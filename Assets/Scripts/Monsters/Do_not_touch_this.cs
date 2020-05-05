@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : MonoBehaviour
+public class Do_not_touch_this : MonoBehaviour
 {
-    private Collider2D coll;
+
+    /*
+     *  using System.Collections;
+using System.Collections.Generic;
+//using System.Numerics;
+using UnityEngine;
+
+public class Slime : MonoBehaviour
+{private Collider2D coll;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -93,6 +101,5 @@ public class Slime : MonoBehaviour
 
         }
     }
-
-
+     */
 }
