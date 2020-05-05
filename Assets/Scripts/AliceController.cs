@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class AliceController : MonoBehaviour
 {
     //Variables
     private Rigidbody2D rb;
@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private Collider2D coll;
 
     //FSM
-    private enum State { Idle, Walking, Jumping };
+    private enum State { Idle, Walking, Jumping, Falling};
     private State state = State.Idle;
 
     //Inspector variables
@@ -51,7 +51,8 @@ public class Player : MonoBehaviour
         {
             state = State.Jumping;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
-            
+            //Jumping
+            state = State.Jumping;
         }
     }
 
@@ -61,6 +62,12 @@ public class Player : MonoBehaviour
         if (Mathf.Abs(rb.velocity.x) > 0.1f)
         {
             state = State.Walking;
+        }
+        //Falling
+        else if (state == State.Jumping) {
+            if (rb.velocity.y < .1f) {
+                state = State.Falling;
+            }
         }
         //Not moving
         else
