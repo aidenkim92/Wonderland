@@ -12,11 +12,11 @@ public class Slime : MonoBehaviour
     [SerializeField] public LayerMask ground;
 
 
-    [SerializeField] private float leftCap;
-    [SerializeField] private float rightCap;
+    [SerializeField] public float leftCap;
+    [SerializeField] public float rightCap;
 
-    [SerializeField] private float jumpLength;
-    [SerializeField] private float jumpHeight;
+    [SerializeField] public float jumpLength;
+    [SerializeField] public float jumpHeight;
 
     private bool facingRight = true;
 
