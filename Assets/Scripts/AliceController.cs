@@ -56,7 +56,7 @@ public class AliceController : MonoBehaviour
           
           if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
-            state = State.Jumping;
+            //state = State.Jumping;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             //Jumping
             state = State.Jumping;
