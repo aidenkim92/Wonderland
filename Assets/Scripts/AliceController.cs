@@ -10,13 +10,13 @@ public class AliceController : MonoBehaviour
     private Collider2D coll;
 
     //FSM
-    private enum State { Idle, Walking, Jumping, Falling};
+    private enum State { Idle, Walking, Jumping, Falling };
     private State state = State.Idle;
 
     //Inspector variables
     [SerializeField] private LayerMask ground;
-    [SerializeField] private float JumpForce = 10.0f;
-    [SerializeField] private float Speed = 7f;
+    [SerializeField] private float JumpForce = 4.0f;
+    [SerializeField] private float Speed = 5f;
 
     private void Start()
     {
@@ -34,31 +34,32 @@ public class AliceController : MonoBehaviour
 
     private void Movement()
     {
-        float hdirection = Input.GetAxis("Horizontal");
 
-        if (hdirection < 0)
+
+        if (Input.GetAxisRaw("Horizontal") < 0f)
         {
             rb.velocity = new Vector2(-Speed, rb.velocity.y);
             transform.localScale = new Vector2(0.1f, 0.1f);
 
         }
-        else if (hdirection > 0)
+        else if (Input.GetAxisRaw("Horizontal") > 0f)
         {
             rb.velocity = new Vector2(Speed, rb.velocity.y);
             transform.localScale = new Vector2(-0.1f, 0.1f);
         }
-        else if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
+        else
+        {
+
+            //state = State.Idle;
+            rb.velocity = new Vector2(0f, rb.velocity.y);
+        }
+          
+          if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
             state = State.Jumping;
             rb.velocity = new Vector2(rb.velocity.x, JumpForce);
             //Jumping
             state = State.Jumping;
-        }
-
-        else{
-
-            //state = State.Idle;
-            rb.velocity = new Vector2(0f, rb.velocity.y);
         }
     }
 
@@ -70,8 +71,10 @@ public class AliceController : MonoBehaviour
             state = State.Walking;
         }
         //Falling
-        else if (state == State.Jumping) {
-            if (rb.velocity.y < .1f) {
+        else if (state == State.Jumping)
+        {
+            if (rb.velocity.y < .1f)
+            {
                 state = State.Falling;
             }
         }
