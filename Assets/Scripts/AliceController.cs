@@ -54,6 +54,12 @@ public class AliceController : MonoBehaviour
             //Jumping
             state = State.Jumping;
         }
+
+        else{
+
+            //state = State.Idle;
+            rb.velocity = new Vector2(0f, rb.velocity.y);
+        }
     }
 
     private void AnimationState()
