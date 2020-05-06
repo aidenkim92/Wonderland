@@ -9797,7 +9797,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 599311138, guid: 6cb60913836d4b44d9dffa5aae30204d, type: 3}
       propertyPath: shootInterval
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 599311138, guid: 6cb60913836d4b44d9dffa5aae30204d, type: 3}
       propertyPath: shootPointLeft
