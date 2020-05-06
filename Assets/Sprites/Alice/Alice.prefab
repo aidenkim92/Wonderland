@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7723099013343994594}
   - component: {fileID: 7723099013343994593}
   - component: {fileID: -4575576571065281430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alice
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,9 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eca52f6585e08f458412f6fe2e73637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  Anim: {fileID: 0}
-  coll: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 0

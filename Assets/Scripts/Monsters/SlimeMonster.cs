@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+//using System.Numerics;
 using UnityEngine;
 
 public class SlimeMonster : MonoBehaviour
@@ -14,7 +15,7 @@ public class SlimeMonster : MonoBehaviour
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        Invoke("Think", 5);
+        Invoke("Think", 2);
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
@@ -26,7 +27,7 @@ public class SlimeMonster : MonoBehaviour
     {
         //Move
         rigid.velocity = new Vector2(nextMove * -1, rigid.velocity.y);
-
+        
         //Detect of the platform
         Vector2 frontVec = new Vector2(rigid.position.x + nextMove * -1 * 0.5f, rigid.position.y);
         Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
@@ -39,6 +40,7 @@ public class SlimeMonster : MonoBehaviour
             Debug.Log("Oh tehre is wall!!");
             Turn();
         }
+       
     }
 
     //Recursive Function
@@ -49,18 +51,21 @@ public class SlimeMonster : MonoBehaviour
 
         //Sprite animation
         animator.SetInteger("WalkSpeed", nextMove);
-
+        
         //Flip sprite
         if (nextMove != 0)
         {
             spriteRenderer.flipX = nextMove == 1;
+            
         }
+     
 
         //Recursive functionality
         float nextThinkTime = Random.Range(2f, 5f);
         Invoke("Think", nextThinkTime);
 
     }
+
     //Turn
     private void Turn()
     {
@@ -69,4 +74,5 @@ public class SlimeMonster : MonoBehaviour
         CancelInvoke();
         Invoke("Think", 2);
     }
+
 }
