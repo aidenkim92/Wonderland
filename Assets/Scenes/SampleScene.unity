@@ -455,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 62.93, y: -12.07, z: -5.73}
+  m_LocalPosition: {x: 28.51, y: 5.22, z: -5.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -482,7 +482,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  JumpForce: 4
+  JumpForce: 7
   Speed: 5
 --- !u!70 &819833526
 CapsuleCollider2D:
@@ -9619,10 +9619,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2063408369}
   - component: {fileID: 2063408368}
-  - component: {fileID: 2063408367}
   - component: {fileID: 2063408366}
-  - component: {fileID: 2063408365}
   - component: {fileID: 2063408370}
+  - component: {fileID: 2063408365}
+  - component: {fileID: 2063408367}
   m_Layer: 9
   m_Name: SlimeMonster
   m_TagString: Enemy
@@ -9640,7 +9640,7 @@ Animator:
   m_GameObject: {fileID: 2063408364}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7c2536328ad398d40bcee9a275e7f3f8, type: 2}
+  m_Controller: {fileID: 9100000, guid: fed4b5aa92bb39f4c98e424010d0ef57, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9670,8 +9670,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &2063408367
-CapsuleCollider2D:
+--- !u!61 &2063408367
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9683,9 +9683,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.008069641}
-  m_Size: {x: 0.5, y: 1.0161391}
-  m_Direction: 0
+  m_Offset: {x: 0.03151703, y: -0.12113148}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8109077, y: 0.75773704}
+  m_EdgeRadius: 0
 --- !u!212 &2063408368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9744,13 +9754,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063408364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.015570625, z: -0, w: 0.99987876}
   m_LocalPosition: {x: 29.14, y: 4.47, z: -1.9304897}
   m_LocalScale: {x: 1, y: 0.922, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.784, z: 0}
 --- !u!114 &2063408370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9760,9 +9770,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063408364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002cb5c2ad4a3a044b81c17413380fc3, type: 3}
+  m_Script: {fileID: 11500000, guid: f29a6aecf068c3546b728c02476c91c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  leftCap: 23
+  rightCap: 31
+  jumpLength: 1
+  jumpHeight: 7
 --- !u!1001 &1112946433454552583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9887,12 +9904,12 @@ PrefabInstance:
     - target: {fileID: 7723099013343994592, guid: b37fa28df0feb6e42a7cbedf5369d702,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.61
+      value: 23.74
       objectReference: {fileID: 0}
     - target: {fileID: 7723099013343994592, guid: b37fa28df0feb6e42a7cbedf5369d702,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.12
+      value: 4.51
       objectReference: {fileID: 0}
     - target: {fileID: 7723099013343994592, guid: b37fa28df0feb6e42a7cbedf5369d702,
         type: 3}
