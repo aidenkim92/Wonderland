@@ -9,7 +9,7 @@ public class BananaMonster : MonoBehaviour
     private Vector3 movement;
     private int movementFlag = 0;//0:Idle, 1:Left, 2:Right
     bool isTracing;
-    private GameObject traceTarget;
+    public GameObject traceTarget;
 
     //Initialization
     private void Start()

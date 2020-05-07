@@ -1,87 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 public class AliceController : MonoBehaviour
 {
-    //Variables
-    private Rigidbody2D rb;
-    private Animator Anim;
-    private Collider2D coll;
+    public float moveSpeed;
+    public Rigidbody2D theRB;
+    public float jumpForce;
 
-    //FSM
-    private enum State { Idle, Walking, Jumping, Falling };
-    private State state = State.Idle;
+    private bool isGrounded;
+    public Transform groundCheckPoint;
+    public LayerMask whatIsGround;
 
-    //Inspector variables
-    [SerializeField] private LayerMask ground;
-    [SerializeField] private float JumpForce = 4.0f;
-    [SerializeField] private float Speed = 5f;
+    private bool canDoubleJump;
 
-    private void Start()
+    private Animator anim;
+    private SpriteRenderer theSR;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        Anim = GetComponent<Animator>();
-        coll = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
+        theSR = GetComponent<SpriteRenderer>();
+
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        Movement();
-        AnimationState();
-        Anim.SetInteger("State", (int)state);
+        Movement()
     }
 
     private void Movement()
     {
+        theRB.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), theRB.velocity.y);
 
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
 
-        if (Input.GetAxisRaw("Horizontal") < 0f)
+        if (isGrounded)
         {
-            rb.velocity = new Vector2(-Speed, rb.velocity.y);
-            transform.localScale = new Vector2(0.1f, 0.1f);
+            canDoubleJump = true;
+        }
 
-        }
-        else if (Input.GetAxisRaw("Horizontal") > 0f)
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(Speed, rb.velocity.y);
-            transform.localScale = new Vector2(-0.1f, 0.1f);
-        }
-        else
-        {
-
-            //state = State.Idle;
-            rb.velocity = new Vector2(0f, rb.velocity.y);
-        }
-          
-          if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
-        {
-            //state = State.Jumping;
-            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
-            //Jumping
-            state = State.Jumping;
-        }
-    }
-
-    private void AnimationState()
-    {
-        //Moving
-        if (Mathf.Abs(rb.velocity.x) > 0.1f)
-        {
-            state = State.Walking;
-        }
-        //Falling
-        else if (state == State.Jumping)
-        {
-            if (rb.velocity.y < .1f)
+            if (isGrounded)
             {
-                state = State.Falling;
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+
             }
+
+            else
+            {
+                if (canDoubleJump)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                    canDoubleJump = false;
+                }
+            }
+
         }
-        //Not moving
-        else
+
+        if (theRB.velocity.x < 0f)
         {
-            state = State.Idle;
+            theSR.flipX = true;
         }
+        else if (theRB.velocity.x > 0f)
+        {
+            theSR.flipX = false;
+        }
+
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
     }
 }
