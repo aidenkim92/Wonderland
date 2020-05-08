@@ -31,4 +31,5 @@ public class GameManager : MonoBehaviour
     {
         money++;
     }
+   
 }

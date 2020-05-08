@@ -27,18 +27,18 @@ public class TurretMonster : MonoBehaviour
     public Transform shootPointLeft, shootPointRight;
 
 
-    private void Awake()
+     void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
 
     }
 
-    private void Start()
+     void Start()
     {
         curHealth = maxHealth;
     }
 
-    private void Update()
+     void Update()
     {
         anim.SetBool("Awake", awake);
         anim.SetBool("LookingRight", lookingRight);
@@ -53,9 +53,16 @@ public class TurretMonster : MonoBehaviour
         {
             lookingRight = false;
         }
+
+        //If the turret health is less or equal than the 0
+        //Destroy
+        if(curHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void RangeCheck()
+     void RangeCheck()
     {
         distance = Vector3.Distance(transform.position, target.transform.position);
 
@@ -72,7 +79,7 @@ public class TurretMonster : MonoBehaviour
 
     }
 
-    public void Attack(bool attackingRight)
+     public void Attack(bool attackingRight)
     {
         bulletTimer += Time.deltaTime;
 
@@ -99,5 +106,12 @@ public class TurretMonster : MonoBehaviour
                 bulletTimer = 0;
             }
         }
+    }
+
+    //If the turret get damaged
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
     }
 }

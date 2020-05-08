@@ -10,11 +10,10 @@ public class Bullet : MonoBehaviour
         {
             if(col.CompareTag("Player"))
             {
-                //col.GetComponent<Player>().Damage(1); <- need to be added when me(Aiden) add the health bar
-
+                col.GetComponent<Player>().Damage(1);// <- need to be added when me(Aiden) add the health bar
+                Destroy(gameObject);
             }
-
-            //Destroy(gameObject);
+           
         }
     }
 }

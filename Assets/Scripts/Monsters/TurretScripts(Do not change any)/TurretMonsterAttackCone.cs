@@ -8,12 +8,12 @@ public class TurretMonsterAttackCone : MonoBehaviour
 
     public bool isLeft = false;
 
-    private void Awake()
+     void Awake()
     {
         turretMonster = gameObject.GetComponentInParent<TurretMonster>();    
     }
 
-    private void OnTriggerStay2D(Collider2D col)
+     void OnTriggerStay2D(Collider2D col)
     {
         if(col.CompareTag("Player"))
         {
