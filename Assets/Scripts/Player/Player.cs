@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         {
             if(grounded)
             {
-                rigid.AddForce(Vector2.up * jumpPower);
+                rigid.AddForce(Vector2.up * jumpPower * 2);
                 canDoubleJump = true;
             }
             else
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
                     
-                    rigid.AddForce(Vector2.up * jumpPower / (jumpPower/2));
+                    rigid.AddForce(Vector2.up * jumpPower * 2);
                 }
             }
         }
