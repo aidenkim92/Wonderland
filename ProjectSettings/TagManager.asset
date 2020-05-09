@@ -7,6 +7,7 @@ TagManager:
   - PlatForm
   - Enemy
   - MonsterBlock
+  - FieldItem
   layers:
   - Default
   - TransparentFX
