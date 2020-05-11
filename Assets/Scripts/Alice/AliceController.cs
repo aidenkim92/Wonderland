@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEditor.Experimental;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AliceController : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D theRB;
     public float jumpForce;
+    public int level;
+
 
     private bool isGrounded;
     public Transform groundCheckPoint;
@@ -18,18 +21,55 @@ public class AliceController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer theSR;
 
+    public void SavePlayer()
+    {
+        SaveSystem.savePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        level = data.level;
+
+        Vector3 pos;
+
+        pos.x = data.position[0];
+        pos.y = data.position[1];
+        pos.z = data.position[2];
+
+        transform.position = pos;
+        StartCoroutine(LoadNewScene(level));
+
+    }
+
+    IEnumerator LoadNewScene(int sceneBuildIndex)
+    {
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneBuildIndex);
+        asyncOperation.allowSceneActivation = false;
+
+        while (asyncOperation.progress < 0.9f)
+        {
+            yield return null;
+        }
+
+        asyncOperation.allowSceneActivation = true;
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
+        level = SceneManager.GetActiveScene().buildIndex;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement()
+        Movement();
     }
 
     private void Movement()
