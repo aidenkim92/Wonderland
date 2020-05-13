@@ -112,6 +112,7 @@ public class AliceController : MonoBehaviour
         }
 
         anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isDoubleJump", canDoubleJump);
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
     }
 }

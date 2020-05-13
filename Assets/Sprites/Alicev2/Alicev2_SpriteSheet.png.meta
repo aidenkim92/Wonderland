@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: cf370d9b0c7339145aebc8fc4c72c192
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6498461259997760914
+    second: Alicev2_SpriteSheet_0
+  - first:
+      213: 2093995122017903601
+    second: Alicev2_SpriteSheet_1
+  - first:
+      213: 4727498721218363335
+    second: Alicev2_SpriteSheet_2
+  - first:
+      213: -7289303968526546310
+    second: Alicev2_SpriteSheet_3
+  - first:
+      213: 7859802524411312737
+    second: Alicev2_SpriteSheet_4
+  - first:
+      213: -8096719406477638717
+    second: Alicev2_SpriteSheet_5
+  - first:
+      213: 6469178555212425018
+    second: Alicev2_SpriteSheet_6
+  - first:
+      213: -3661537960044785399
+    second: Alicev2_SpriteSheet_7
+  - first:
+      213: -7036099639809451599
+    second: Alicev2_SpriteSheet_8
+  - first:
+      213: -8275937237935035399
+    second: Alicev2_SpriteSheet_9
+  - first:
+      213: -8097648282511979354
+    second: Alicev2_SpriteSheet_10
+  - first:
+      213: 3100362104104196821
+    second: Alicev2_SpriteSheet_11
+  - first:
+      213: 1936247247504359799
+    second: Alicev2_SpriteSheet_12
+  - first:
+      213: -4638590206162435183
+    second: Alicev2_SpriteSheet_13
+  - first:
+      213: -5768946838369512583
+    second: Alicev2_SpriteSheet_14
+  - first:
+      213: 6815848237570708466
+    second: Alicev2_SpriteSheet_15
+  - first:
+      213: 5815951750210167166
+    second: Alicev2_SpriteSheet_16
+  - first:
+      213: -5032225146496507777
+    second: Alicev2_SpriteSheet_17
+  - first:
+      213: 655732833568338232
+    second: Alicev2_SpriteSheet_18
+  - first:
+      213: 3177438429266551909
+    second: Alicev2_SpriteSheet_19
+  - first:
+      213: -1013324205049743833
+    second: Alicev2_SpriteSheet_20
+  - first:
+      213: 7068352170315451006
+    second: Alicev2_SpriteSheet_21
+  - first:
+      213: 1167286654179301197
+    second: Alicev2_SpriteSheet_22
+  - first:
+      213: -5115409316067172386
+    second: Alicev2_SpriteSheet_23
+  - first:
+      213: -5181944727171445845
+    second: Alicev2_SpriteSheet_24
+  - first:
+      213: 360014785496766601
+    second: Alicev2_SpriteSheet_25
+  - first:
+      213: -2087731305245085799
+    second: Alicev2_SpriteSheet_26
+  - first:
+      213: 1496268851086018780
+    second: Alicev2_SpriteSheet_27
+  - first:
+      213: -5360096452738756124
+    second: Alicev2_SpriteSheet_28
+  - first:
+      213: 4015974816127811730
+    second: Alicev2_SpriteSheet_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6232331ae3d0d5a0800000000000000
+      internalID: -6498461259997760914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 108
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32741187d5f0d10800000000000000
+      internalID: 2093995122017903601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 108
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf75522a037b9140800000000000000
+      internalID: 4727498721218363335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a412839a037da90800000000000000
+      internalID: -7289303968526546310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 81
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a3140c0c0a31d60800000000000000
+      internalID: 7859802524411312737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 81
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c383ea199ca2af80800000000000000
+      internalID: -8096719406477638717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 81
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e20cee9327c950800000000000000
+      internalID: 6469178555212425018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9011cefff9a9f2dc0800000000000000
+      internalID: -3661537960044785399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b957ec08a0ca5e90800000000000000
+      internalID: -7036099639809451599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb647d0ee6f52d80800000000000000
+      internalID: -8275937237935035399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac42dc4acf5f9f80800000000000000
+      internalID: -8097648282511979354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da963248e2b60b20800000000000000
+      internalID: 3100362104104196821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77143d8ec9eeeda10800000000000000
+      internalID: 1936247247504359799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1930517a8ca60afb0800000000000000
+      internalID: -4638590206162435183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9735fda6a6590ffa0800000000000000
+      internalID: -5768946838369512583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3df533cd1c69e50800000000000000
+      internalID: 6815848237570708466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71a6167d4966b050800000000000000
+      internalID: 5815951750210167166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 54
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70a94124e1f92ab0800000000000000
+      internalID: -5032225146496507777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831b664b981a91900800000000000000
+      internalID: 655732833568338232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564ab18aa67881c20800000000000000
+      internalID: 3177438429266551909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72674bb1103ffe1f0800000000000000
+      internalID: -1013324205049743833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a830369d4d71260800000000000000
+      internalID: 7068352170315451006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4759650709033010800000000000000
+      internalID: 1167286654179301197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf9713645a6209b0800000000000000
+      internalID: -5115409316067172386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babcc3bc9b80618b0800000000000000
+      internalID: -5181944727171445845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9885c6b3a870ff400800000000000000
+      internalID: 360014785496766601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f676c6073e603e0800000000000000
+      internalID: -2087731305245085799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8c67da790d3c410800000000000000
+      internalID: 1496268851086018780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1dcacdcac1d95b0800000000000000
+      internalID: -5360096452738756124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alicev2_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290863651db9bb730800000000000000
+      internalID: 4015974816127811730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
