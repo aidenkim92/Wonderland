@@ -6,14 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public int money =0;
-    public int lives;
-
     private void Awake()
     {
         MakeSingleton();
     }
-
 
     void MakeSingleton()
     {
@@ -27,9 +23,4 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void addMoney()
-    {
-        money++;
-    }
-   
 }
