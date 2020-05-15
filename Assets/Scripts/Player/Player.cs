@@ -136,6 +136,7 @@ public class Player : MonoBehaviour
     {
         float timer = 0;
 
+        rigid.velocity = new Vector2(rigid.velocity.x, 0);
         while (knockDuration > timer)
         {
             timer += Time.deltaTime; //Increase timer
