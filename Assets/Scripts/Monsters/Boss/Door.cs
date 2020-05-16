@@ -1,43 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    [System.Obsolete]
+    public string transferMapName;
+    private Player player;
+
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             if(Input.GetKeyDown("e"))
             {
-                Application.LoadLevel(1);
+                player.currentMapName = transferMapName;
+                SceneManager.LoadScene(transferMapName);
             }
         }
     }
-
-    [System.Obsolete]
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
             if (Input.GetKeyDown("e"))
             {
-                Application.LoadLevel(1);
+                player.currentMapName = transferMapName;
+                SceneManager.LoadScene(transferMapName);
             }
         }
     }
-
-    [System.Obsolete]
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.CompareTag("Player"))
-        {
-            if (Input.GetKeyDown("e"))
-            {
-                Application.LoadLevel(1);
-            }
-        }
-    }
+   
 }
 

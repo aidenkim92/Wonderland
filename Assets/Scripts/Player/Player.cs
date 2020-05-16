@@ -8,6 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    //TEsting
+    public string currentMapName;
+
+
     //Floats
     public float maxSpeed = 3f;
     public float speed = 50f;
@@ -27,29 +31,24 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     public static Player instance;
-    private void Awake()
-    {/*
 
+
+    void Start()
+    {
         if(instance == null)
         {
+            DontDestroyOnLoad(this.gameObject);
+            rigid = gameObject.GetComponent<Rigidbody2D>();
+            animator = gameObject.GetComponent<Animator>();
+
+            curHealth = maxHealth;
             instance = this;
         }
         else
         {
-            if(instance != this)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(gameObject);
-        */
-    }
-    void Start()
-    {
-        rigid = gameObject.GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
-
-        curHealth = maxHealth;
+       
     }
 
     [System.Obsolete]

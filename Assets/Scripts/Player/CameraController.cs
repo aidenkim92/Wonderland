@@ -1,28 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float smoothSpeed;
-    [SerializeField] private float maxX,minX, maxY,minY;
-    private Transform target;
+    public static CameraController instance;
+    public GameObject target;
+    public float moveSpeed;
+    private Vector3 targetPosition;
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        if(instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+       
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        //transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        if(target.gameObject != null)
+        {
+            targetPosition.Set(target.transform.position.x, target.transform.position.y, this.transform.position.z);
 
-        //first parameter is the current position
-        //second parameter is target position
-        //third parameter is speed
-        transform.position = Vector3.Lerp(transform.position, new Vector3(target.position.x, target.position.y, transform.position.z), smoothSpeed * Time.deltaTime);
-
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), transform.position.z);
+            this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        }
     }
 }
