@@ -22,7 +22,7 @@ public class TurretMonster : MonoBehaviour
 
     //References
     public GameObject bullet;
-    public Transform target;
+    private Transform target;
     public Animator anim;
     public Transform shootPointLeft, shootPointRight;
 
@@ -35,6 +35,7 @@ public class TurretMonster : MonoBehaviour
 
      void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         curHealth = maxHealth;
     }
 

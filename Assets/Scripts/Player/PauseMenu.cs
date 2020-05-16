@@ -41,13 +41,12 @@ public class PauseMenu : MonoBehaviour
 
     }
 
-    [System.Obsolete]
     public void Restart()
     {
         //string currentSceneName = SceneManager.GetActiveScene().name;
-       // SceneManager.LoadScene(currentSceneName);
-
-        Application.LoadLevel(0);
+        // SceneManager.LoadScene(currentSceneName);
+        Destroy(Player.instance.gameObject);
+        SceneManager.LoadScene(0);
         //SceneManager.LoadScene(2);
         
         //Application.LoadLevel(Application.loadedLevel);

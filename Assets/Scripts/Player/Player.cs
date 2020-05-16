@@ -4,6 +4,7 @@ using TMPro;
 //using System.Numerics;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -24,6 +25,25 @@ public class Player : MonoBehaviour
     //References
     private Rigidbody2D rigid;
     private Animator animator;
+
+    public static Player instance;
+    private void Awake()
+    {/*
+
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            if(instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+        DontDestroyOnLoad(gameObject);
+        */
+    }
     void Start()
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
@@ -115,11 +135,11 @@ public class Player : MonoBehaviour
 
 
     //When the player is dead
-    [System.Obsolete]
     void Die()
     {
         //Restart
-        Application.LoadLevel(0);
+        Destroy(gameObject);
+        SceneManager.LoadScene(0);
     }
 
     //When get damage
