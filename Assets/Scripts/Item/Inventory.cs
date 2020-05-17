@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
@@ -7,6 +8,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+    
     public static Inventory instance;
     private OkOrCancel ooc;
     private DataBaseManager database;
@@ -14,7 +16,6 @@ public class Inventory : MonoBehaviour
     private List<Item> inventoryItemList;
     private List<Item> inventoryTapList;//shown list that taps
 
-   
     public string[] tabDescription;
 
     public Transform tf; // parent Object of the slot
@@ -34,6 +35,7 @@ public class Inventory : MonoBehaviour
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
 
+
     void Start()
     {
         instance = this;
@@ -45,6 +47,16 @@ public class Inventory : MonoBehaviour
 
     }
 
+    public List<Item> SaveItem()
+    {
+        return inventoryItemList;
+    }
+
+    public void LoadItem(List<Item> _itemList)
+    {
+        inventoryItemList = _itemList;
+    }
+   
     public void GetAnItem(int _itemID,int _count = 1)
     {
         for(int i = 0; i < database.itemList.Count;i++)

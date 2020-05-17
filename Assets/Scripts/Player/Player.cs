@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using TMPro;
 //using System.Numerics;
 using UnityEditor;
@@ -10,7 +11,8 @@ public class Player : MonoBehaviour
 {
     //TEsting
     public string currentMapName;
-
+    public string currentSceneName;
+    //private SaveNLoad saveNLoad;
 
     //Floats
     public float maxSpeed = 3f;
@@ -23,8 +25,8 @@ public class Player : MonoBehaviour
 
 
     //Stats
-    public int curHealth;
-    public int maxHealth = 100;
+    public int curHealth = 7;
+    public int maxHealth = 7;
 
     //References
     private Rigidbody2D rigid;
@@ -33,27 +35,44 @@ public class Player : MonoBehaviour
     public static Player instance;
 
 
-    void Start()
+    private void Awake()
     {
         if(instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
-            rigid = gameObject.GetComponent<Rigidbody2D>();
-            animator = gameObject.GetComponent<Animator>();
-
-            curHealth = maxHealth;
             instance = this;
         }
         else
         {
             Destroy(this.gameObject);
         }
-       
+    }
+    void Start()
+    {
+        rigid = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+
+        curHealth = maxHealth;
+        //saveNLoad = FindObjectOfType<SaveNLoad>();
+
     }
 
     [System.Obsolete]
     void Update()
     {
+        /*
+         *  if(Input.GetKeyDown(KeyCode.F5))
+        {
+            saveNLoad.callSave();
+        }
+        if(Input.GetKeyDown(KeyCode.F9))
+        {
+            saveNLoad.callLoad();
+        }
+
+         */
+
+
         animator.SetBool("Grounded",grounded);
         //Getting actual the Player speed in the animator
         animator.SetFloat("Speed", Mathf.Abs(rigid.velocity.x));
