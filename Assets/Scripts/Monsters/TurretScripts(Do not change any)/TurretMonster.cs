@@ -59,7 +59,17 @@ public class TurretMonster : MonoBehaviour
         //Destroy
         if(curHealth <= 0)
         {
-            Destroy(gameObject);
+            if(Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+                Destroy(gameObject);
+            }
         }
     }
 

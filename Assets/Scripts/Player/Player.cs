@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
@@ -9,7 +10,13 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    //TEsting
+    //Testing for gain experiences and up the level
+    public int character_LV = 0;
+    public int currentExp = 0;
+    public int maxExp = 100;
+
+
+    //TEsting for save and load data as a binary file.
     public string currentMapName;
     public string currentSceneName;
     //private SaveNLoad saveNLoad;
@@ -114,6 +121,10 @@ public class Player : MonoBehaviour
             curHealth = maxHealth;
         }
         
+        if(currentExp > maxExp)
+        {
+            currentExp = maxExp;
+        }
         if(curHealth <= 0)
         {
             Die();
@@ -122,20 +133,20 @@ public class Player : MonoBehaviour
 
      void FixedUpdate()
     {
-        Vector3 easeVelocity = rigid.velocity;
+       
+         Vector3 easeVelocity = rigid.velocity;
         easeVelocity.y = rigid.velocity.y;//Does not affect on Y axis
         easeVelocity.z = 0.0f; //No Z axis
         easeVelocity.x *= 0.75f;
-
-
-        //Get x axis
-        float h = Input.GetAxis("Horizontal");
 
         //Fake friction / Easing the x speed of the player
         if(grounded)
         {
             rigid.velocity = easeVelocity;
         }
+
+        //Get x axis
+        float h = Input.GetAxis("Horizontal");
 
         //Move the player
         rigid.AddForce((Vector2.right * speed) * h);
