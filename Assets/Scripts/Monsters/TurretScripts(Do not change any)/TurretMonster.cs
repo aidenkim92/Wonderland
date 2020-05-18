@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class TurretMonster : MonoBehaviour
 {
     //Integers
-    public int curHealth;
-    public int maxHealth;
+    public int curHealth = 100;
+    public int maxHealth = 100;
 
     //Floats
     public float distance;
@@ -59,7 +58,19 @@ public class TurretMonster : MonoBehaviour
         //Destroy
         if(curHealth <= 0)
         {
-            Destroy(gameObject);
+            if (Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+
+                Destroy(gameObject);
+
+            }
         }
     }
 

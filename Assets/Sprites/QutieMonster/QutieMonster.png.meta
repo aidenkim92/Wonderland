@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: a426ae75562ebb64dab8450ae9f4616f
+guid: 0a1aba38792760142abb53f172f41b9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8227546954408941770
-    second: HealthBar_0
+      213: 5860832835316194092
+    second: QutieMonster_0
   - first:
-      213: -3178617384780871938
-    second: HealthBar_1
+      213: -2760883084746411588
+    second: QutieMonster_1
   - first:
-      213: 5032351099696674128
-    second: HealthBar_2
+      213: -6688395248615732036
+    second: QutieMonster_2
   - first:
-      213: 5856585005746452560
-    second: HealthBar_3
+      213: -5552900845713755529
+    second: QutieMonster_3
   - first:
-      213: -6503669339106013020
-    second: HealthBar_4
+      213: -9204555300447171578
+    second: QutieMonster_4
   - first:
-      213: -7959300830350487195
-    second: HealthBar_5
+      213: -7491805704859163841
+    second: QutieMonster_5
   - first:
-      213: 4778905902034280743
-    second: HealthBar_6
-  - first:
-      213: -5794802862350705069
-    second: HealthBar_7
+      213: -8637961255809990494
+    second: QutieMonster_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -69,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 28
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -96,7 +93,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -110,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBar_0
+      name: QutieMonster_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 113
-        width: 112
-        height: 14
+        y: 32
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +121,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637ab99e2a1e1dd80800000000000000
-      internalID: -8227546954408941770
+      spriteID: c2b97f4696cd55150800000000000000
+      internalID: 5860832835316194092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_1
+      name: QutieMonster_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
-        width: 112
+        x: 16
+        y: 32
+        width: 13
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef6414f545843e3d0800000000000000
-      internalID: -3178617384780871938
+      spriteID: cb13e43567f5fa9d0800000000000000
+      internalID: -2760883084746411588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_2
+      name: QutieMonster_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 81
-        width: 112
-        height: 14
+        x: 32
+        y: 32
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0557772a9a086d540800000000000000
-      internalID: 5032351099696674128
+      spriteID: cbc49d045fb0e23a0800000000000000
+      internalID: -6688395248615732036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_3
+      name: QutieMonster_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
-        width: 112
-        height: 14
+        y: 0
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05875608805c64150800000000000000
-      internalID: 5856585005746452560
+      spriteID: 772f342f91220f2b0800000000000000
+      internalID: -5552900845713755529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_4
+      name: QutieMonster_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 49
-        width: 112
+        x: 17
+        y: 0
+        width: 13
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a09cf9a1335eb5a0800000000000000
-      internalID: -6503669339106013020
+      spriteID: 60c4869d8b9d24080800000000000000
+      internalID: -9204555300447171578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_5
+      name: QutieMonster_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 33
-        width: 112
-        height: 14
+        x: 33
+        y: 0
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,19 +226,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 561dc72a012ea8190800000000000000
-      internalID: -7959300830350487195
+      spriteID: f33ef9b9762c70890800000000000000
+      internalID: -7491805704859163841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_6
+      name: QutieMonster_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17
-        width: 112
+        x: 49
+        y: 0
+        width: 13
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,29 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72165c12995125240800000000000000
-      internalID: 4778905902034280743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HealthBar_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 112
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35e5b26bf79b49fa0800000000000000
-      internalID: -5794802862350705069
+      spriteID: 2a0cbd3f00ccf1880800000000000000
+      internalID: -8637961255809990494
       vertices: []
       indices: 
       edges: []

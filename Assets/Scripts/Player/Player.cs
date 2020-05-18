@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using TMPro;
 //using System.Numerics;
 using UnityEditor;
 using UnityEngine;
@@ -9,6 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    //Testing for gain experiences and up the level
+    public int character_LV = 1;
+    public int currentExp = 0;
+    public int maxExp = 100;
     //TEsting
     public string currentMapName;
     public string currentSceneName;
@@ -25,7 +28,7 @@ public class Player : MonoBehaviour
 
 
     //Stats
-    public int curHealth = 7;
+    public int curHealth = 0;
     public int maxHealth = 7;
 
     //References
@@ -52,7 +55,7 @@ public class Player : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 
-        curHealth = maxHealth;
+        //curHealth = maxHealth;
         //saveNLoad = FindObjectOfType<SaveNLoad>();
 
     }
@@ -109,12 +112,20 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(curHealth > maxHealth)
+        /*
+         *  if(curHealth > maxHealth)
         {
             curHealth = maxHealth;
         }
-        
-        if(curHealth <= 0)
+
+       if (currentExp > maxExp)
+        { 
+            currentExp = maxExp;
+        }
+         */
+   
+
+        if (curHealth <= 0)
         {
             Die();
         }

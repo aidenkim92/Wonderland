@@ -4,22 +4,45 @@ using UnityEngine;
 
 public class QutieMonster : MonoBehaviour
 {
-    private Rigidbody2D rigid;
+    //Integers
+    public int curHealth = 100;
+    public int maxHealth = 100;
     int nextMove;
+
+
+    private Rigidbody2D rigid;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
 
-
+    private Player player;
     private void Awake()
     {
+        player = FindObjectOfType<Player>();
         rigid = GetComponent<Rigidbody2D>();
         Invoke("Think", 5);
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        curHealth = maxHealth;
     }
-
+    void Update()
+    {
+        if (curHealth <= 0)
+        {
+            if (Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+                Destroy(gameObject);
+            }
+        }
+    }
     //Automatically, executed by itself per second 50~60times
     //Physics bases stuffs in the FixedUpdate()
     private void FixedUpdate()
@@ -36,7 +59,7 @@ public class QutieMonster : MonoBehaviour
         //Detect the monster is almost in front of the collased part from the ground
         if (rayHit.collider == null)
         {
-            Debug.Log("Oh tehre is wall!!");
+            Debug.Log("Oh there is wall!!");
             Turn();
         }
     }
@@ -68,5 +91,23 @@ public class QutieMonster : MonoBehaviour
         spriteRenderer.flipX = nextMove == 1;
         CancelInvoke();
         Invoke("Think", 2);
+    }
+
+    //If the Qutie Monster getDamaged
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+    }
+
+    //When the player get damaged
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            player.curHealth -= 1;
+            player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
+        }
     }
 }
