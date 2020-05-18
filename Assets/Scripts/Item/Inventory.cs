@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices.WindowsRuntime;
-using TMPro;
+
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -14,21 +14,24 @@ public class QutieMonster : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
 
+    private Player player;
 
     private void Awake()
     {
+
         rigid = GetComponent<Rigidbody2D>();
         Invoke("Think", 5);
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         curHealth = maxHealth;
+
+        player = FindObjectOfType<Player>();
     }
-
-
+    
     void Update()
     {
-        if (curHealth <= 0)
+        /* if (curHealth <= 0)
         {
             if (Player.instance.currentExp == Player.instance.maxExp)
             {
@@ -42,7 +45,25 @@ public class QutieMonster : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+         */
+
+        if (curHealth <= 0)
+        {
+            if (player.currentExp == player.maxExp)
+            {
+                player.currentExp = 0;
+                player.character_LV += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                player.currentExp += 10;
+                Destroy(gameObject);
+            }
+        }
     }
+
+    
     //Automatically, executed by itself per second 50~60times
     //Physics bases stuffs in the FixedUpdate()
     private void FixedUpdate()
@@ -59,7 +80,7 @@ public class QutieMonster : MonoBehaviour
         //Detect the monster is almost in front of the collased part from the ground
         if (rayHit.collider == null)
         {
-            Debug.Log("Oh tehre is wall!!");
+            Debug.Log("Oh there is wall!!");
             Turn();
         }
     }
@@ -97,7 +118,7 @@ public class QutieMonster : MonoBehaviour
     public void Damage(int damage)
     {
         curHealth -= damage;
-        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+       // gameObject.GetComponent<Animation>().Play("RedFlash_Player");
     }
 
     //When the player get damaged
@@ -105,9 +126,10 @@ public class QutieMonster : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            Player.instance.curHealth -= 1;
-            Player.instance.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
-            StartCoroutine(Player.instance.Knockback(0.02f, 20, Player.instance.transform.position));
+            player.curHealth -= 1;
+            player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
         }
     }
+
 }

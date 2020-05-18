@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using TMPro;
 //using System.Numerics;
 using UnityEditor;
 using UnityEngine;
