@@ -21,7 +21,6 @@ public class Item
         Equip,
         ETC
     }
-
     public Item(int _itemID,string _itemName,string _itemDes,ITemType _itemType,int _itemCount = 1)
     {
         itemID = _itemID;

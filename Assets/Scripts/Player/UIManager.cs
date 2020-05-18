@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour
 {
     public Slider expBar;
     public Text expText;
+    public Text levelText;
     public Slider healthBar;
     public Text HPText;
     public Player player;
@@ -33,5 +34,7 @@ public class UIManager : MonoBehaviour
         expBar.maxValue = player.maxExp;
         expBar.value = player.currentExp;
         expText.text = "Exp: " + player.currentExp + "/" + player.maxExp;
+
+        levelText.text = "Level: " + player.character_LV;
     }
 }

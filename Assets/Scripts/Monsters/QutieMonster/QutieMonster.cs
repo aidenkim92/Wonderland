@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class QutieMonster : MonoBehaviour
 {
-    private Rigidbody2D rigid;
+    //Integers
+    public int curHealth;
+    public int maxHealth;
     int nextMove;
+
+    private Rigidbody2D rigid;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
@@ -18,8 +22,27 @@ public class QutieMonster : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        curHealth = maxHealth;
     }
 
+
+    void Update()
+    {
+        if (curHealth <= 0)
+        {
+            if (Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+                Destroy(gameObject);
+            }
+        }
+    }
     //Automatically, executed by itself per second 50~60times
     //Physics bases stuffs in the FixedUpdate()
     private void FixedUpdate()
@@ -68,5 +91,23 @@ public class QutieMonster : MonoBehaviour
         spriteRenderer.flipX = nextMove == 1;
         CancelInvoke();
         Invoke("Think", 2);
+    }
+
+    //If the Qutie Monster getDamaged
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+    }
+
+    //When the player get damaged
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            Player.instance.curHealth -= 1;
+            Player.instance.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            StartCoroutine(Player.instance.Knockback(0.02f, 20, Player.instance.transform.position));
+        }
     }
 }

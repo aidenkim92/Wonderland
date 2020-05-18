@@ -30,7 +30,6 @@ public class TurretMonster : MonoBehaviour
      void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
-
     }
 
      void Start()

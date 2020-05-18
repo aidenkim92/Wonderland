@@ -22,7 +22,6 @@ public class CameraController : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
             instance = this;
         }
-       
     }
 
     private void Update()

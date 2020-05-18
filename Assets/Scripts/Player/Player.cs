@@ -7,14 +7,14 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     //Testing for gain experiences and up the level
-    public int character_LV = 0;
+    public int character_LV = 1;
     public int currentExp = 0;
     public int maxExp = 100;
-
 
     //TEsting for save and load data as a binary file.
     public string currentMapName;
@@ -133,8 +133,7 @@ public class Player : MonoBehaviour
 
      void FixedUpdate()
     {
-       
-         Vector3 easeVelocity = rigid.velocity;
+        Vector3 easeVelocity = rigid.velocity;
         easeVelocity.y = rigid.velocity.y;//Does not affect on Y axis
         easeVelocity.z = 0.0f; //No Z axis
         easeVelocity.x *= 0.75f;
@@ -161,7 +160,6 @@ public class Player : MonoBehaviour
             rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
         }
     }
-
 
     //When the player is dead
     void Die()
