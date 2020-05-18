@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class AliceController : MonoBehaviour
 {
+
+    public static AliceController instance;
     public float moveSpeed;
     public Rigidbody2D theRB;
     public float jumpForce;
@@ -21,6 +23,14 @@ public class AliceController : MonoBehaviour
     private Animator anim;
     private SpriteRenderer theSR;
 
+    public float knockBackLength, knockBackForce;
+    private float knockBackCounter;
+
+
+    void Awake()
+    {
+        instance = this;
+    }
     public void SavePlayer()
     {
         SaveSystem.savePlayer(this);
@@ -69,20 +79,75 @@ public class AliceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if (knockBackCounter <= 0)
+        {
+
+            HorizontalMovement();
+            CheckGrounded();
+            VerticalMovement();
+            FaceCharacter();
+
+        }
+        else
+        {
+            KnockbackMovement();
+        }
+
+        ActivateAnimation();
+
     }
 
-    private void Movement()
+    public void CheckGrounded()
     {
-        theRB.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), theRB.velocity.y);
-
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-
         if (isGrounded)
         {
             canDoubleJump = true;
         }
 
+    }
+
+    public void KnockbackMovement()
+    {
+        knockBackCounter -= Time.deltaTime;
+        if (!theSR.flipX)
+        {
+            theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+
+        }
+        else
+        {
+            theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+        }
+
+    }
+    public void FaceCharacter()
+    {
+        if (theRB.velocity.x < 0f)
+        {
+            theSR.flipX = true;
+        }
+        else if (theRB.velocity.x > 0f)
+        {
+            theSR.flipX = false;
+        }
+    }
+
+    public void ActivateAnimation()
+    {
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
+
+    }
+
+    public void HorizontalMovement()
+    {
+        theRB.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), theRB.velocity.y);
+
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+    }
+
+    public void VerticalMovement()
+    {
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
@@ -101,18 +166,12 @@ public class AliceController : MonoBehaviour
             }
 
         }
+    }
 
-        if (theRB.velocity.x < 0f)
-        {
-            theSR.flipX = true;
-        }
-        else if (theRB.velocity.x > 0f)
-        {
-            theSR.flipX = false;
-        }
+    public void KnockBack()
+    {
+        knockBackCounter = knockBackLength;
 
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetBool("isDoubleJump", canDoubleJump);
-        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
+        theRB.velocity = new Vector2(0f, knockBackForce);
     }
 }
