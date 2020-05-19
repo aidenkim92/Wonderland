@@ -8,9 +8,12 @@ public class Slime : MonoBehaviour
     private Collider2D coll;
     private Rigidbody2D rb;
     private Animator anim;
+    public int curHealth = 100;
+    public GameObject[] prefab;
 
 
     [SerializeField] public LayerMask ground;
+    private Player player;
 
 
     [SerializeField] public float leftCap;
@@ -27,7 +30,8 @@ public class Slime : MonoBehaviour
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-               
+        player = FindObjectOfType<Player>();
+
     }
 
 
@@ -45,6 +49,7 @@ public class Slime : MonoBehaviour
         {
             anim.SetBool("Falling", false);
         }
+        checkHealth();
     }
 
     private void Move()
@@ -94,4 +99,50 @@ public class Slime : MonoBehaviour
 
         }
     }
+    private void checkHealth()
+    {
+        if (curHealth <= 0)
+        {
+            if (Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+
+            }
+            int probability;
+
+            probability = 3;
+
+            if (probability == 3)
+            {
+                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+            }
+            Destroy(gameObject);
+
+        }
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            player.Damage(2);
+            player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            player.Knockback(2, 20, player.transform.transform.position);
+
+        }
+
+    }
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+    }
 }
+

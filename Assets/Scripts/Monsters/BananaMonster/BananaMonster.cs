@@ -54,8 +54,10 @@ public class BananaMonster : MonoBehaviour
                 
             }
             int probability;
+
             probability = 3;
-            if(probability == 3)
+
+            if (probability == 3)
             {
                 int getRandPrefab = Random.RandomRange(0,prefab.Length);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity );
@@ -100,13 +102,13 @@ public class BananaMonster : MonoBehaviour
         if (dist == "Left")
         {
             moveVelocity = Vector3.left;
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
       
         }
         else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
          
         }
 

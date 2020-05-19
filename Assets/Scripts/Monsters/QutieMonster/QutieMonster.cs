@@ -8,7 +8,7 @@ public class QutieMonster : MonoBehaviour
     public int curHealth = 100;
     public int maxHealth = 100;
     int nextMove;
-
+    public GameObject[] prefab;
 
     private Rigidbody2D rigid;
     private Animator animator;
@@ -34,13 +34,22 @@ public class QutieMonster : MonoBehaviour
             {
                 Player.instance.currentExp = 0;
                 Player.instance.character_LV += 1;
-                Destroy(gameObject);
             }
             else
             {
                 Player.instance.currentExp += 10;
-                Destroy(gameObject);
+                
             }
+            int probability;
+
+            probability = 3;
+
+            if (probability == 3)
+            {
+                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+            }
+            Destroy(gameObject);
         }
     }
     //Automatically, executed by itself per second 50~60times
