@@ -40,6 +40,7 @@ public class QutieMonster : MonoBehaviour
                 Player.instance.currentExp += 10;
 
            }
+            AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
             int probability;
 

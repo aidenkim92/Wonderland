@@ -12,7 +12,9 @@ public class ItemPickup : MonoBehaviour
 
         if (col.CompareTag("Player"))
         {
+
             Inventory.instance.GetAnItem(itemID, _count);
+            AudioManager.instance.PlaySFX(7);
             Destroy(this.gameObject);
         }
     }

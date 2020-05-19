@@ -123,6 +123,7 @@ public class Slime : MonoBehaviour
                 int getRandPrefab = Random.RandomRange(0, prefab.Length);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
+            AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
 
         }

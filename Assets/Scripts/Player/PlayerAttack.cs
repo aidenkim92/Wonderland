@@ -29,7 +29,7 @@ public class PlayerAttack : MonoBehaviour
             attackTimer = attackCoolDown;
 
             attackTrigger.enabled = true;
-         //   AudioManager.instance.PlaySFX(0);
+            AudioManager.instance.PlaySFX(0);
 
         }
 
