@@ -105,8 +105,7 @@ public class QutieMonster : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            player.curHealth -= 1;
-            player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            player.Damage(2);
             StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
         }
     }

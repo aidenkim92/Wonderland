@@ -10,6 +10,12 @@ public class BananaMonster : MonoBehaviour
     private int movementFlag = 0;//0:Idle, 1:Left, 2:Right
     bool isTracing;
     private GameObject traceTarget;
+    private Player player;
+
+    public int curHealth = 100;
+    public int maxHealth = 100;
+
+    public GameObject[] prefab;
 
     //Initialization
     private void Start()
@@ -17,12 +23,47 @@ public class BananaMonster : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         StartCoroutine("ChangeMovement");
+        player = FindObjectOfType<Player>();
     }
 
     //Physics engine Updates
     private void FixedUpdate()
     {
         move();
+
+    }
+
+    private void Update()
+    {
+        checkHealth();
+    }
+
+    private void checkHealth()
+    {
+        if (curHealth <= 0)
+        {
+            if (Player.instance.currentExp == Player.instance.maxExp)
+            {
+                Player.instance.currentExp = 0;
+                Player.instance.character_LV += 1;
+
+            }
+            else
+            {
+                Player.instance.currentExp += 10;
+                
+            }
+            int probability;
+            probability = 3;
+            if(probability == 3)
+            {
+                int getRandPrefab = Random.RandomRange(0,prefab.Length);
+                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity );
+            }
+            Destroy(gameObject);
+
+        }
+
     }
 
     private void move()
@@ -123,5 +164,22 @@ public class BananaMonster : MonoBehaviour
             isTracing = true;
             StartCoroutine("ChangeMovement");
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            player.Damage(2);
+            player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            player.Knockback(2, 20, player.transform.transform.position);
+
+        }
+
+    }
+    public void Damage(int damage)
+    {
+        curHealth -= damage;
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
     }
 }
