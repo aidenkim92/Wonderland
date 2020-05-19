@@ -11,7 +11,14 @@ public class UIManager : MonoBehaviour
     public Text HPText;
     public Player player;
 
+    public static UIManager instance;
+
     private static bool UIExists;
+
+    void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         if(!UIExists)
@@ -27,6 +34,11 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
+        ResetPlayer();
+    }
+
+    public void ResetPlayer()
+    {
         healthBar.maxValue = player.maxHealth;
         healthBar.value = player.curHealth;
         HPText.text = "HP: " + player.curHealth + "/" + player.maxHealth;
@@ -37,5 +49,6 @@ public class UIManager : MonoBehaviour
         expText.text = "Exp: " + player.currentExp + "/" + player.maxExp;
 
         levelText.text = "Level: " + player.character_LV;
+
     }
 }

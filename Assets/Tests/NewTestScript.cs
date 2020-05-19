@@ -17,6 +17,7 @@ namespace Tests
 
             GameObject monsterGO = TestHelper.InstantiateFromResource("QutieMonster");
             QutieMonster _m = monsterGO.GetComponent<QutieMonster>();
+            
 
             _m.curHealth = 100;
             _m.Damage(20);

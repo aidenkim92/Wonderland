@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 290373581
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 9010202646671661792, guid: f374363a617847542a22c59358d2c8b1,
     type: 3}
@@ -163,12 +163,12 @@ MonoBehaviour:
   maxExp: 100
   currentMapName: 
   currentSceneName: 
-  maxSpeed: 3
+  maxSpeed: 5
   speed: 50
   jumpPower: 150
   canDoubleJump: 0
   grounded: 0
-  curHealth: 4
+  curHealth: 7
   maxHealth: 7
 --- !u!111 &6881498912276521096
 Animation:

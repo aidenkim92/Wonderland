@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3682290032359354815
+--- !u!1 &1047754069833037253
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3682290032359354810}
-  - component: {fileID: 3682290032359354814}
-  - component: {fileID: 3682290032359354811}
-  - component: {fileID: 3682290032359354809}
+  - component: {fileID: 1047754069833037248}
+  - component: {fileID: 1047754069833037252}
+  - component: {fileID: 1047754069833037249}
+  - component: {fileID: 1047754069833037251}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -19,31 +19,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3682290032359354810
+--- !u!4 &1047754069833037248
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3682290032359354815}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 168.5, y: 12.49, z: -100}
+  m_GameObject: {fileID: 1047754069833037253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 143.46, y: 12.49, z: -100}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &3682290032359354814
+--- !u!20 &1047754069833037252
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3682290032359354815}
+  m_GameObject: {fileID: 1047754069833037253}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.04605731, g: 0.046489947, b: 0.047169805, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -76,21 +76,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3682290032359354811
+--- !u!81 &1047754069833037249
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3682290032359354815}
+  m_GameObject: {fileID: 1047754069833037253}
   m_Enabled: 1
---- !u!114 &3682290032359354809
+--- !u!114 &1047754069833037251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3682290032359354815}
+  m_GameObject: {fileID: 1047754069833037253}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fffa5647552d9742a451e69568238f0, type: 3}

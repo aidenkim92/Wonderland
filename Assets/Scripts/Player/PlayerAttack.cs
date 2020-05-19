@@ -24,15 +24,18 @@ public class PlayerAttack : MonoBehaviour
         //When the key "f" is pressed and not attacking the moment
         if(Input.GetKeyDown("f") && !attacking)
         {
+            AudioManager.instance.PlaySFX(0);
             attacking = true;
             attackTimer = attackCoolDown;
 
             attackTrigger.enabled = true;
+            
         }
 
         //If the attacking is true
         if(attacking)
         {
+            
             //If the attack timer is bigger than 0
             if(attackTimer > 0)
             {

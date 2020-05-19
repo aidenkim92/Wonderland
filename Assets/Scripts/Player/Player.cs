@@ -36,11 +36,12 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     public static Player instance;
+    
 
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
             instance = this;
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
 
     }
 
-    [System.Obsolete]
+    //[System.Obsolete]
     void Update()
     {
         /*
@@ -76,13 +77,13 @@ public class Player : MonoBehaviour
          */
 
 
-        animator.SetBool("Grounded",grounded);
+        animator.SetBool("Grounded", grounded);
         //Getting actual the Player speed in the animator
         animator.SetFloat("Speed", Mathf.Abs(rigid.velocity.x));
 
-        
+
         //To move left
-        if(Input.GetAxis("Horizontal") < -0.1f)
+        if (Input.GetAxis("Horizontal") < -0.1f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
@@ -93,23 +94,25 @@ public class Player : MonoBehaviour
         }
 
         //Prevent getting infinite number for jump
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
-            if(grounded)
+            if (grounded)
             {
                 rigid.AddForce(Vector2.up * jumpPower * 2);
                 canDoubleJump = true;
             }
             else
             {
-                if(canDoubleJump)
+                if (canDoubleJump)
                 {
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
-                    
+
                     rigid.AddForce(Vector2.up * jumpPower * 2);
                 }
+                
             }
+            AudioManager.instance.PlaySFX(1);
         }
 
         /*
@@ -123,15 +126,11 @@ public class Player : MonoBehaviour
             currentExp = maxExp;
         }
          */
-   
 
-        if (curHealth <= 0)
-        {
-            Die();
-        }
+
     }
 
-     void FixedUpdate()
+    void FixedUpdate()
     {
         Vector3 easeVelocity = rigid.velocity;
         easeVelocity.y = rigid.velocity.y;//Does not affect on Y axis
@@ -143,7 +142,7 @@ public class Player : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
 
         //Fake friction / Easing the x speed of the player
-        if(grounded)
+        if (grounded)
         {
             rigid.velocity = easeVelocity;
         }
@@ -152,7 +151,7 @@ public class Player : MonoBehaviour
         rigid.AddForce((Vector2.right * speed) * h);
 
         //Limiting Player speed
-        if(rigid.velocity.x > maxSpeed)
+        if (rigid.velocity.x > maxSpeed)
         {
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
         }
@@ -160,20 +159,30 @@ public class Player : MonoBehaviour
         {
             rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
         }
+
+        if (curHealth <= 0)
+        {
+            AudioManager.instance.PlaySFX(2);
+            LevelManager.instance.RespawnPlayer();
+
+        }
+
     }
 
 
-    //When the player is dead
-    void Die()
-    {
-        //Restart
-        Destroy(gameObject);
-        SceneManager.LoadScene(0);
-    }
+
 
     //When get damage
     public void Damage(int damage)
     {
+
+        if (curHealth <= 0)
+        {
+            AudioManager.instance.PlaySFX(2);
+            LevelManager.instance.RespawnPlayer();
+
+        }
+        AudioManager.instance.PlaySFX(5);
         curHealth -= damage;
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
