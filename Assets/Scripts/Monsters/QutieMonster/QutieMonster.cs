@@ -8,7 +8,7 @@ public class QutieMonster : MonoBehaviour
     public int curHealth = 100;
     public int maxHealth = 100;
     int nextMove;
-   // public GameObject[] prefab;
+    public GameObject[] prefab;
 
     private Rigidbody2D rigid;
     private Animator animator;
@@ -19,105 +19,104 @@ public class QutieMonster : MonoBehaviour
     private void Awake()
     {
         player = FindObjectOfType<Player>();
-        //rigid = GetComponent<Rigidbody2D>();
-        //Invoke("Think", 5);
-        //animator = GetComponent<Animator>();
-        //spriteRenderer = GetComponent<SpriteRenderer>();
-        //capsuleCollider = GetComponent<CapsuleCollider2D>();
+        rigid = GetComponent<Rigidbody2D>();
+        Invoke("Think", 5);
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
         curHealth = maxHealth;
     }
     void Update()
     {
-        //if (curHealth <= 0)
-        //{
-        //    if (Player.instance.currentExp == Player.instance.maxExp)
-        //    {
-        //        // Player.instance.currentExp = 0;
-        //        //Player.instance.character_LV += 1;
+        if (curHealth <= 0)
+        {
+           if (Player.instance.currentExp == Player.instance.maxExp)
+          {
+               Player.instance.currentExp = 0;
+               Player.instance.character_LV += 1;
+            }
+           else
+            {
+                Player.instance.currentExp += 10;
 
+           }
+            Destroy(gameObject);
+            int probability;
 
-        //    }
-        //    else
-        //    {
-        //        //Player.instance.currentExp += 10;
+            probability = 3;
 
-        //    }
-        //    int probability;
-
-        //    probability = 3;
-
-        //    if (probability == 3)
-        //    {
-        //        //int getRandPrefab = Random.RandomRange(0, prefab.Length);
-        //        // Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-        //    }
-        //    // Destroy(gameObject);
-        //}
+            if (probability == 3)
+            {
+                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+            }
+        }
     }
+
     //Automatically, executed by itself per second 50~60times
     //Physics bases stuffs in the FixedUpdate()
     private void FixedUpdate()
     {
-        ////Move
-        //rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
+        //Move
+        rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
 
-        ////Detect of the platform
-        //Vector2 frontVec = new Vector2(rigid.position.x + nextMove * 0.5f, rigid.position.y);
-        //Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
+        //Detect of the platform
+        Vector2 frontVec = new Vector2(rigid.position.x + nextMove * 0.5f, rigid.position.y);
+        Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
 
-        //RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("PlatForm"));
+        RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("PlatForm"));
 
-        ////Detect the monster is almost in front of the collased part from the ground
-        //if (rayHit.collider == null)
-        //{
-        //    //Debug.Log("Oh there is wall!!");
-        //    // Turn();
-        //}
+        //Detect the monster is almost in front of the collased part from the ground
+        if (rayHit.collider == null)
+        {
+            Debug.Log("Oh there is wall!!");
+             Turn();
+        }
     }
 
     //Recursive Function
     private void Think()
     {
-        ////Sets next active
-        //nextMove = Random.Range(-1, 2);
+        //Sets next active
+        nextMove = Random.Range(-1, 2);
 
-        ////Sprite animation
-        //animator.SetInteger("WalkSpeed", nextMove);
+        //Sprite animation
+        animator.SetInteger("WalkSpeed", nextMove);
 
-        ////Flip sprite
-        //if (nextMove != 0)
-        //{
-        //    spriteRenderer.flipX = nextMove == 1;
-        //}
+        //Flip sprite
+        if (nextMove != 0)
+        {
+            spriteRenderer.flipX = nextMove == 1;
+        }
 
         ////Recursive functionality
-        //float nextThinkTime = Random.Range(2f, 5f);
-        //Invoke("Think", nextThinkTime);
+        float nextThinkTime = Random.Range(2f, 5f);
+        Invoke("Think", nextThinkTime);
 
     }
     //Turn
     private void Turn()
     {
-        //nextMove *= -1;
-        //spriteRenderer.flipX = nextMove == 1;
-        //CancelInvoke();
-        //Invoke("Think", 2);
+        nextMove *= -1;
+        spriteRenderer.flipX = nextMove == 1;
+        CancelInvoke();
+        Invoke("Think", 2);
     }
 
     //If the Qutie Monster getDamaged
     public void Damage(int damage)
     {
         curHealth -= damage;
-        // gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
     }
 
     //When the player get damaged
     void OnCollisionEnter2D(Collision2D col)
     {
-        //if (col.gameObject.tag == "Player")
-        //{
-        //    //player.Damage(2);
-        //    // StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
-        //}
+        if (col.gameObject.tag == "Player")
+        {
+            player.Damage(2);
+             StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
+        }
     }
 }

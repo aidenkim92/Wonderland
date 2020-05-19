@@ -98,7 +98,9 @@ public class Player : MonoBehaviour
         {
             if (grounded)
             {
-                rigid.AddForce(Vector2.up * jumpPower * 2);
+                //Do not erase this
+                //rigid.AddForce(Vector2.up * jumpPower * (Vector2.up)/2);
+                rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 canDoubleJump = true;
             }
             else
@@ -107,8 +109,9 @@ public class Player : MonoBehaviour
                 {
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
-
-                    rigid.AddForce(Vector2.up * jumpPower * 2);
+                    rigid.AddForce(Vector2.up * (jumpPower/2), ForceMode2D.Impulse);
+                    //Do not erase this
+                    //rigid.AddForce(Vector2.up * jumpPower * (Vector2.up)/2);
                 }
                 
             }
@@ -126,7 +129,6 @@ public class Player : MonoBehaviour
             currentExp = maxExp;
         }
          */
-
 
     }
 
@@ -169,12 +171,15 @@ public class Player : MonoBehaviour
 
     }
 
-
-
-
     //When get damage
     public void Damage(int damage)
     {
+
+        curHealth -= damage;
+        //Get the animation RedFlash_Player
+        //Do not use the animator that has been already defined.
+        //Just use reference with this gameObject.
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
 
         if (curHealth <= 0)
         {
@@ -183,11 +188,6 @@ public class Player : MonoBehaviour
 
         }
         AudioManager.instance.PlaySFX(5);
-        curHealth -= damage;
-        //Get the animation RedFlash_Player
-        //Do not use the animator that has been already defined.
-        //Just use reference with this gameObject.
-        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
     }
 
     public IEnumerator Knockback(float knockDuration, float knockbackPower, Vector3 knockbackDirection)

@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curHealth: 100
   maxHealth: 100
+  prefab: []
 --- !u!50 &4989628831027484542
 Rigidbody2D:
   serializedVersion: 4
