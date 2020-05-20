@@ -13,7 +13,7 @@ public class SceneManaging : MonoBehaviour
     {
 
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         Player.instance.transform.position = new Vector3(142, 10, 0);
 
 
