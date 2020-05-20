@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class SaveNLoad : MonoBehaviour
 {
+
+    public static SaveNLoad instance;
     [System.Serializable]
    public class Data
    {

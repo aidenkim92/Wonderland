@@ -11,29 +11,22 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource bgm, levelEndMusic;
 
+
+
     void Awake()
     {
         instance = this;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void PlaySFX(int soundToPlay)
     {
         
-
-        soundEffects[soundToPlay].Stop();
-        soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
-        soundEffects[soundToPlay].Play();
+        if(PauseMenu.isPaused == false)
+        {
+            soundEffects[soundToPlay].Stop();
+            soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
+            soundEffects[soundToPlay].Play();
+        }
 
     }
 }

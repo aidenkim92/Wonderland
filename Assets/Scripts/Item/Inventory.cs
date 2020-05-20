@@ -230,23 +230,28 @@ public class Inventory : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.I))
             {
-                activated = !activated;
+                if (PauseMenu.isPaused == false)
+                {
+                    activated = !activated;
 
-                if(activated)
-                {
-                    go.SetActive(true);
-                    selectedTab = 0;
-                    tabActivated = true;
-                    itemActivated = false;
-                    ShowTab();
+                    if (activated)
+                    {
+                        go.SetActive(true);
+                        selectedTab = 0;
+                        tabActivated = true;
+                        itemActivated = false;
+                        ShowTab();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        go.SetActive(false);
+                        tabActivated = false;
+                        itemActivated = false;
+                    }
+
                 }
-                else
-                {
-                    StopAllCoroutines();
-                    go.SetActive(false);
-                    tabActivated = false;
-                    itemActivated = false;
-                }
+                    
             }
 
             if(activated)
@@ -379,33 +384,38 @@ public class Inventory : MonoBehaviour
 
     IEnumerator OOCCoroutine()
     {
-        go_OOC.SetActive(true);
-        ooc.ShowTwoChoice("Use", "Cancel");
-        yield return new WaitUntil(() => !ooc.activated);
+       
+            go_OOC.SetActive(true);
+            ooc.ShowTwoChoice("Use", "Cancel");
+            yield return new WaitUntil(() => !ooc.activated);
 
-        if(ooc.GetResult())
-        {
-            for(int i = 0; i < inventoryItemList.Count; i++)
+            if (ooc.GetResult())
             {
-                if (inventoryItemList[i].itemID == inventoryTapList[selectedItem].itemID)
+                for (int i = 0; i < inventoryItemList.Count; i++)
                 {
-                    database.UseItem(inventoryItemList[i].itemID);
-                    if (inventoryItemList[i].itemCount > 1)
+                    if (inventoryItemList[i].itemID == inventoryTapList[selectedItem].itemID)
                     {
-                        inventoryItemList[i].itemCount--;
+                        database.UseItem(inventoryItemList[i].itemID);
+                        if (inventoryItemList[i].itemCount > 1)
+                        {
+                            inventoryItemList[i].itemCount--;
+                        }
+                        else
+                        {
+                            inventoryItemList.RemoveAt(i);
+                        }
+                        ShowItem();
+                        break;
                     }
-                    else
-                    {
-                        inventoryItemList.RemoveAt(i);
-                    }
-                    ShowItem();
-                    break;
                 }
             }
-        }
 
-        stopKeyInput = false;
-        go_OOC.SetActive(false);
+            stopKeyInput = false;
+            go_OOC.SetActive(false);
+
+        
+        
+        
     }
 
 }

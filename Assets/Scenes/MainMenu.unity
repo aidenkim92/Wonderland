@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 48285029}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2064931591}
+        m_MethodName: callLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &48285029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2674,6 +2685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2064931589}
   - component: {fileID: 2064931590}
+  - component: {fileID: 2064931591}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2717,6 +2729,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ae2b3faae73a34da3ed2cf10774633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  sl: {fileID: 2064931591}
+  player: {fileID: 0}
+--- !u!114 &2064931591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064931588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14385ecab434f6048b91d762558cf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    playerX: 0
+    playerY: 0
+    playerZ: 0
+    playerCurrentHP: 0
+    playerItemInventory: 
+    playerItemInventoryCount: 
+    mapName: 
+    sceneName: 
+    swList: 
+    swNameList: []
+    varNameList: []
+    varNumberList: []
 --- !u!1 &2106418658
 GameObject:
   m_ObjectHideFlags: 0
