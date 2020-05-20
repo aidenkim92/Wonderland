@@ -171,6 +171,19 @@ public class Player : MonoBehaviour
 
     }
 
+    //Moving Platform
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("MovingPlatForm"))
+        {
+            this.transform.parent = other.transform;
+            Debug.Log("MOVING");
+        }
+        
+    }
+
+
     //When get damage
     public void Damage(int damage)
     {
