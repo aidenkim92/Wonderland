@@ -40,17 +40,18 @@ public class QutieMonster : MonoBehaviour
                 Player.instance.currentExp += 10;
 
            }
-            AudioManager.instance.PlaySFX(6);
-            Destroy(gameObject);
             int probability;
 
-            probability = 3;
+            probability = Random.RandomRange(0, 5);
 
             if (probability == 3)
             {
-                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                int getRandPrefab = Random.RandomRange(0, prefab.Length-1);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
+            Destroy(gameObject);
+            AudioManager.instance.PlaySFX(6);
+            
         }
     }
 

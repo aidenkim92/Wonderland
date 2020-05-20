@@ -30,25 +30,21 @@ public class DataBaseManager : MonoBehaviour
         switch(_itemID)
         {
             case 1:
-                if(player.curHealth > player.maxHealth)
-                {
-                    player.curHealth = player.maxHealth;
-                }
-                else
-                {
-                    player.curHealth += 1;
-                }
-                break;
-            case 2:
+                player.curHealth += 1;
                 if (player.curHealth > player.maxHealth)
                 {
                     player.curHealth = player.maxHealth;
                 }
-                else
+                
+                break;
+
+            case 2:
+                player.curHealth += 3;
+                if (player.curHealth > player.maxHealth)
                 {
-                    player.curHealth += 3;
+                    player.curHealth = player.maxHealth;
                 }
-                break;;
+                break;
         }
     }
     void Start()

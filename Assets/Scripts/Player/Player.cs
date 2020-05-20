@@ -181,6 +181,7 @@ public class Player : MonoBehaviour
         //Just use reference with this gameObject.
         gameObject.GetComponent<Animation>().Play("RedFlash_Player");
 
+        //check
         if (curHealth <= 0)
         {
             AudioManager.instance.PlaySFX(2);

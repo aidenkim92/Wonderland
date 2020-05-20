@@ -5,11 +5,10 @@ using UnityEngine;
 public class ItemDrop : MonoBehaviour
 {
     [SerializeField]
-    static GameObject[] prefab;
-
+    public GameObject[] prefab;
 
     // Update is called once per frame
-    public static void DropItem(Transform monster)
+    public  void DropItem(Transform monster)
     {
 
         int probability;

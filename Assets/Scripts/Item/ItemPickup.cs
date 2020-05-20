@@ -14,8 +14,8 @@ public class ItemPickup : MonoBehaviour
         {
 
             Inventory.instance.GetAnItem(itemID, _count);
-            AudioManager.instance.PlaySFX(7);
             Destroy(this.gameObject);
+            AudioManager.instance.PlaySFX(7);
         }
     }
 }

@@ -9,7 +9,6 @@ public class Slime : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     public int curHealth = 100;
-    public GameObject[] prefab;
 
 
     [SerializeField] public LayerMask ground;
@@ -21,6 +20,8 @@ public class Slime : MonoBehaviour
 
     [SerializeField] public float jumpLength;
     [SerializeField] public float jumpHeight;
+
+    public GameObject[] prefab;
 
     private bool facingRight = true;
 
@@ -103,24 +104,24 @@ public class Slime : MonoBehaviour
     {
         if (curHealth <= 0)
         {
-            if (Player.instance.currentExp == Player.instance.maxExp)
+            if (player.currentExp == player.maxExp)
             {
-                Player.instance.currentExp = 0;
-                Player.instance.character_LV += 1;
+                player.currentExp = 0;
+                player.character_LV += 1;
 
             }
             else
             {
-                Player.instance.currentExp += 10;
+                player.currentExp += 10;
 
             }
             int probability;
 
-            probability = 3;
+            probability = Random.RandomRange(0, 5);
 
             if (probability == 3)
             {
-                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                int getRandPrefab = Random.RandomRange(0, prefab.Length-1);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
             AudioManager.instance.PlaySFX(6);

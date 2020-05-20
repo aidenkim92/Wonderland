@@ -55,13 +55,14 @@ public class BananaMonster : MonoBehaviour
             }
             int probability;
 
-            probability = 3;
+            probability = Random.RandomRange(0, 5);
 
             if (probability == 3)
             {
-                int getRandPrefab = Random.RandomRange(0,prefab.Length);
-                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity );
+                int getRandPrefab = Random.RandomRange(0, prefab.Length);
+                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
+            AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
 
         }

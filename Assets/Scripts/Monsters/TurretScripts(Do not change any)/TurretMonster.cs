@@ -12,7 +12,7 @@ public class TurretMonster : MonoBehaviour
     public float distance;
     public float wakeRange;
     public float shootInterval;
-    public float bulletSpeed = 100;
+    public float bulletSpeed = 10.0f;
     public float bulletTimer;
 
     //Boolean
@@ -54,23 +54,19 @@ public class TurretMonster : MonoBehaviour
             lookingRight = false;
         }
 
-        //If the turret health is less or equal than the 0
-        //Destroy
+
         if(curHealth <= 0)
         {
             if (Player.instance.currentExp == Player.instance.maxExp)
             {
                 Player.instance.currentExp = 0;
                 Player.instance.character_LV += 1;
-                Destroy(gameObject);
             }
             else
             {
                 Player.instance.currentExp += 10;
-
-                Destroy(gameObject);
-
             }
+            Destroy(gameObject);
         }
     }
 
@@ -105,7 +101,6 @@ public class TurretMonster : MonoBehaviour
                 GameObject bulletClone;
                 bulletClone = Instantiate(bullet, shootPointLeft.transform.position, shootPointLeft.transform.rotation) as GameObject;
                 bulletClone.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
-
                 bulletTimer = 0;
             }
             
@@ -114,7 +109,6 @@ public class TurretMonster : MonoBehaviour
                 GameObject bulletClone;
                 bulletClone = Instantiate(bullet, shootPointRight.transform.position, shootPointRight.transform.rotation) as GameObject;
                 bulletClone.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
-
                 bulletTimer = 0;
             }
         }
