@@ -25,11 +25,15 @@ public class BossBullet : MonoBehaviour
     private void OnTriggerEnter2D (Collider2D other)
     {
         Debug.Log("IT GETS HERE");
-        if(other.CompareTag("Player"))
+        if (other.isTrigger != true)
         {
-            Player.instance.Damage(1);
-            //Destroy(gameObject);
-            
+            if (other.gameObject.tag == ("Player"))
+            {
+
+                other.GetComponent<Player>().Damage(1);
+                Destroy(gameObject);
+            }
         }
+          
     }
 }

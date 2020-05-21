@@ -10,6 +10,7 @@ TagManager:
   - FieldItem
   - Canvas
   - MovingPlatform
+  - Boss
   layers:
   - Default
   - TransparentFX

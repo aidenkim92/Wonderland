@@ -13,5 +13,8 @@ public class AttackTrigger : MonoBehaviour
             //then sendThe damage to the Mathod Damage in the monster whose has the Damage mathod
             col.SendMessageUpwards("Damage", damage);
         }
+        else if ((col.isTrigger == true) && col.CompareTag("Boss")){
+            col.SendMessageUpwards("Damage", damage);
+        }
     }
 }

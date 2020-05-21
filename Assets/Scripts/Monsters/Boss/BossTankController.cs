@@ -27,10 +27,12 @@ public class BossTankController : MonoBehaviour
 
     [Header("Health System")]
     public int health = 100;
+    private Player player;
     // Start is called before the first frame update
     void Start()
     {
         currentState = bossStates.shooting;
+        player = FindObjectOfType<Player>();
 
     }
 
@@ -40,25 +42,25 @@ public class BossTankController : MonoBehaviour
         switch (currentState)
         {
             case bossStates.shooting:
-               
+
                 shotCounter -= Time.deltaTime;
 
-                if(shotCounter <= 0)
+                if (shotCounter <= 0)
                 {
                     shotCounter = timeBetweenShots;
 
-                  var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
+                    var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
                     newBullet.transform.localScale = theBoss.localScale;
                 }
 
                 break;
 
             case bossStates.hurt:
-                if(hurtCounter > 0)
+                if (hurtCounter > 0)
                 {
                     hurtCounter -= Time.deltaTime;
 
-                    if(hurtCounter <= 0)
+                    if (hurtCounter <= 0)
                     {
                         currentState = bossStates.moving;
                     }
@@ -68,7 +70,7 @@ public class BossTankController : MonoBehaviour
 
             case bossStates.moving:
 
-                if(moveRight)
+                if (moveRight)
                 {
                     theBoss.position += new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
 
@@ -96,26 +98,23 @@ public class BossTankController : MonoBehaviour
 
                 break;
         }
-
-#if UNITY_EDITOR
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            Damage(1);
-        }
-
-#endif
-
     }
+
+       
+
+
 
 
 
     public void Damage(int damage)
     {
+        anim.SetTrigger("Hit");
+        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
         health -= damage;
         currentState = bossStates.hurt;
         hurtCounter = hurtTime;
-
-        anim.SetTrigger("Hit");
+        
+        
 
         if(health <= 0)
         {

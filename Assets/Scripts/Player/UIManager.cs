@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
         ResetPlayer();
     }
 
-    public void ResetPlayer()
+   public void ResetPlayer()
     {
         healthBar.maxValue = player.maxHealth;
         healthBar.value = player.curHealth;
