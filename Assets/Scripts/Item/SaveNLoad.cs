@@ -50,8 +50,7 @@ public class SaveNLoad : MonoBehaviour
         data.playerCurrentHP = player.curHealth;
 
         data.mapName = player.currentMapName;
-        data.sceneName = player.currentSceneName;
-
+        
         Debug.Log("basic datas suceeed");
         data.playerItemInventory.Clear();
         for(int i = 0; i < database.var_name.Length;i++)
@@ -98,8 +97,7 @@ public class SaveNLoad : MonoBehaviour
 
 
             player.currentMapName = data.mapName;
-            player.currentSceneName = data.sceneName;
-
+            
             vector.Set(data.playerX, data.playerY, data.playerZ);
             player.transform.position = vector;
 

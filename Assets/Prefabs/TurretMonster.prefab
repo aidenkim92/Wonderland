@@ -57,10 +57,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.78721, y: 1.0836341}
+    - - {x: 2.2392974, y: -0.01768078}
+      - {x: 2.2677398, y: 0.36016786}
       - {x: -0.5826343, y: 0.22807954}
       - {x: -0.56452286, y: -0.19835283}
-      - {x: 2.7893543, y: -0.8790725}
+      - {x: 2.1769652, y: -0.7310873}
 --- !u!114 &2371949232688023136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2758488d62d4c0f4384ced5f26388360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretMonster: {fileID: 0}
+  turretMonster: {fileID: 2371949233991748349}
   isLeft: 0
 --- !u!1 &2371949232749622807
 GameObject:
@@ -132,8 +133,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.9195337, y: 1.044793}
-      - {x: -1.9364214, y: -0.94913495}
+    - - {x: -2.8216486, y: 0.73555744}
+      - {x: -2.8051844, y: -0.7524339}
       - {x: 1.2154684, y: -0.14964977}
       - {x: 1.2158537, y: 0.19817242}
 --- !u!114 &2371949232749622825
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2758488d62d4c0f4384ced5f26388360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretMonster: {fileID: 0}
+  turretMonster: {fileID: 2371949233991748349}
   isLeft: 1
 --- !u!1 &2371949233110180995
 GameObject:
@@ -337,12 +338,11 @@ MonoBehaviour:
   distance: 0
   wakeRange: 6
   shootInterval: 0.5
-  bulletSpeed: 10
+  bulletSpeed: 2
   bulletTimer: 0
   awake: 0
   lookingRight: 1
   bullet: {fileID: 2386516267058673495, guid: 74c1e6d95e3988640bde916f4b6e7bba, type: 3}
-  target: {fileID: 0}
   anim: {fileID: 0}
   shootPointLeft: {fileID: 2371949233705846445}
   shootPointRight: {fileID: 2371949234088951917}
@@ -359,7 +359,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 838d1d08c9a29cc4d8f7af7007b3e2d8, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &2371949234357519632

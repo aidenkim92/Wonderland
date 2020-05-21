@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
+    //Define varaibles
     private Collider2D coll;
     private Rigidbody2D rb;
     private Animator anim;
@@ -12,6 +13,8 @@ public class Slime : MonoBehaviour
 
 
     [SerializeField] public LayerMask ground;
+
+    //Reference player object
     private Player player;
 
 
@@ -21,6 +24,7 @@ public class Slime : MonoBehaviour
     [SerializeField] public float jumpLength;
     [SerializeField] public float jumpHeight;
 
+    //Reference prefabs for items
     public GameObject[] prefab;
 
     private bool facingRight = true;
@@ -35,7 +39,7 @@ public class Slime : MonoBehaviour
 
     }
 
-
+    //Updating of current reaction 
     private void Update()
     {
         if (anim.GetBool("Jumping"))
@@ -53,6 +57,7 @@ public class Slime : MonoBehaviour
         checkHealth();
     }
 
+    //Move
     private void Move()
     {
         if (facingRight)
@@ -74,12 +79,9 @@ public class Slime : MonoBehaviour
                 facingRight = false;
 
             }
-
-
         }
         else
         {
-     
             if (transform.position.x >= leftCap)
             {
                 if (transform.localScale.x == 1)
@@ -100,8 +102,11 @@ public class Slime : MonoBehaviour
 
         }
     }
+
+    //Check health
     private void checkHealth()
     {
+        //Depends on the monster status it updates player current stats.
         if (curHealth <= 0)
         {
             if (player.currentExp == player.maxExp)
@@ -115,8 +120,9 @@ public class Slime : MonoBehaviour
                 player.currentExp += 10;
 
             }
-            int probability;
 
+            //Probability that for dropping items.
+            int probability;
             probability = Random.RandomRange(0, 5);
 
             if (probability == 3)
@@ -126,10 +132,10 @@ public class Slime : MonoBehaviour
             }
             AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
-
         }
-
     }
+
+    //Determine player is triggered 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -141,6 +147,8 @@ public class Slime : MonoBehaviour
         }
 
     }
+
+    //Getting damage
     public void Damage(int damage)
     {
         curHealth -= damage;

@@ -5,14 +5,14 @@ using UnityEngine;
 public class TurretMonsterAttackCone : MonoBehaviour
 {
     public TurretMonster turretMonster;
-
     public bool isLeft = false;
 
-     void Awake()
+    void Awake()
     {
-        turretMonster = gameObject.GetComponentInParent<TurretMonster>();    
+       turretMonster = gameObject.GetComponentInParent<TurretMonster>();    
     }
 
+    //Determine player is triggered and set bool is true if the character is leftside
      void OnTriggerStay2D(Collider2D col)
     {
         if(col.CompareTag("Player"))

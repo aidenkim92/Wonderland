@@ -8,13 +8,17 @@ public class QutieMonster : MonoBehaviour
     public int curHealth = 100;
     public int maxHealth = 100;
     int nextMove;
+
+    //Prefab for items
     public GameObject[] prefab;
 
+    //Define
     private Rigidbody2D rigid;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private CapsuleCollider2D capsuleCollider;
 
+    //Player reference
     private Player player;
     private void Awake()
     {
@@ -96,6 +100,7 @@ public class QutieMonster : MonoBehaviour
         Invoke("Think", nextThinkTime);
 
     }
+
     //Turn
     private void Turn()
     {

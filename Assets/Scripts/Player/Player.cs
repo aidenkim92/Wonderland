@@ -1,20 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-//using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    //Testing for gain experiences and up the level
+    //Gain experiences and up the level
     public int character_LV = 1;
     public int currentExp = 0;
     public int maxExp = 100;
-    //TEsting
+
+    //Reference for transfering map
     public string currentMapName;
-    public string currentSceneName;
     //private SaveNLoad saveNLoad;
 
     //Floats
@@ -26,7 +25,6 @@ public class Player : MonoBehaviour
     public bool canDoubleJump;
     public bool grounded;
 
-
     //Stats
     public int curHealth = 0;
     public int maxHealth = 7;
@@ -36,9 +34,7 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     public static Player instance;
-    
-
-
+   
     private void Awake()
     {
         if (instance == null)
@@ -56,12 +52,9 @@ public class Player : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 
-        //curHealth = maxHealth;
         //saveNLoad = FindObjectOfType<SaveNLoad>();
-
     }
 
-    //[System.Obsolete]
     void Update()
     {
         /*
@@ -109,27 +102,14 @@ public class Player : MonoBehaviour
                 {
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
-                    rigid.AddForce(Vector2.up * (jumpPower/2), ForceMode2D.Impulse);
+                    rigid.AddForce(Vector2.up * (jumpPower / 2), ForceMode2D.Impulse);
                     //Do not erase this
                     //rigid.AddForce(Vector2.up * jumpPower * (Vector2.up)/2);
                 }
-                
+
             }
             AudioManager.instance.PlaySFX(1);
         }
-
-        /*
-         *  if(curHealth > maxHealth)
-        {
-            curHealth = maxHealth;
-        }
-
-       if (currentExp > maxExp)
-        { 
-            currentExp = maxExp;
-        }
-         */
-
     }
 
     void FixedUpdate()
@@ -138,7 +118,6 @@ public class Player : MonoBehaviour
         easeVelocity.y = rigid.velocity.y;//Does not affect on Y axis
         easeVelocity.z = 0.0f; //No Z axis
         easeVelocity.x *= 0.75f;
-
 
         //Get x axis
         float h = Input.GetAxis("Horizontal");
@@ -204,6 +183,7 @@ public class Player : MonoBehaviour
         AudioManager.instance.PlaySFX(5);
     }
 
+    //For knockback reaction
     public IEnumerator Knockback(float knockDuration, float knockbackPower, Vector3 knockbackDirection)
     {
         float timer = 0;

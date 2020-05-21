@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-//using TMPro;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    //Variables
     private bool attacking = false;
     private float attackTimer = 0.0f;
     private float attackCoolDown = 0.3f;
 
+    //References
     public Collider2D attackTrigger;
-
     private Animator animator;
 
     void Awake()

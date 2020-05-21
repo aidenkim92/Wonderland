@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    //Define variaables that for UI components
     public Slider expBar;
     public Text expText;
     public Text levelText;
@@ -19,6 +20,7 @@ public class UIManager : MonoBehaviour
     {
         instance = this;
     }
+
     void Start()
     {
         if(!UIExists)
@@ -37,6 +39,7 @@ public class UIManager : MonoBehaviour
         ResetPlayer();
     }
 
+    //UI features that need to be updating depends on the main character stats.
    public void ResetPlayer()
     {
         healthBar.maxValue = player.maxHealth;
