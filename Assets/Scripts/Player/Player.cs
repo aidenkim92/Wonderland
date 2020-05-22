@@ -25,6 +25,15 @@ public class Player : MonoBehaviour
     public bool canDoubleJump;
     public bool grounded;
 
+    //ForSpells
+    private bool m_facingRight;
+    //private bool spellUsed;
+    //public float SpellCastTime = 0.5f;
+    //private Coroutine spellRoutine;
+    //[SerializeField] private GameObject[] spellPrefab;
+    //[SerializeField] private Transform spellExit;
+    //[SerializeField] private GameObject[] blocks;
+
     //Stats
     public int curHealth = 0;
     public int maxHealth = 7;
@@ -51,7 +60,7 @@ public class Player : MonoBehaviour
     {
         rigid = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
-
+        m_facingRight = true;
         //saveNLoad = FindObjectOfType<SaveNLoad>();
     }
 
@@ -68,22 +77,22 @@ public class Player : MonoBehaviour
         }
 
          */
-
-
         animator.SetBool("Grounded", grounded);
         //Getting actual the Player speed in the animator
         animator.SetFloat("Speed", Mathf.Abs(rigid.velocity.x));
 
 
-        //To move left
-        if (Input.GetAxis("Horizontal") < -0.1f)
+        //To move left but facing right
+        if (Input.GetAxis("Horizontal") < 0 && m_facingRight)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            Flip();
+            //transform.localScale = new Vector3(-1, 1, 1);
         }
-        //To move right
-        if (Input.GetAxis("Horizontal") > 0.1f)
+        //To move right but facing left
+        else if (Input.GetAxis("Horizontal") > 0 && !m_facingRight)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            Flip();
+            //transform.localScale = new Vector3(1, 1, 1);
         }
 
         //Prevent getting infinite number for jump
@@ -110,6 +119,15 @@ public class Player : MonoBehaviour
             }
             AudioManager.instance.PlaySFX(1);
         }
+
+        //SPELL TESTING--------------------------------------------------
+        /*If player is staying still and key 1 is used (prevent animation overlaping) and if player can see the target
+        if (Input.GetKeyDown(KeyCode.Alpha1) && Mathf.Abs(rigid.velocity.x) < 0.1f && InLineOfSight()) {
+            ActivateBlocks();
+            if (!spellUsed) spellRoutine = StartCoroutine(spellAttack());
+        }
+        */
+
     }
 
     void FixedUpdate()
@@ -199,4 +217,53 @@ public class Player : MonoBehaviour
 
         yield return 0;
     }
+
+
+    public void Flip() {
+        m_facingRight = !m_facingRight;
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+    /*Spell Testing--------------------------------------------------------------------------------------------------------
+    //Spell Function
+    public IEnumerator spellAttack() { 
+            spellUsed = true;
+            animator.SetBool("spellUsed", spellUsed);
+            yield return new WaitForSeconds(SpellCastTime); //Cast timex
+            CastSpell();
+            StopSpell();
+    }
+    
+    //Stopping spell being used
+    public void StopSpell() {
+        if (spellRoutine != null)
+        {
+            StopCoroutine(spellRoutine);
+            spellUsed = false;
+            animator.SetBool("spellUsed", spellUsed);
+        }
+    }
+
+    //Casting prefab spell
+    public void CastSpell() {
+        Instantiate(spellPrefab[0], spellExit.position, Quaternion.identity);
+    }
+
+    //Looking at enemy
+    public bool InLineOfSight() {
+        Vector3 targetDir = (GameObject.Find("QutieMonster").transform.position - transform.position).normalized;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, targetDir, Vector2.Distance(transform.position, GameObject.Find("QutieMonster").transform.position),256);
+        if (hit.collider == null) {
+            return true;
+        }
+        return false;
+    }
+
+    //Activating blocks for spell attacks
+    public void ActivateBlocks() {
+        blocks[0].SetActive(true);
+        blocks[1].SetActive(true);
+        blocks[2].SetActive(true);
+    }
+    */
 }

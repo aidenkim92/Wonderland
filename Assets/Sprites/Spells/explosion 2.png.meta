@@ -1,0 +1,7888 @@
+fileFormatVersion: 2
+guid: eadd22a231cd2364cbe66ea191d817cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -789958583252383640
+    second: explosion 2_0
+  - first:
+      213: 8959340665772629119
+    second: explosion 2_1
+  - first:
+      213: -1104303793459298932
+    second: explosion 2_2
+  - first:
+      213: 6732291844080083972
+    second: explosion 2_3
+  - first:
+      213: -2749417384427172715
+    second: explosion 2_4
+  - first:
+      213: -4057337734260332919
+    second: explosion 2_5
+  - first:
+      213: 5794787360949467378
+    second: explosion 2_6
+  - first:
+      213: 2323459237606396080
+    second: explosion 2_7
+  - first:
+      213: 1845865877760797450
+    second: explosion 2_8
+  - first:
+      213: -5428108499794500145
+    second: explosion 2_9
+  - first:
+      213: -8980207968338515998
+    second: explosion 2_10
+  - first:
+      213: 5348935975433591008
+    second: explosion 2_11
+  - first:
+      213: 6668090071984692006
+    second: explosion 2_12
+  - first:
+      213: -8170432714615321814
+    second: explosion 2_13
+  - first:
+      213: -5143585436448285768
+    second: explosion 2_14
+  - first:
+      213: -4490778347774435484
+    second: explosion 2_15
+  - first:
+      213: -7990361071669211765
+    second: explosion 2_16
+  - first:
+      213: -3248998883588682434
+    second: explosion 2_17
+  - first:
+      213: -7540774406393489883
+    second: explosion 2_18
+  - first:
+      213: 5339817345796116977
+    second: explosion 2_19
+  - first:
+      213: -9204447678588900832
+    second: explosion 2_20
+  - first:
+      213: 4201059335881836211
+    second: explosion 2_21
+  - first:
+      213: -6604164929669640669
+    second: explosion 2_22
+  - first:
+      213: -8786782894650099780
+    second: explosion 2_23
+  - first:
+      213: -5040097481508774941
+    second: explosion 2_24
+  - first:
+      213: -1479399446474223236
+    second: explosion 2_25
+  - first:
+      213: -7492956801668528020
+    second: explosion 2_26
+  - first:
+      213: -8609311062559513836
+    second: explosion 2_27
+  - first:
+      213: -4434484001089834782
+    second: explosion 2_28
+  - first:
+      213: -7363773383559155974
+    second: explosion 2_29
+  - first:
+      213: 2012085574599315516
+    second: explosion 2_30
+  - first:
+      213: 1097413482868264468
+    second: explosion 2_31
+  - first:
+      213: 631333605577752279
+    second: explosion 2_32
+  - first:
+      213: 3313360849995638992
+    second: explosion 2_33
+  - first:
+      213: 2683166934149512066
+    second: explosion 2_34
+  - first:
+      213: 5762673731859598344
+    second: explosion 2_35
+  - first:
+      213: 4004087908132822245
+    second: explosion 2_36
+  - first:
+      213: -7788051913745542481
+    second: explosion 2_37
+  - first:
+      213: 1907600415465394733
+    second: explosion 2_38
+  - first:
+      213: -7273297228479321188
+    second: explosion 2_39
+  - first:
+      213: 1732982486098629087
+    second: explosion 2_40
+  - first:
+      213: -2703181941380817683
+    second: explosion 2_41
+  - first:
+      213: -64068130003039683
+    second: explosion 2_42
+  - first:
+      213: -4997644232927048515
+    second: explosion 2_43
+  - first:
+      213: -5116597250235276666
+    second: explosion 2_44
+  - first:
+      213: -1572159806370103045
+    second: explosion 2_45
+  - first:
+      213: 6988876585726681651
+    second: explosion 2_46
+  - first:
+      213: -4049826818755387903
+    second: explosion 2_47
+  - first:
+      213: -5802213064462726757
+    second: explosion 2_48
+  - first:
+      213: -5483760209064368227
+    second: explosion 2_49
+  - first:
+      213: 173009974160840301
+    second: explosion 2_50
+  - first:
+      213: -9045446305187168281
+    second: explosion 2_51
+  - first:
+      213: -5270802353774931743
+    second: explosion 2_52
+  - first:
+      213: -2450089295908716669
+    second: explosion 2_53
+  - first:
+      213: -7133558563655317645
+    second: explosion 2_54
+  - first:
+      213: 6488489049524747697
+    second: explosion 2_55
+  - first:
+      213: -5895103437220455560
+    second: explosion 2_56
+  - first:
+      213: 7796803731367417846
+    second: explosion 2_57
+  - first:
+      213: 7561556635387400262
+    second: explosion 2_58
+  - first:
+      213: -4912177162855959716
+    second: explosion 2_59
+  - first:
+      213: 1360090839560986968
+    second: explosion 2_60
+  - first:
+      213: -3741115654560740316
+    second: explosion 2_61
+  - first:
+      213: -8831315203036963535
+    second: explosion 2_62
+  - first:
+      213: 3890187866754260201
+    second: explosion 2_63
+  - first:
+      213: 2637757082923549322
+    second: explosion 2_64
+  - first:
+      213: 1368505347627399995
+    second: explosion 2_65
+  - first:
+      213: 2735499887782049485
+    second: explosion 2_66
+  - first:
+      213: 8330210842999408214
+    second: explosion 2_67
+  - first:
+      213: -431590540503070116
+    second: explosion 2_68
+  - first:
+      213: 5467031892558011762
+    second: explosion 2_69
+  - first:
+      213: -410902687949948756
+    second: explosion 2_70
+  - first:
+      213: -1296519392303301624
+    second: explosion 2_71
+  - first:
+      213: -4480519742898405095
+    second: explosion 2_72
+  - first:
+      213: -5562869232445301858
+    second: explosion 2_73
+  - first:
+      213: -1473446639799911052
+    second: explosion 2_74
+  - first:
+      213: -7389782066397774415
+    second: explosion 2_75
+  - first:
+      213: 2562383892160380805
+    second: explosion 2_76
+  - first:
+      213: -2575879392579164170
+    second: explosion 2_77
+  - first:
+      213: 927911005715370740
+    second: explosion 2_78
+  - first:
+      213: -658507682927843512
+    second: explosion 2_79
+  - first:
+      213: -3863962458197970396
+    second: explosion 2_80
+  - first:
+      213: 987958747631987937
+    second: explosion 2_81
+  - first:
+      213: 1431329496371371117
+    second: explosion 2_82
+  - first:
+      213: 8861694782908042740
+    second: explosion 2_83
+  - first:
+      213: -4892267430818207868
+    second: explosion 2_84
+  - first:
+      213: 3437827724731572385
+    second: explosion 2_85
+  - first:
+      213: 2764521054760442894
+    second: explosion 2_86
+  - first:
+      213: -4518682560394536551
+    second: explosion 2_87
+  - first:
+      213: 284485206980598251
+    second: explosion 2_88
+  - first:
+      213: -2939932627155649507
+    second: explosion 2_89
+  - first:
+      213: 5354165784925626622
+    second: explosion 2_90
+  - first:
+      213: -2229189571222802728
+    second: explosion 2_91
+  - first:
+      213: -6786371021271591236
+    second: explosion 2_92
+  - first:
+      213: 6174343969068599895
+    second: explosion 2_93
+  - first:
+      213: -1495189902942946347
+    second: explosion 2_94
+  - first:
+      213: 4535919243085160407
+    second: explosion 2_95
+  - first:
+      213: 7764489725694091614
+    second: explosion 2_96
+  - first:
+      213: -1385852898270813154
+    second: explosion 2_97
+  - first:
+      213: -5445506180041481213
+    second: explosion 2_98
+  - first:
+      213: -1982857392348799893
+    second: explosion 2_99
+  - first:
+      213: -6437588877103656157
+    second: explosion 2_100
+  - first:
+      213: 6463852050636817560
+    second: explosion 2_101
+  - first:
+      213: -7602828418395407937
+    second: explosion 2_102
+  - first:
+      213: 8956265412407343126
+    second: explosion 2_103
+  - first:
+      213: 4950431673289829735
+    second: explosion 2_104
+  - first:
+      213: 1614856045648451627
+    second: explosion 2_105
+  - first:
+      213: -7472861260917154565
+    second: explosion 2_106
+  - first:
+      213: 6076725979473963674
+    second: explosion 2_107
+  - first:
+      213: 780949142186051817
+    second: explosion 2_108
+  - first:
+      213: -8337748343749944373
+    second: explosion 2_109
+  - first:
+      213: 4925844082742042783
+    second: explosion 2_110
+  - first:
+      213: -4560652601850152645
+    second: explosion 2_111
+  - first:
+      213: -3113140347615528459
+    second: explosion 2_112
+  - first:
+      213: 4476508597331147736
+    second: explosion 2_113
+  - first:
+      213: -7152350501980648520
+    second: explosion 2_114
+  - first:
+      213: 7114892522305968917
+    second: explosion 2_115
+  - first:
+      213: -7968727322078529120
+    second: explosion 2_116
+  - first:
+      213: -7248936408977685673
+    second: explosion 2_117
+  - first:
+      213: -4769858420480248868
+    second: explosion 2_118
+  - first:
+      213: -7604442287547275544
+    second: explosion 2_119
+  - first:
+      213: -6268828820839974640
+    second: explosion 2_120
+  - first:
+      213: 5018195581823627747
+    second: explosion 2_121
+  - first:
+      213: -2434406457193191760
+    second: explosion 2_122
+  - first:
+      213: 1550136139504822306
+    second: explosion 2_123
+  - first:
+      213: 1916516854302936635
+    second: explosion 2_124
+  - first:
+      213: -1122210514132968625
+    second: explosion 2_125
+  - first:
+      213: -1510207859152482344
+    second: explosion 2_126
+  - first:
+      213: -6081391304291685420
+    second: explosion 2_127
+  - first:
+      213: -4006319127692788532
+    second: explosion 2_128
+  - first:
+      213: -7475025984363656808
+    second: explosion 2_129
+  - first:
+      213: 1183466529979706055
+    second: explosion 2_130
+  - first:
+      213: 4144252565836376365
+    second: explosion 2_131
+  - first:
+      213: -5548045241978108416
+    second: explosion 2_132
+  - first:
+      213: -7695738042229150723
+    second: explosion 2_133
+  - first:
+      213: -8058358600190186754
+    second: explosion 2_134
+  - first:
+      213: 5412545206310452048
+    second: explosion 2_135
+  - first:
+      213: -880754451966738640
+    second: explosion 2_136
+  - first:
+      213: -5450376249452894905
+    second: explosion 2_137
+  - first:
+      213: 4653954147818515227
+    second: explosion 2_138
+  - first:
+      213: -2290145112745108771
+    second: explosion 2_139
+  - first:
+      213: -390271105031944946
+    second: explosion 2_140
+  - first:
+      213: 7050524325844179078
+    second: explosion 2_141
+  - first:
+      213: -6037392740711769693
+    second: explosion 2_142
+  - first:
+      213: -5383504674509326462
+    second: explosion 2_143
+  - first:
+      213: 2485226693051174752
+    second: explosion 2_144
+  - first:
+      213: -2180679438076354958
+    second: explosion 2_145
+  - first:
+      213: -4761734814778116255
+    second: explosion 2_146
+  - first:
+      213: 4607532389187338125
+    second: explosion 2_147
+  - first:
+      213: -1702105915090359373
+    second: explosion 2_148
+  - first:
+      213: 4648882613561719065
+    second: explosion 2_149
+  - first:
+      213: 3727289733207401798
+    second: explosion 2_150
+  - first:
+      213: -7648432951149463217
+    second: explosion 2_151
+  - first:
+      213: 7343095854240564733
+    second: explosion 2_152
+  - first:
+      213: -5193588693353055920
+    second: explosion 2_153
+  - first:
+      213: 7662194872709213362
+    second: explosion 2_154
+  - first:
+      213: -1709803245171329281
+    second: explosion 2_155
+  - first:
+      213: 7988511581029257290
+    second: explosion 2_156
+  - first:
+      213: -6847427062407413596
+    second: explosion 2_157
+  - first:
+      213: 2270507987441327067
+    second: explosion 2_158
+  - first:
+      213: -1819257253196238206
+    second: explosion 2_159
+  - first:
+      213: 6201837111123828118
+    second: explosion 2_160
+  - first:
+      213: 8622948036497038778
+    second: explosion 2_161
+  - first:
+      213: -6979979911843950578
+    second: explosion 2_162
+  - first:
+      213: -7343216401214728877
+    second: explosion 2_163
+  - first:
+      213: -5785765249973251603
+    second: explosion 2_164
+  - first:
+      213: -2274396409614111183
+    second: explosion 2_165
+  - first:
+      213: 5113257884185489174
+    second: explosion 2_166
+  - first:
+      213: -4785535206855396187
+    second: explosion 2_167
+  - first:
+      213: 4324214634814611055
+    second: explosion 2_168
+  - first:
+      213: -3553405893964302140
+    second: explosion 2_169
+  - first:
+      213: 5408562228872630790
+    second: explosion 2_170
+  - first:
+      213: -332460550302820485
+    second: explosion 2_171
+  - first:
+      213: 1300615933766244048
+    second: explosion 2_172
+  - first:
+      213: 7858878086002281593
+    second: explosion 2_173
+  - first:
+      213: -7698792243116516742
+    second: explosion 2_174
+  - first:
+      213: 6314348366207296042
+    second: explosion 2_175
+  - first:
+      213: -1513852817132282463
+    second: explosion 2_176
+  - first:
+      213: 5949003586049637609
+    second: explosion 2_177
+  - first:
+      213: 2889141955569029496
+    second: explosion 2_178
+  - first:
+      213: 5104853100330900620
+    second: explosion 2_179
+  - first:
+      213: 2570825314025779744
+    second: explosion 2_180
+  - first:
+      213: 1428762002711811203
+    second: explosion 2_181
+  - first:
+      213: 2507863044154211548
+    second: explosion 2_182
+  - first:
+      213: 5259679454422371119
+    second: explosion 2_183
+  - first:
+      213: -1743706687276248887
+    second: explosion 2_184
+  - first:
+      213: -7636415418560398725
+    second: explosion 2_185
+  - first:
+      213: 5459027428295906436
+    second: explosion 2_186
+  - first:
+      213: 6604133666846924562
+    second: explosion 2_187
+  - first:
+      213: -6404267089962646845
+    second: explosion 2_188
+  - first:
+      213: -8360273651753706015
+    second: explosion 2_189
+  - first:
+      213: -2846861247250293705
+    second: explosion 2_190
+  - first:
+      213: 6138899383646688399
+    second: explosion 2_191
+  - first:
+      213: 869195573931548802
+    second: explosion 2_192
+  - first:
+      213: -1520609415784371627
+    second: explosion 2_193
+  - first:
+      213: 6282743562982240574
+    second: explosion 2_194
+  - first:
+      213: 7174237947700626465
+    second: explosion 2_195
+  - first:
+      213: -938440244647742285
+    second: explosion 2_196
+  - first:
+      213: -5807384184932897402
+    second: explosion 2_197
+  - first:
+      213: 2775691340599861040
+    second: explosion 2_198
+  - first:
+      213: 6873320268945968939
+    second: explosion 2_199
+  - first:
+      213: 3431929338311374019
+    second: explosion 2_200
+  - first:
+      213: 1244981003558550530
+    second: explosion 2_201
+  - first:
+      213: 5907658487599173631
+    second: explosion 2_202
+  - first:
+      213: -4684240489540313234
+    second: explosion 2_203
+  - first:
+      213: -7033059315520242992
+    second: explosion 2_204
+  - first:
+      213: 1215536442781199188
+    second: explosion 2_205
+  - first:
+      213: -6001708540429526561
+    second: explosion 2_206
+  - first:
+      213: -265961405907399657
+    second: explosion 2_207
+  - first:
+      213: 8173795114698486026
+    second: explosion 2_208
+  - first:
+      213: -4224766023236844105
+    second: explosion 2_209
+  - first:
+      213: -1608467681466151019
+    second: explosion 2_210
+  - first:
+      213: 3111472271595332026
+    second: explosion 2_211
+  - first:
+      213: 1553834110992307923
+    second: explosion 2_212
+  - first:
+      213: -8026498745117427061
+    second: explosion 2_213
+  - first:
+      213: 5262545499567704234
+    second: explosion 2_214
+  - first:
+      213: -8061712892913369090
+    second: explosion 2_215
+  - first:
+      213: 3685273983713985664
+    second: explosion 2_216
+  - first:
+      213: 4700119930918465124
+    second: explosion 2_217
+  - first:
+      213: 6020514424656291688
+    second: explosion 2_218
+  - first:
+      213: 2362160186211764382
+    second: explosion 2_219
+  - first:
+      213: -7188451416260564708
+    second: explosion 2_220
+  - first:
+      213: -3578656248506066488
+    second: explosion 2_221
+  - first:
+      213: 511774344538421257
+    second: explosion 2_222
+  - first:
+      213: -4468988292992475068
+    second: explosion 2_223
+  - first:
+      213: -8315808714871840223
+    second: explosion 2_224
+  - first:
+      213: -6624050743961653336
+    second: explosion 2_225
+  - first:
+      213: 2512391225397032110
+    second: explosion 2_226
+  - first:
+      213: -7207553249972555331
+    second: explosion 2_227
+  - first:
+      213: -1110740006172003455
+    second: explosion 2_228
+  - first:
+      213: 677071861811209286
+    second: explosion 2_229
+  - first:
+      213: -153029411895513551
+    second: explosion 2_230
+  - first:
+      213: -8353266038573502825
+    second: explosion 2_231
+  - first:
+      213: -5877773675255765643
+    second: explosion 2_232
+  - first:
+      213: 3152017833969946694
+    second: explosion 2_233
+  - first:
+      213: 878063058141463935
+    second: explosion 2_234
+  - first:
+      213: 7818915111765883893
+    second: explosion 2_235
+  - first:
+      213: -5518116960043902051
+    second: explosion 2_236
+  - first:
+      213: -4260006947401437633
+    second: explosion 2_237
+  - first:
+      213: 2880688897633727051
+    second: explosion 2_238
+  - first:
+      213: 5706698048740864906
+    second: explosion 2_239
+  - first:
+      213: -6361009278052944655
+    second: explosion 2_240
+  - first:
+      213: -6008301520620564089
+    second: explosion 2_241
+  - first:
+      213: -6430869132358229704
+    second: explosion 2_242
+  - first:
+      213: 2452697930550443673
+    second: explosion 2_243
+  - first:
+      213: 6733354366264402385
+    second: explosion 2_244
+  - first:
+      213: 5697661643566577073
+    second: explosion 2_245
+  - first:
+      213: -7268562287473924282
+    second: explosion 2_246
+  - first:
+      213: -7505346493691246049
+    second: explosion 2_247
+  - first:
+      213: -3969692825056193025
+    second: explosion 2_248
+  - first:
+      213: -8024890552062605153
+    second: explosion 2_249
+  - first:
+      213: 5600090717161639012
+    second: explosion 2_250
+  - first:
+      213: 8454793133958930074
+    second: explosion 2_251
+  - first:
+      213: -2338360626737754721
+    second: explosion 2_252
+  - first:
+      213: 5910459722128006360
+    second: explosion 2_253
+  - first:
+      213: -3669891038286287785
+    second: explosion 2_254
+  - first:
+      213: 2989055286088795138
+    second: explosion 2_255
+  - first:
+      213: -552996323984747464
+    second: explosion 2_256
+  - first:
+      213: 8659333739367559910
+    second: explosion 2_257
+  - first:
+      213: 1309633328425098980
+    second: explosion 2_258
+  - first:
+      213: -307155420353599899
+    second: explosion 2_259
+  - first:
+      213: 1514834932411653816
+    second: explosion 2_260
+  - first:
+      213: -4828247998202069754
+    second: explosion 2_261
+  - first:
+      213: 8069147792862324011
+    second: explosion 2_262
+  - first:
+      213: 5103932720427918596
+    second: explosion 2_263
+  - first:
+      213: -6859012383358492719
+    second: explosion 2_264
+  - first:
+      213: -5531676615419270067
+    second: explosion 2_265
+  - first:
+      213: 8689506365981405008
+    second: explosion 2_266
+  - first:
+      213: -3759201311280544042
+    second: explosion 2_267
+  - first:
+      213: -6804325762021093570
+    second: explosion 2_268
+  - first:
+      213: 8894753861995246654
+    second: explosion 2_269
+  - first:
+      213: 8936328512506767796
+    second: explosion 2_270
+  - first:
+      213: 7831834769346990613
+    second: explosion 2_271
+  - first:
+      213: 5221160971791774002
+    second: explosion 2_272
+  - first:
+      213: -8812894893643545196
+    second: explosion 2_273
+  - first:
+      213: 3278017473699333509
+    second: explosion 2_274
+  - first:
+      213: 2587276355800543150
+    second: explosion 2_275
+  - first:
+      213: -5115913510118690149
+    second: explosion 2_276
+  - first:
+      213: -8415449074435843642
+    second: explosion 2_277
+  - first:
+      213: -1388878145056378165
+    second: explosion 2_278
+  - first:
+      213: 7301418893052967349
+    second: explosion 2_279
+  - first:
+      213: -7287708131250290834
+    second: explosion 2_280
+  - first:
+      213: 5229037962429058260
+    second: explosion 2_281
+  - first:
+      213: -7693271417888149485
+    second: explosion 2_282
+  - first:
+      213: -438862602396703144
+    second: explosion 2_283
+  - first:
+      213: -3615117807678268467
+    second: explosion 2_284
+  - first:
+      213: -3199815108219090341
+    second: explosion 2_285
+  - first:
+      213: 6256283919703037784
+    second: explosion 2_286
+  - first:
+      213: 267188792166706676
+    second: explosion 2_287
+  - first:
+      213: -2547362870909557352
+    second: explosion 2_288
+  - first:
+      213: 6785894888931055912
+    second: explosion 2_289
+  - first:
+      213: 6202346334004087065
+    second: explosion 2_290
+  - first:
+      213: 787862190893142957
+    second: explosion 2_291
+  - first:
+      213: -8620369910269021965
+    second: explosion 2_292
+  - first:
+      213: -2081725222841363883
+    second: explosion 2_293
+  - first:
+      213: -4465639399515078160
+    second: explosion 2_294
+  - first:
+      213: 6858333635428191973
+    second: explosion 2_295
+  - first:
+      213: 2245310952940044815
+    second: explosion 2_296
+  - first:
+      213: -1841916429677701406
+    second: explosion 2_297
+  - first:
+      213: 2275944914849415917
+    second: explosion 2_298
+  - first:
+      213: -6761546914952370581
+    second: explosion 2_299
+  - first:
+      213: -1243172545126840067
+    second: explosion 2_300
+  - first:
+      213: -458325064074092923
+    second: explosion 2_301
+  - first:
+      213: 76297527049070527
+    second: explosion 2_302
+  - first:
+      213: 5865806602651422176
+    second: explosion 2_303
+  - first:
+      213: -4763692857895763341
+    second: explosion 2_304
+  - first:
+      213: 4172152931534308335
+    second: explosion 2_305
+  - first:
+      213: -5804246542598848838
+    second: explosion 2_306
+  - first:
+      213: 2484929436619473782
+    second: explosion 2_307
+  - first:
+      213: -6232336719947134312
+    second: explosion 2_308
+  - first:
+      213: 6079488342027689985
+    second: explosion 2_309
+  - first:
+      213: -8817128432576641825
+    second: explosion 2_310
+  - first:
+      213: 7370681550001940788
+    second: explosion 2_311
+  - first:
+      213: 4043978219023114104
+    second: explosion 2_312
+  - first:
+      213: -1615227504915798507
+    second: explosion 2_313
+  - first:
+      213: -9211479444034304227
+    second: explosion 2_314
+  - first:
+      213: -3101047281193350032
+    second: explosion 2_315
+  - first:
+      213: 7470620067865392466
+    second: explosion 2_316
+  - first:
+      213: -3899235928951544218
+    second: explosion 2_317
+  - first:
+      213: -8443682234313623443
+    second: explosion 2_318
+  - first:
+      213: -1926814969524168022
+    second: explosion 2_319
+  - first:
+      213: 5113805798935821675
+    second: explosion 2_320
+  - first:
+      213: 3232780920426255104
+    second: explosion 2_321
+  - first:
+      213: 3227595521316623707
+    second: explosion 2_322
+  - first:
+      213: -2782956673602625519
+    second: explosion 2_323
+  - first:
+      213: -4610912472865437173
+    second: explosion 2_324
+  - first:
+      213: 6804464005994077987
+    second: explosion 2_325
+  - first:
+      213: -7504358305819108775
+    second: explosion 2_326
+  - first:
+      213: -2719011109969957438
+    second: explosion 2_327
+  - first:
+      213: -8952154985355802694
+    second: explosion 2_328
+  - first:
+      213: 5299556924458778744
+    second: explosion 2_329
+  - first:
+      213: 6802852752089997628
+    second: explosion 2_330
+  - first:
+      213: -4245625636956170312
+    second: explosion 2_331
+  - first:
+      213: -1439837488669670413
+    second: explosion 2_332
+  - first:
+      213: 6273790091708547326
+    second: explosion 2_333
+  - first:
+      213: 4154309890495606515
+    second: explosion 2_334
+  - first:
+      213: 5031909001269489061
+    second: explosion 2_335
+  - first:
+      213: -5914623602252845178
+    second: explosion 2_336
+  - first:
+      213: 277079757038833374
+    second: explosion 2_337
+  - first:
+      213: -3228520252153909996
+    second: explosion 2_338
+  - first:
+      213: 979096480612479751
+    second: explosion 2_339
+  - first:
+      213: -7177334699383705939
+    second: explosion 2_340
+  - first:
+      213: -4504179851743462461
+    second: explosion 2_341
+  - first:
+      213: -5228856916951549813
+    second: explosion 2_342
+  - first:
+      213: -3681454855279059152
+    second: explosion 2_343
+  - first:
+      213: -8233611691594833321
+    second: explosion 2_344
+  - first:
+      213: 7764776239845871667
+    second: explosion 2_345
+  - first:
+      213: -563398003138054163
+    second: explosion 2_346
+  - first:
+      213: 1174406010495593729
+    second: explosion 2_347
+  - first:
+      213: 6347757689675943543
+    second: explosion 2_348
+  - first:
+      213: 6618865930384665404
+    second: explosion 2_349
+  - first:
+      213: -8752149805735969429
+    second: explosion 2_350
+  - first:
+      213: -4214092121183204033
+    second: explosion 2_351
+  - first:
+      213: 2420307068032338023
+    second: explosion 2_352
+  - first:
+      213: -3358453067225429104
+    second: explosion 2_353
+  - first:
+      213: -743064291847153258
+    second: explosion 2_354
+  - first:
+      213: 7355167765465752201
+    second: explosion 2_355
+  - first:
+      213: 7083403993499873413
+    second: explosion 2_356
+  - first:
+      213: 650324967170422250
+    second: explosion 2_357
+  - first:
+      213: -6861660004399956033
+    second: explosion 2_358
+  - first:
+      213: -6458375086121241946
+    second: explosion 2_359
+  - first:
+      213: 2669904138773668181
+    second: explosion 2_360
+  - first:
+      213: 8941120104231200553
+    second: explosion 2_361
+  - first:
+      213: 3586542556447178707
+    second: explosion 2_362
+  - first:
+      213: 6691734935424465038
+    second: explosion 2_363
+  - first:
+      213: 869831283625603125
+    second: explosion 2_364
+  - first:
+      213: -760743641060161568
+    second: explosion 2_365
+  - first:
+      213: 7337262757083922587
+    second: explosion 2_366
+  - first:
+      213: -5902030831967703824
+    second: explosion 2_367
+  - first:
+      213: 170299955700978345
+    second: explosion 2_368
+  - first:
+      213: -3128654353524825268
+    second: explosion 2_369
+  - first:
+      213: -8761469957754288395
+    second: explosion 2_370
+  - first:
+      213: 8187955826989038353
+    second: explosion 2_371
+  - first:
+      213: 576363505764576860
+    second: explosion 2_372
+  - first:
+      213: 8910904934051238593
+    second: explosion 2_373
+  - first:
+      213: -8831549084959837769
+    second: explosion 2_374
+  - first:
+      213: 6717962767863788338
+    second: explosion 2_375
+  - first:
+      213: -2572693212732027329
+    second: explosion 2_376
+  - first:
+      213: 5987191016096471904
+    second: explosion 2_377
+  - first:
+      213: 2181683908606501479
+    second: explosion 2_378
+  - first:
+      213: 6043173428495090885
+    second: explosion 2_379
+  - first:
+      213: 4444933842375952209
+    second: explosion 2_380
+  - first:
+      213: 7952970687850707598
+    second: explosion 2_381
+  - first:
+      213: 1079712385490754806
+    second: explosion 2_382
+  - first:
+      213: 3294576500382746259
+    second: explosion 2_383
+  - first:
+      213: -4255552279513521147
+    second: explosion 2_384
+  - first:
+      213: -8962996114003918534
+    second: explosion 2_385
+  - first:
+      213: -199691204335636902
+    second: explosion 2_386
+  - first:
+      213: 9055495498446646693
+    second: explosion 2_387
+  - first:
+      213: 5644030635580317242
+    second: explosion 2_388
+  - first:
+      213: -4999719771424198239
+    second: explosion 2_389
+  - first:
+      213: 7947377410792779401
+    second: explosion 2_390
+  - first:
+      213: -6142794165599389334
+    second: explosion 2_391
+  - first:
+      213: 3446186092507149851
+    second: explosion 2_392
+  - first:
+      213: -4333720873528321337
+    second: explosion 2_393
+  - first:
+      213: -3894602760233928559
+    second: explosion 2_394
+  - first:
+      213: 1800965409303050226
+    second: explosion 2_395
+  - first:
+      213: -7340862068971814993
+    second: explosion 2_396
+  - first:
+      213: 8178435550008661457
+    second: explosion 2_397
+  - first:
+      213: -5610099180945341724
+    second: explosion 2_398
+  - first:
+      213: -1518126164205364095
+    second: explosion 2_399
+  - first:
+      213: -7149173388946152700
+    second: explosion 2_400
+  - first:
+      213: 409522494603904822
+    second: explosion 2_401
+  - first:
+      213: 8746905594202055906
+    second: explosion 2_402
+  - first:
+      213: 5446895850279884806
+    second: explosion 2_403
+  - first:
+      213: -748391131179839371
+    second: explosion 2_404
+  - first:
+      213: -2291686342440557830
+    second: explosion 2_405
+  - first:
+      213: 6168779298745890850
+    second: explosion 2_406
+  - first:
+      213: 1058357375849636208
+    second: explosion 2_407
+  - first:
+      213: -4680835842289074464
+    second: explosion 2_408
+  - first:
+      213: -6751110027677808461
+    second: explosion 2_409
+  - first:
+      213: -6906554638463955231
+    second: explosion 2_410
+  - first:
+      213: 6595692271821048110
+    second: explosion 2_411
+  - first:
+      213: 192014332069053348
+    second: explosion 2_412
+  - first:
+      213: 9040883989704371416
+    second: explosion 2_413
+  - first:
+      213: 5091091990783456872
+    second: explosion 2_414
+  - first:
+      213: -7212602438040649947
+    second: explosion 2_415
+  - first:
+      213: 8038680371243669001
+    second: explosion 2_416
+  - first:
+      213: -817676585349048989
+    second: explosion 2_417
+  - first:
+      213: -1926374245457802445
+    second: explosion 2_418
+  - first:
+      213: -4655005268434071010
+    second: explosion 2_419
+  - first:
+      213: 544565721004704272
+    second: explosion 2_420
+  - first:
+      213: 7076682911623409643
+    second: explosion 2_421
+  - first:
+      213: -792809699373513106
+    second: explosion 2_422
+  - first:
+      213: -7036707586920658873
+    second: explosion 2_423
+  - first:
+      213: -1978090129853539706
+    second: explosion 2_424
+  - first:
+      213: -9055143993111290472
+    second: explosion 2_425
+  - first:
+      213: -7956261591543696226
+    second: explosion 2_426
+  - first:
+      213: 30992088952251265
+    second: explosion 2_427
+  - first:
+      213: -2413876273952919819
+    second: explosion 2_428
+  - first:
+      213: -3396039925816084852
+    second: explosion 2_429
+  - first:
+      213: 1061897249912882609
+    second: explosion 2_430
+  - first:
+      213: -851450869682608362
+    second: explosion 2_431
+  - first:
+      213: -1486837781720016844
+    second: explosion 2_432
+  - first:
+      213: -2139450858247528896
+    second: explosion 2_433
+  - first:
+      213: -7373639598686286498
+    second: explosion 2_434
+  - first:
+      213: 5208350190264478543
+    second: explosion 2_435
+  - first:
+      213: -7466511756218029004
+    second: explosion 2_436
+  - first:
+      213: 6138025133839747176
+    second: explosion 2_437
+  - first:
+      213: -7270444433194931763
+    second: explosion 2_438
+  - first:
+      213: -8444078504153227794
+    second: explosion 2_439
+  - first:
+      213: -1820094069129402348
+    second: explosion 2_440
+  - first:
+      213: -706582007513062322
+    second: explosion 2_441
+  - first:
+      213: -8853692200565847470
+    second: explosion 2_442
+  - first:
+      213: 6437779165026148064
+    second: explosion 2_443
+  - first:
+      213: 6533785690143827718
+    second: explosion 2_444
+  - first:
+      213: 6720473039864746332
+    second: explosion 2_445
+  - first:
+      213: 4222930334367192858
+    second: explosion 2_446
+  - first:
+      213: 5836202623798769137
+    second: explosion 2_447
+  - first:
+      213: -5222793050440151395
+    second: explosion 2_448
+  - first:
+      213: 7355454328369956869
+    second: explosion 2_449
+  - first:
+      213: 2518091254517754052
+    second: explosion 2_450
+  - first:
+      213: 1457129356133168257
+    second: explosion 2_451
+  - first:
+      213: -3164876978835195525
+    second: explosion 2_452
+  - first:
+      213: -3873621367866485957
+    second: explosion 2_453
+  - first:
+      213: -4218226572172569508
+    second: explosion 2_454
+  - first:
+      213: -5042350710849312930
+    second: explosion 2_455
+  - first:
+      213: -4025760404212418633
+    second: explosion 2_456
+  - first:
+      213: 1005719220003196571
+    second: explosion 2_0
+  - first:
+      213: 8304391944204861764
+    second: explosion 2_1
+  - first:
+      213: -2463104360939611373
+    second: explosion 2_2
+  - first:
+      213: -2071948274004383528
+    second: explosion 2_3
+  - first:
+      213: -6556065599618116129
+    second: explosion 2_4
+  - first:
+      213: -8066662050543813547
+    second: explosion 2_5
+  - first:
+      213: 1928834614159865889
+    second: explosion 2_6
+  - first:
+      213: -2586556723338873403
+    second: explosion 2_7
+  - first:
+      213: 909140574014871864
+    second: explosion 2_8
+  - first:
+      213: 555655172683059676
+    second: explosion 2_9
+  - first:
+      213: -7996868028249796573
+    second: explosion 2_10
+  - first:
+      213: -7457176111853181295
+    second: explosion 2_11
+  - first:
+      213: -6163363272971544504
+    second: explosion 2_12
+  - first:
+      213: -4655864446645056395
+    second: explosion 2_13
+  - first:
+      213: 1623227500028819981
+    second: explosion 2_14
+  - first:
+      213: 6438786302067156716
+    second: explosion 2_15
+  - first:
+      213: -9112633994211819566
+    second: explosion 2_16
+  - first:
+      213: 222407809025317174
+    second: explosion 2_17
+  - first:
+      213: -2201936350241550611
+    second: explosion 2_18
+  - first:
+      213: -5890523421512300732
+    second: explosion 2_19
+  - first:
+      213: -59722105383644678
+    second: explosion 2_20
+  - first:
+      213: 5751757710916023670
+    second: explosion 2_21
+  - first:
+      213: 5244787484459158301
+    second: explosion 2_22
+  - first:
+      213: -6948273420793902886
+    second: explosion 2_23
+  - first:
+      213: -2591494628942616784
+    second: explosion 2_24
+  - first:
+      213: -3962412513258976425
+    second: explosion 2_25
+  - first:
+      213: 6496077544647911962
+    second: explosion 2_26
+  - first:
+      213: -5787340622538774999
+    second: explosion 2_27
+  - first:
+      213: 1650252664429464478
+    second: explosion 2_28
+  - first:
+      213: -7837119279671188792
+    second: explosion 2_29
+  - first:
+      213: 8688889507459115848
+    second: explosion 2_30
+  - first:
+      213: -8528137527393126269
+    second: explosion 2_31
+  - first:
+      213: -3430753045042734245
+    second: explosion 2_32
+  - first:
+      213: -4625133919418731291
+    second: explosion 2_33
+  - first:
+      213: 4913393087135805959
+    second: explosion 2_34
+  - first:
+      213: -6219004226807718295
+    second: explosion 2_35
+  - first:
+      213: -5355914469990922990
+    second: explosion 2_36
+  - first:
+      213: -6068110787091074473
+    second: explosion 2_37
+  - first:
+      213: 7252563663813192670
+    second: explosion 2_38
+  - first:
+      213: 4919698161461095785
+    second: explosion 2_39
+  - first:
+      213: -7202744953097965116
+    second: explosion 2_40
+  - first:
+      213: 8591660235948387914
+    second: explosion 2_41
+  - first:
+      213: -7469743612197758265
+    second: explosion 2_42
+  - first:
+      213: 8866196520640372862
+    second: explosion 2_43
+  - first:
+      213: -2601261034352283041
+    second: explosion 2_44
+  - first:
+      213: 3527557901353382167
+    second: explosion 2_45
+  - first:
+      213: 6907063108224157117
+    second: explosion 2_46
+  - first:
+      213: -4756264786767775669
+    second: explosion 2_47
+  - first:
+      213: 1749517548252393019
+    second: explosion 2_48
+  - first:
+      213: -2229419960667331174
+    second: explosion 2_49
+  - first:
+      213: 951125226405164266
+    second: explosion 2_50
+  - first:
+      213: 1705308757269640212
+    second: explosion 2_51
+  - first:
+      213: 7313724409074090257
+    second: explosion 2_52
+  - first:
+      213: 32356131459456483
+    second: explosion 2_53
+  - first:
+      213: -7230287731198356673
+    second: explosion 2_54
+  - first:
+      213: -8838209073080837335
+    second: explosion 2_55
+  - first:
+      213: 8008866806787400872
+    second: explosion 2_56
+  - first:
+      213: -6447448247741062716
+    second: explosion 2_57
+  - first:
+      213: -6089095723705318908
+    second: explosion 2_58
+  - first:
+      213: 7117853531268514780
+    second: explosion 2_59
+  - first:
+      213: -8745117222260383264
+    second: explosion 2_60
+  - first:
+      213: 9022483267896083443
+    second: explosion 2_61
+  - first:
+      213: 3336324951886891488
+    second: explosion 2_62
+  - first:
+      213: -5089385650345180581
+    second: explosion 2_63
+  - first:
+      213: -8107720654933146779
+    second: explosion 2_64
+  - first:
+      213: 8098914817119066812
+    second: explosion 2_65
+  - first:
+      213: -7529547641158755736
+    second: explosion 2_66
+  - first:
+      213: -7110334316032825068
+    second: explosion 2_67
+  - first:
+      213: 4208444053695514990
+    second: explosion 2_68
+  - first:
+      213: -3580979620010695607
+    second: explosion 2_69
+  - first:
+      213: 4843322800699783778
+    second: explosion 2_70
+  - first:
+      213: 7483385036004579864
+    second: explosion 2_71
+  - first:
+      213: -9071369755050047394
+    second: explosion 2_72
+  - first:
+      213: -3431522116878879661
+    second: explosion 2_73
+  - first:
+      213: 9181576311137532643
+    second: explosion 2_74
+  - first:
+      213: -7330921455790031527
+    second: explosion 2_75
+  - first:
+      213: -6172093553686702023
+    second: explosion 2_76
+  - first:
+      213: -8263855831758909425
+    second: explosion 2_77
+  - first:
+      213: -5536049104226543062
+    second: explosion 2_78
+  - first:
+      213: 4797343007981790029
+    second: explosion 2_79
+  - first:
+      213: 4660840315348720638
+    second: explosion 2_80
+  - first:
+      213: -7393502930636067659
+    second: explosion 2_81
+  - first:
+      213: -6625773167017173626
+    second: explosion 2_82
+  - first:
+      213: -8551095942373059036
+    second: explosion 2_83
+  - first:
+      213: 7914624309807842907
+    second: explosion 2_84
+  - first:
+      213: -6327831782491033742
+    second: explosion 2_85
+  - first:
+      213: -2793960812956720223
+    second: explosion 2_86
+  - first:
+      213: -4580805873967619295
+    second: explosion 2_87
+  - first:
+      213: -6372691943484448709
+    second: explosion 2_88
+  - first:
+      213: -2573411308717154548
+    second: explosion 2_89
+  - first:
+      213: 4245339087695343833
+    second: explosion 2_90
+  - first:
+      213: -1433114915367769641
+    second: explosion 2_91
+  - first:
+      213: 7635952000227103842
+    second: explosion 2_92
+  - first:
+      213: 1902945784728637911
+    second: explosion 2_93
+  - first:
+      213: 121166650146689257
+    second: explosion 2_94
+  - first:
+      213: 2140202561499549832
+    second: explosion 2_95
+  - first:
+      213: -7080152939255365586
+    second: explosion 2_96
+  - first:
+      213: -5342829727556327514
+    second: explosion 2_97
+  - first:
+      213: -3878233105419304063
+    second: explosion 2_98
+  - first:
+      213: -7173430067376430907
+    second: explosion 2_99
+  - first:
+      213: -4421297885359359410
+    second: explosion 2_100
+  - first:
+      213: -7799736021842836546
+    second: explosion 2_101
+  - first:
+      213: -1344747939739610800
+    second: explosion 2_102
+  - first:
+      213: 8815357050059640038
+    second: explosion 2_103
+  - first:
+      213: 4086343754418011886
+    second: explosion 2_104
+  - first:
+      213: 1638602845153536839
+    second: explosion 2_105
+  - first:
+      213: -5574917879288892426
+    second: explosion 2_106
+  - first:
+      213: 6824462674494811610
+    second: explosion 2_107
+  - first:
+      213: -3698500313662087990
+    second: explosion 2_108
+  - first:
+      213: 7377134289051211146
+    second: explosion 2_109
+  - first:
+      213: 9083897222970619316
+    second: explosion 2_110
+  - first:
+      213: -2062588959466975868
+    second: explosion 2_111
+  - first:
+      213: -1225032888838563579
+    second: explosion 2_112
+  - first:
+      213: 7926130163387671571
+    second: explosion 2_113
+  - first:
+      213: 4374729669185605297
+    second: explosion 2_114
+  - first:
+      213: 7049255027090873751
+    second: explosion 2_115
+  - first:
+      213: -6757691342120388669
+    second: explosion 2_116
+  - first:
+      213: -7005025256791065623
+    second: explosion 2_117
+  - first:
+      213: 5612999015122984901
+    second: explosion 2_118
+  - first:
+      213: 8356725065486879283
+    second: explosion 2_119
+  - first:
+      213: 8511572723026403652
+    second: explosion 2_120
+  - first:
+      213: -1012058038902020983
+    second: explosion 2_121
+  - first:
+      213: 8949678882484617856
+    second: explosion 2_122
+  - first:
+      213: 2700487621081697128
+    second: explosion 2_123
+  - first:
+      213: -6460266624680525109
+    second: explosion 2_124
+  - first:
+      213: -240564848662262580
+    second: explosion 2_125
+  - first:
+      213: 970026447753766672
+    second: explosion 2_126
+  - first:
+      213: -7261261070265677983
+    second: explosion 2_127
+  - first:
+      213: -8899150245529295657
+    second: explosion 2_128
+  - first:
+      213: -2738637792455981212
+    second: explosion 2_129
+  - first:
+      213: -7414119225204668436
+    second: explosion 2_130
+  - first:
+      213: -6281327552722497882
+    second: explosion 2_131
+  - first:
+      213: 8241582714652806605
+    second: explosion 2_132
+  - first:
+      213: 3637572880305399934
+    second: explosion 2_133
+  - first:
+      213: 7804622516918681981
+    second: explosion 2_134
+  - first:
+      213: -3070568012735170451
+    second: explosion 2_135
+  - first:
+      213: -4063259726083962264
+    second: explosion 2_136
+  - first:
+      213: 2285446449413084213
+    second: explosion 2_137
+  - first:
+      213: 8414629298582445190
+    second: explosion 2_138
+  - first:
+      213: -6313835502847334122
+    second: explosion 2_139
+  - first:
+      213: 3824290383738055963
+    second: explosion 2_140
+  - first:
+      213: -8852803402452361603
+    second: explosion 2_141
+  - first:
+      213: 432734422314581073
+    second: explosion 2_142
+  - first:
+      213: -3514251000815537079
+    second: explosion 2_143
+  - first:
+      213: -1930104265268913520
+    second: explosion 2_144
+  - first:
+      213: -4727341918161320531
+    second: explosion 2_145
+  - first:
+      213: -3342822405757219523
+    second: explosion 2_146
+  - first:
+      213: 4830704479832787810
+    second: explosion 2_147
+  - first:
+      213: -4347166886839968797
+    second: explosion 2_148
+  - first:
+      213: -1924926263220552112
+    second: explosion 2_149
+  - first:
+      213: -5600430120131822359
+    second: explosion 2_150
+  - first:
+      213: -4654013059816775617
+    second: explosion 2_151
+  - first:
+      213: 2037827183789984945
+    second: explosion 2_152
+  - first:
+      213: -8092746218476246065
+    second: explosion 2_153
+  - first:
+      213: 701349060087190985
+    second: explosion 2_154
+  - first:
+      213: 1531642640179242527
+    second: explosion 2_155
+  - first:
+      213: -297762364444931743
+    second: explosion 2_156
+  - first:
+      213: -536307901531049129
+    second: explosion 2_157
+  - first:
+      213: 9087912717777615744
+    second: explosion 2_158
+  - first:
+      213: -2997519983315860655
+    second: explosion 2_159
+  - first:
+      213: 6946612373611263504
+    second: explosion 2_160
+  - first:
+      213: -6732496737491341857
+    second: explosion 2_161
+  - first:
+      213: -5139226312092182945
+    second: explosion 2_162
+  - first:
+      213: -2569328198171562393
+    second: explosion 2_163
+  - first:
+      213: -3707216968751960526
+    second: explosion 2_164
+  - first:
+      213: 7928457021290389063
+    second: explosion 2_165
+  - first:
+      213: -8109377581411687696
+    second: explosion 2_166
+  - first:
+      213: -8011006887844155778
+    second: explosion 2_167
+  - first:
+      213: 5436031066205369531
+    second: explosion 2_168
+  - first:
+      213: 5262767205683348319
+    second: explosion 2_169
+  - first:
+      213: 3580902187758059378
+    second: explosion 2_170
+  - first:
+      213: -1134147827897459499
+    second: explosion 2_171
+  - first:
+      213: -4354870418264076273
+    second: explosion 2_172
+  - first:
+      213: -5812979805973845386
+    second: explosion 2_173
+  - first:
+      213: -812517032443926368
+    second: explosion 2_174
+  - first:
+      213: 5097042402206355428
+    second: explosion 2_175
+  - first:
+      213: 210341649590266734
+    second: explosion 2_176
+  - first:
+      213: -1848686876610634906
+    second: explosion 2_177
+  - first:
+      213: -4351547184643406390
+    second: explosion 2_178
+  - first:
+      213: 1653532596430538767
+    second: explosion 2_179
+  - first:
+      213: 7967089717396071764
+    second: explosion 2_180
+  - first:
+      213: -4474386627959839355
+    second: explosion 2_181
+  - first:
+      213: -1629216150293876331
+    second: explosion 2_182
+  - first:
+      213: -1137636762534461812
+    second: explosion 2_183
+  - first:
+      213: 8698211294630966497
+    second: explosion 2_184
+  - first:
+      213: -8445720323609668259
+    second: explosion 2_185
+  - first:
+      213: -8624269177400195589
+    second: explosion 2_186
+  - first:
+      213: 8259879688341865782
+    second: explosion 2_187
+  - first:
+      213: 1987096923087376258
+    second: explosion 2_188
+  - first:
+      213: 2980982362021361774
+    second: explosion 2_189
+  - first:
+      213: 309591859803654225
+    second: explosion 2_190
+  - first:
+      213: -6409115345387210724
+    second: explosion 2_191
+  - first:
+      213: 6955058615961469616
+    second: explosion 2_192
+  - first:
+      213: -1105270872350918892
+    second: explosion 2_193
+  - first:
+      213: 7765032431151441375
+    second: explosion 2_194
+  - first:
+      213: 4796340710053055059
+    second: explosion 2_195
+  - first:
+      213: 280954312765313653
+    second: explosion 2_196
+  - first:
+      213: -5485931225548165980
+    second: explosion 2_197
+  - first:
+      213: 265569162284466383
+    second: explosion 2_198
+  - first:
+      213: 1462069722560150986
+    second: explosion 2_199
+  - first:
+      213: -421170090129102291
+    second: explosion 2_200
+  - first:
+      213: 5289580006352756116
+    second: explosion 2_201
+  - first:
+      213: -4770672250288333517
+    second: explosion 2_202
+  - first:
+      213: -8679686992933922590
+    second: explosion 2_203
+  - first:
+      213: 5472199129714945866
+    second: explosion 2_204
+  - first:
+      213: 1360008184787057065
+    second: explosion 2_205
+  - first:
+      213: 3850960191085027613
+    second: explosion 2_206
+  - first:
+      213: -823707401438770982
+    second: explosion 2_207
+  - first:
+      213: -7665627349246332917
+    second: explosion 2_208
+  - first:
+      213: 160964111795788834
+    second: explosion 2_209
+  - first:
+      213: 4199165591277047040
+    second: explosion 2_210
+  - first:
+      213: 4418466509123456491
+    second: explosion 2_211
+  - first:
+      213: -5242928694742979900
+    second: explosion 2_212
+  - first:
+      213: 6686282264782738089
+    second: explosion 2_213
+  - first:
+      213: 5714696111635604689
+    second: explosion 2_214
+  - first:
+      213: 4900445462177778825
+    second: explosion 2_215
+  - first:
+      213: 4093110881467119757
+    second: explosion 2_216
+  - first:
+      213: -5197440717768812118
+    second: explosion 2_217
+  - first:
+      213: 2356028620664071193
+    second: explosion 2_218
+  - first:
+      213: 8863317211648508454
+    second: explosion 2_219
+  - first:
+      213: 3175910108741418609
+    second: explosion 2_220
+  - first:
+      213: 7316925196947322765
+    second: explosion 2_221
+  - first:
+      213: -7877861175028259570
+    second: explosion 2_222
+  - first:
+      213: -8555171710583605288
+    second: explosion 2_223
+  - first:
+      213: -3960887322328647417
+    second: explosion 2_224
+  - first:
+      213: -1210805595800704795
+    second: explosion 2_225
+  - first:
+      213: 6341357456505215326
+    second: explosion 2_226
+  - first:
+      213: -351277328290639610
+    second: explosion 2_227
+  - first:
+      213: -7901532274320923163
+    second: explosion 2_228
+  - first:
+      213: -6368872537857477534
+    second: explosion 2_229
+  - first:
+      213: 3149322863815958898
+    second: explosion 2_230
+  - first:
+      213: -6429264751228599169
+    second: explosion 2_231
+  - first:
+      213: 2614198782353875354
+    second: explosion 2_232
+  - first:
+      213: 7663602950935077542
+    second: explosion 2_233
+  - first:
+      213: 2934303102362717532
+    second: explosion 2_234
+  - first:
+      213: 2682801317690868406
+    second: explosion 2_235
+  - first:
+      213: 3436385829056726950
+    second: explosion 2_236
+  - first:
+      213: 7635916227105640363
+    second: explosion 2_237
+  - first:
+      213: 3853557688212482073
+    second: explosion 2_238
+  - first:
+      213: -1994594183251189044
+    second: explosion 2_239
+  - first:
+      213: 4300228633824632022
+    second: explosion 2_240
+  - first:
+      213: 4721584210700114847
+    second: explosion 2_241
+  - first:
+      213: -4642180264637398262
+    second: explosion 2_242
+  - first:
+      213: -6650078639032698368
+    second: explosion 2_243
+  - first:
+      213: 5038500639416924608
+    second: explosion 2_244
+  - first:
+      213: 4786986729850391712
+    second: explosion 2_245
+  - first:
+      213: -8022654350446829818
+    second: explosion 2_246
+  - first:
+      213: -2402000034342903194
+    second: explosion 2_247
+  - first:
+      213: 3346111750863328874
+    second: explosion 2_248
+  - first:
+      213: 1981093994894557204
+    second: explosion 2_249
+  - first:
+      213: 8099603186977905459
+    second: explosion 2_250
+  - first:
+      213: -1029469049475884142
+    second: explosion 2_251
+  - first:
+      213: 1488295986126838234
+    second: explosion 2_252
+  - first:
+      213: -569400421011327968
+    second: explosion 2_253
+  - first:
+      213: -1989844506551352589
+    second: explosion 2_254
+  - first:
+      213: -7324346207755905089
+    second: explosion 2_255
+  - first:
+      213: 3439483852838762197
+    second: explosion 2_256
+  - first:
+      213: -8511736612067126407
+    second: explosion 2_257
+  - first:
+      213: -3247905055979890488
+    second: explosion 2_258
+  - first:
+      213: -9175365051222699059
+    second: explosion 2_259
+  - first:
+      213: 690893893902006327
+    second: explosion 2_260
+  - first:
+      213: 101716195144486481
+    second: explosion 2_261
+  - first:
+      213: -3484740981998640661
+    second: explosion 2_262
+  - first:
+      213: 3477069956410006940
+    second: explosion 2_263
+  - first:
+      213: 308769739685204888
+    second: explosion 2_264
+  - first:
+      213: -3579812190435333837
+    second: explosion 2_265
+  - first:
+      213: -3462020323810138130
+    second: explosion 2_266
+  - first:
+      213: -5721379309455283978
+    second: explosion 2_267
+  - first:
+      213: 7646427056502098981
+    second: explosion 2_268
+  - first:
+      213: 2496146140535144977
+    second: explosion 2_269
+  - first:
+      213: 775025468801758909
+    second: explosion 2_270
+  - first:
+      213: 3903549880736881913
+    second: explosion 2_271
+  - first:
+      213: 4288770074730333246
+    second: explosion 2_272
+  - first:
+      213: 5532384251967772313
+    second: explosion 2_273
+  - first:
+      213: -2899709610071790018
+    second: explosion 2_274
+  - first:
+      213: 4777361161845861580
+    second: explosion 2_275
+  - first:
+      213: 4677955065070049603
+    second: explosion 2_276
+  - first:
+      213: -4582190982265660847
+    second: explosion 2_277
+  - first:
+      213: 4321963504942593781
+    second: explosion 2_278
+  - first:
+      213: 699737204479659090
+    second: explosion 2_279
+  - first:
+      213: -4787954258726953147
+    second: explosion 2_280
+  - first:
+      213: 7724224076877516735
+    second: explosion 2_281
+  - first:
+      213: -3059346160485939918
+    second: explosion 2_282
+  - first:
+      213: 5509366001265527141
+    second: explosion 2_283
+  - first:
+      213: -916627542500795331
+    second: explosion 2_284
+  - first:
+      213: 7644052630311113792
+    second: explosion 2_285
+  - first:
+      213: 624321358395086872
+    second: explosion 2_286
+  - first:
+      213: -5720800646497867950
+    second: explosion 2_287
+  - first:
+      213: -8481821422257631464
+    second: explosion 2_288
+  - first:
+      213: 854669773041542832
+    second: explosion 2_289
+  - first:
+      213: -9147862525485780157
+    second: explosion 2_290
+  - first:
+      213: -5822730731864259869
+    second: explosion 2_291
+  - first:
+      213: 8958690273459930394
+    second: explosion 2_292
+  - first:
+      213: -3529962469622519224
+    second: explosion 2_293
+  - first:
+      213: 1319263114115083514
+    second: explosion 2_294
+  - first:
+      213: 8416317425911364137
+    second: explosion 2_295
+  - first:
+      213: -5840348856942087931
+    second: explosion 2_296
+  - first:
+      213: 4794383648018458007
+    second: explosion 2_297
+  - first:
+      213: 6919792531519142123
+    second: explosion 2_298
+  - first:
+      213: 34655548100027609
+    second: explosion 2_299
+  - first:
+      213: -410909881054653794
+    second: explosion 2_300
+  - first:
+      213: 2588077695782054396
+    second: explosion 2_301
+  - first:
+      213: -8269929510916790429
+    second: explosion 2_302
+  - first:
+      213: 7781721195104146740
+    second: explosion 2_303
+  - first:
+      213: -3259797262849986253
+    second: explosion 2_304
+  - first:
+      213: 8539859409094706650
+    second: explosion 2_305
+  - first:
+      213: 8770334731258214416
+    second: explosion 2_306
+  - first:
+      213: -1724694529577544598
+    second: explosion 2_307
+  - first:
+      213: 773015043009192515
+    second: explosion 2_308
+  - first:
+      213: -3931291484874183124
+    second: explosion 2_309
+  - first:
+      213: -2167799198959926671
+    second: explosion 2_310
+  - first:
+      213: -7723373723622384731
+    second: explosion 2_311
+  - first:
+      213: -3409036377798575237
+    second: explosion 2_312
+  - first:
+      213: -2194471498089756365
+    second: explosion 2_313
+  - first:
+      213: -4410048876813955072
+    second: explosion 2_314
+  - first:
+      213: -1455863892740028931
+    second: explosion 2_315
+  - first:
+      213: 98300754677126452
+    second: explosion 2_316
+  - first:
+      213: -9024404870143441583
+    second: explosion 2_317
+  - first:
+      213: 1939113958303058904
+    second: explosion 2_318
+  - first:
+      213: 6778834279628584480
+    second: explosion 2_319
+  - first:
+      213: -1554757948719115163
+    second: explosion 2_320
+  - first:
+      213: 8386510383556007285
+    second: explosion 2_321
+  - first:
+      213: -3064222852976329312
+    second: explosion 2_322
+  - first:
+      213: 9132755169170682889
+    second: explosion 2_323
+  - first:
+      213: -7609763498152727858
+    second: explosion 2_324
+  - first:
+      213: 2645861198471623444
+    second: explosion 2_325
+  - first:
+      213: -6979097761030611927
+    second: explosion 2_326
+  - first:
+      213: 2805431451546614467
+    second: explosion 2_327
+  - first:
+      213: 2474621412225777955
+    second: explosion 2_328
+  - first:
+      213: -1897542535891407069
+    second: explosion 2_329
+  - first:
+      213: 4428494383506960636
+    second: explosion 2_330
+  - first:
+      213: 4755294808414119057
+    second: explosion 2_331
+  - first:
+      213: -4699243189904806590
+    second: explosion 2_332
+  - first:
+      213: 6685456465130180045
+    second: explosion 2_333
+  - first:
+      213: 3262477697161566447
+    second: explosion 2_334
+  - first:
+      213: -5102499692477899220
+    second: explosion 2_335
+  - first:
+      213: 8594098586727394734
+    second: explosion 2_336
+  - first:
+      213: -4708028854147368405
+    second: explosion 2_337
+  - first:
+      213: -7764275066003805657
+    second: explosion 2_338
+  - first:
+      213: 5020771652780833131
+    second: explosion 2_339
+  - first:
+      213: -5645618172410236939
+    second: explosion 2_340
+  - first:
+      213: 2410291430822198229
+    second: explosion 2_341
+  - first:
+      213: 8968679080497030988
+    second: explosion 2_342
+  - first:
+      213: -8609487817201171567
+    second: explosion 2_343
+  - first:
+      213: 7002096767229806257
+    second: explosion 2_344
+  - first:
+      213: -9021735541403687646
+    second: explosion 2_345
+  - first:
+      213: -7477634740608281858
+    second: explosion 2_346
+  - first:
+      213: -5604940823128935157
+    second: explosion 2_347
+  - first:
+      213: 747013932284583205
+    second: explosion 2_348
+  - first:
+      213: -441505447985044268
+    second: explosion 2_349
+  - first:
+      213: -4539643499427321287
+    second: explosion 2_350
+  - first:
+      213: 384192409024403084
+    second: explosion 2_351
+  - first:
+      213: 3460548109210969459
+    second: explosion 2_352
+  - first:
+      213: 3591715480794049166
+    second: explosion 2_353
+  - first:
+      213: -4798975675470961581
+    second: explosion 2_354
+  - first:
+      213: 6972972390286668554
+    second: explosion 2_355
+  - first:
+      213: -3883204995956366146
+    second: explosion 2_356
+  - first:
+      213: 7667301695490023289
+    second: explosion 2_357
+  - first:
+      213: 6786885632177186816
+    second: explosion 2_358
+  - first:
+      213: -3843833915248744411
+    second: explosion 2_359
+  - first:
+      213: 3944354856542489609
+    second: explosion 2_360
+  - first:
+      213: 7113309430960034825
+    second: explosion 2_361
+  - first:
+      213: 7618040734815677321
+    second: explosion 2_362
+  - first:
+      213: 450774649910761051
+    second: explosion 2_363
+  - first:
+      213: 6048950674006376619
+    second: explosion 2_364
+  - first:
+      213: -4618813421599935320
+    second: explosion 2_365
+  - first:
+      213: 8789956886903389067
+    second: explosion 2_366
+  - first:
+      213: -3962618908506102270
+    second: explosion 2_367
+  - first:
+      213: -3167231928591758208
+    second: explosion 2_368
+  - first:
+      213: 4895273613190836102
+    second: explosion 2_369
+  - first:
+      213: -970574460885352733
+    second: explosion 2_370
+  - first:
+      213: 5626942987890760896
+    second: explosion 2_371
+  - first:
+      213: 7870101671727028833
+    second: explosion 2_372
+  - first:
+      213: 6242359563211179642
+    second: explosion 2_373
+  - first:
+      213: 7031733408822370991
+    second: explosion 2_374
+  - first:
+      213: -2540618848998411178
+    second: explosion 2_375
+  - first:
+      213: -8383247255350046797
+    second: explosion 2_376
+  - first:
+      213: -4588176353138554726
+    second: explosion 2_377
+  - first:
+      213: 6856465480333509179
+    second: explosion 2_378
+  - first:
+      213: 1834301831061034243
+    second: explosion 2_379
+  - first:
+      213: 1194821957750806345
+    second: explosion 2_380
+  - first:
+      213: 1348358963252630221
+    second: explosion 2_381
+  - first:
+      213: -6438496104999027927
+    second: explosion 2_382
+  - first:
+      213: -6597365884965875849
+    second: explosion 2_383
+  - first:
+      213: -193730960033963439
+    second: explosion 2_384
+  - first:
+      213: -8346809030113740699
+    second: explosion 2_385
+  - first:
+      213: -2639844412924983252
+    second: explosion 2_386
+  - first:
+      213: 749223921616818929
+    second: explosion 2_387
+  - first:
+      213: -5084892043642875839
+    second: explosion 2_388
+  - first:
+      213: -5031028690826247104
+    second: explosion 2_389
+  - first:
+      213: -1421730982732015906
+    second: explosion 2_390
+  - first:
+      213: 2210948176501763978
+    second: explosion 2_391
+  - first:
+      213: 3735715867712275377
+    second: explosion 2_392
+  - first:
+      213: -2850698009260739472
+    second: explosion 2_393
+  - first:
+      213: 5572900628066317298
+    second: explosion 2_394
+  - first:
+      213: 3063014331366744461
+    second: explosion 2_395
+  - first:
+      213: -2206690767627335687
+    second: explosion 2_396
+  - first:
+      213: -6600929704445148779
+    second: explosion 2_397
+  - first:
+      213: -1763797112436137103
+    second: explosion 2_398
+  - first:
+      213: -4786333272454011389
+    second: explosion 2_399
+  - first:
+      213: 3681721759849289861
+    second: explosion 2_400
+  - first:
+      213: -1981278946548260525
+    second: explosion 2_401
+  - first:
+      213: -8878326277767657115
+    second: explosion 2_402
+  - first:
+      213: -3946730810264374045
+    second: explosion 2_403
+  - first:
+      213: 1230700503683552724
+    second: explosion 2_404
+  - first:
+      213: -5066183935414794793
+    second: explosion 2_405
+  - first:
+      213: 7865615589541457254
+    second: explosion 2_406
+  - first:
+      213: 209536036851045364
+    second: explosion 2_407
+  - first:
+      213: 6509533436577996529
+    second: explosion 2_408
+  - first:
+      213: -8717078570923301413
+    second: explosion 2_409
+  - first:
+      213: 5431019589900506892
+    second: explosion 2_410
+  - first:
+      213: 8924956729988111112
+    second: explosion 2_411
+  - first:
+      213: -6503954355732964359
+    second: explosion 2_412
+  - first:
+      213: -799660566371114457
+    second: explosion 2_413
+  - first:
+      213: 2881385987611898314
+    second: explosion 2_414
+  - first:
+      213: 2988855501490614662
+    second: explosion 2_415
+  - first:
+      213: 2597043027585667587
+    second: explosion 2_416
+  - first:
+      213: 5950971130431217215
+    second: explosion 2_417
+  - first:
+      213: 4199782119068988998
+    second: explosion 2_418
+  - first:
+      213: 550602788442867226
+    second: explosion 2_419
+  - first:
+      213: -3870810544493706400
+    second: explosion 2_420
+  - first:
+      213: 9078343531738356958
+    second: explosion 2_421
+  - first:
+      213: -1980239378173364934
+    second: explosion 2_422
+  - first:
+      213: -2364256295703964482
+    second: explosion 2_423
+  - first:
+      213: 8055345933734994111
+    second: explosion 2_424
+  - first:
+      213: 5090100492648237496
+    second: explosion 2_425
+  - first:
+      213: 4010685164597607591
+    second: explosion 2_426
+  - first:
+      213: 7673693529924532441
+    second: explosion 2_427
+  - first:
+      213: 1758199789475614855
+    second: explosion 2_428
+  - first:
+      213: -2731598858439625050
+    second: explosion 2_429
+  - first:
+      213: 1680858957177216371
+    second: explosion 2_430
+  - first:
+      213: -3322504973383698958
+    second: explosion 2_431
+  - first:
+      213: 6529516224894664041
+    second: explosion 2_432
+  - first:
+      213: 8454600212273112961
+    second: explosion 2_433
+  - first:
+      213: -7772047959966449299
+    second: explosion 2_434
+  - first:
+      213: -2378910768229570927
+    second: explosion 2_435
+  - first:
+      213: -7219481645508735550
+    second: explosion 2_436
+  - first:
+      213: -4868044853050592047
+    second: explosion 2_437
+  - first:
+      213: 3220389650314312385
+    second: explosion 2_438
+  - first:
+      213: 932993954573658500
+    second: explosion 2_439
+  - first:
+      213: 6266929458121006385
+    second: explosion 2_440
+  - first:
+      213: -187043541300538646
+    second: explosion 2_441
+  - first:
+      213: -1147561793601516740
+    second: explosion 2_442
+  - first:
+      213: -5737208377978126492
+    second: explosion 2_443
+  - first:
+      213: 772265697338816907
+    second: explosion 2_444
+  - first:
+      213: -2426571711719618413
+    second: explosion 2_445
+  - first:
+      213: -4947544688510875905
+    second: explosion 2_446
+  - first:
+      213: -5494862989231769031
+    second: explosion 2_447
+  - first:
+      213: 1938724578608095114
+    second: explosion 2_448
+  - first:
+      213: 3591496528515861297
+    second: explosion 2_449
+  - first:
+      213: -3786179611231414181
+    second: explosion 2_450
+  - first:
+      213: -5273863477511245050
+    second: explosion 2_451
+  - first:
+      213: 3296196247271900771
+    second: explosion 2_452
+  - first:
+      213: 3962146288642378863
+    second: explosion 2_453
+  - first:
+      213: 2187318711324711383
+    second: explosion 2_454
+  - first:
+      213: 5309661172270441544
+    second: explosion 2_455
+  - first:
+      213: 640554098544776746
+    second: explosion 2_456
+  - first:
+      213: 2213931515656434617
+    second: explosion 2_457
+  - first:
+      213: 2057995186718760922
+    second: explosion 2_458
+  - first:
+      213: -6598862505429492712
+    second: explosion 2_459
+  - first:
+      213: -1795364191638646457
+    second: explosion 2_460
+  - first:
+      213: -5825764188412274938
+    second: explosion 2_461
+  - first:
+      213: 4052314358046257948
+    second: explosion 2_462
+  - first:
+      213: -997003239984856227
+    second: explosion 2_463
+  - first:
+      213: -3160258027207350732
+    second: explosion 2_464
+  - first:
+      213: 969632124943256553
+    second: explosion 2_465
+  - first:
+      213: 437471861734638543
+    second: explosion 2_466
+  - first:
+      213: 5689389906891377236
+    second: explosion 2_467
+  - first:
+      213: -4161564598868390462
+    second: explosion 2_468
+  - first:
+      213: 8487763140549281051
+    second: explosion 2_469
+  - first:
+      213: -2353132318391466263
+    second: explosion 2_470
+  - first:
+      213: -9109184939664452486
+    second: explosion 2_471
+  - first:
+      213: -4131020458336919806
+    second: explosion 2_472
+  - first:
+      213: -5406859955019522258
+    second: explosion 2_473
+  - first:
+      213: 3778043601336166753
+    second: explosion 2_474
+  - first:
+      213: -5072170474488343944
+    second: explosion 2_475
+  - first:
+      213: 6257950145304405591
+    second: explosion 2_476
+  - first:
+      213: 471816302946406821
+    second: explosion 2_477
+  - first:
+      213: -201762315779187688
+    second: explosion 2_478
+  - first:
+      213: 703245407123430422
+    second: explosion 2_479
+  - first:
+      213: 5588776227480201576
+    second: explosion 2_480
+  - first:
+      213: -7991495976253065366
+    second: explosion 2_481
+  - first:
+      213: -7252166228060657271
+    second: explosion 2_482
+  - first:
+      213: 8501003496757774584
+    second: explosion 2_483
+  - first:
+      213: -8698024038717456415
+    second: explosion 2_484
+  - first:
+      213: 8910012216214814964
+    second: explosion 2_485
+  - first:
+      213: 3394616175113998562
+    second: explosion 2_486
+  - first:
+      213: 2230260640731117226
+    second: explosion 2_487
+  - first:
+      213: -4434226637401754604
+    second: explosion 2_488
+  - first:
+      213: -8314940690278107369
+    second: explosion 2_489
+  - first:
+      213: -1389768201336084020
+    second: explosion 2_490
+  - first:
+      213: 1830836682321945090
+    second: explosion 2_491
+  - first:
+      213: -8898492981635950524
+    second: explosion 2_492
+  - first:
+      213: -29493529217153641
+    second: explosion 2_457
+  - first:
+      213: 7280629845973826821
+    second: explosion 2_458
+  - first:
+      213: 6522877193183701793
+    second: explosion 2_459
+  - first:
+      213: 5051641822566891553
+    second: explosion 2_460
+  - first:
+      213: 1951358893674578041
+    second: explosion 2_461
+  - first:
+      213: 6389519046940813308
+    second: explosion 2_462
+  - first:
+      213: 9042236548016183017
+    second: explosion 2_463
+  - first:
+      213: 4235708731000224352
+    second: explosion 2_464
+  - first:
+      213: 4173668887309660220
+    second: explosion 2_465
+  - first:
+      213: 369667983622026393
+    second: explosion 2_466
+  - first:
+      213: 1417744760927509940
+    second: explosion 2_467
+  - first:
+      213: -5571217906928411787
+    second: explosion 2_468
+  - first:
+      213: -1687677200173044507
+    second: explosion 2_469
+  - first:
+      213: 4846798654481879136
+    second: explosion 2_470
+  - first:
+      213: -1110615800309662292
+    second: explosion 2_471
+  - first:
+      213: 5440395823698586128
+    second: explosion 2_472
+  - first:
+      213: 2635030126254351957
+    second: explosion 2_473
+  - first:
+      213: -5854913590912451133
+    second: explosion 2_474
+  - first:
+      213: 179639087523244473
+    second: explosion 2_475
+  - first:
+      213: -4447808110631856936
+    second: explosion 2_476
+  - first:
+      213: -3232218239406783340
+    second: explosion 2_477
+  - first:
+      213: 2729682545248757109
+    second: explosion 2_478
+  - first:
+      213: 2310118234957384045
+    second: explosion 2_479
+  - first:
+      213: 694303304360294447
+    second: explosion 2_480
+  - first:
+      213: 4168631522570235270
+    second: explosion 2_481
+  - first:
+      213: -3109227438172247023
+    second: explosion 2_482
+  - first:
+      213: 6812313747157493652
+    second: explosion 2_483
+  - first:
+      213: -7723573751131342427
+    second: explosion 2_484
+  - first:
+      213: 349744147008558943
+    second: explosion 2_485
+  - first:
+      213: -8076032432769714218
+    second: explosion 2_486
+  - first:
+      213: -996168542723242744
+    second: explosion 2_487
+  - first:
+      213: -7446910138418823842
+    second: explosion 2_488
+  - first:
+      213: 3235691512633783505
+    second: explosion 2_489
+  - first:
+      213: -614749467540308259
+    second: explosion 2_490
+  - first:
+      213: -1030198444334121740
+    second: explosion 2_491
+  - first:
+      213: -2057504884490315995
+    second: explosion 2_492
+  - first:
+      213: -8263107881837887918
+    second: explosion 2_493
+  - first:
+      213: 477132039215088883
+    second: explosion 2_494
+  - first:
+      213: 8214433079593050535
+    second: explosion 2_495
+  - first:
+      213: -1720551788751567246
+    second: explosion 2_496
+  - first:
+      213: -4161765756583684729
+    second: explosion 2_497
+  - first:
+      213: 5475779833261037986
+    second: explosion 2_498
+  - first:
+      213: 7176994226058561957
+    second: explosion 2_499
+  - first:
+      213: 976339549851781673
+    second: explosion 2_500
+  - first:
+      213: 2608073564448065133
+    second: explosion 2_501
+  - first:
+      213: 1066171086894297270
+    second: explosion 2_502
+  - first:
+      213: 4903775175661082606
+    second: explosion 2_503
+  - first:
+      213: -4924943492290451838
+    second: explosion 2_504
+  - first:
+      213: -8520059571828846795
+    second: explosion 2_505
+  - first:
+      213: 1333488872636121370
+    second: explosion 2_506
+  - first:
+      213: -1242081539737849097
+    second: explosion 2_507
+  - first:
+      213: -5464445270933024724
+    second: explosion 2_508
+  - first:
+      213: -5570281335951058195
+    second: explosion 2_509
+  - first:
+      213: -3908498127772680050
+    second: explosion 2_510
+  - first:
+      213: 6046917996297561826
+    second: explosion 2_511
+  - first:
+      213: -6425090727620260155
+    second: explosion 2_512
+  - first:
+      213: 478746409466202665
+    second: explosion 2_513
+  - first:
+      213: 1272457913035297354
+    second: explosion 2_514
+  - first:
+      213: 8447849238582717730
+    second: explosion 2_515
+  - first:
+      213: -8313592580216226058
+    second: explosion 2_516
+  - first:
+      213: 6730378055806699505
+    second: explosion 2_517
+  - first:
+      213: 6521379417777046257
+    second: explosion 2_518
+  - first:
+      213: 1396684968290068542
+    second: explosion 2_519
+  - first:
+      213: 7273089517914171962
+    second: explosion 2_520
+  - first:
+      213: -8690777819232974191
+    second: explosion 2_521
+  - first:
+      213: -7576346753450731757
+    second: explosion 2_522
+  - first:
+      213: -2723366352009799211
+    second: explosion 2_523
+  - first:
+      213: 4775897012476908776
+    second: explosion 2_524
+  - first:
+      213: -1490701273832444414
+    second: explosion 2_525
+  - first:
+      213: -8040958396973717264
+    second: explosion 2_526
+  - first:
+      213: 8340264371310886098
+    second: explosion 2_527
+  - first:
+      213: -904127704584528173
+    second: explosion 2_528
+  - first:
+      213: -1294863239454423776
+    second: explosion 2_529
+  - first:
+      213: 1857494911235847730
+    second: explosion 2_530
+  - first:
+      213: 1966535604196633349
+    second: explosion 2_531
+  - first:
+      213: 5712623884628263925
+    second: explosion 2_532
+  - first:
+      213: 8012621332256501185
+    second: explosion 2_533
+  - first:
+      213: -1585793564935752300
+    second: explosion 2_534
+  - first:
+      213: -5626826365000688789
+    second: explosion 2_535
+  - first:
+      213: -2000864362145469919
+    second: explosion 2_536
+  - first:
+      213: 4632682284788577739
+    second: explosion 2_537
+  - first:
+      213: 4364941369141884188
+    second: explosion 2_538
+  - first:
+      213: -7672602007576053155
+    second: explosion 2_539
+  - first:
+      213: -8887066416339233171
+    second: explosion 2_540
+  - first:
+      213: -5112149265044699799
+    second: explosion 2_541
+  - first:
+      213: -2657528995099619871
+    second: explosion 2_542
+  - first:
+      213: -8032258690363302915
+    second: explosion 2_543
+  - first:
+      213: -3234007436671392392
+    second: explosion 2_544
+  - first:
+      213: -5851226525209713192
+    second: explosion 2_545
+  - first:
+      213: -4882663028303559581
+    second: explosion 2_546
+  - first:
+      213: -217263837365431415
+    second: explosion 2_547
+  - first:
+      213: 5306922626898671004
+    second: explosion 2_548
+  - first:
+      213: -3768794658677859384
+    second: explosion 2_549
+  - first:
+      213: 983238304640593822
+    second: explosion 2_550
+  - first:
+      213: 2366927550515269652
+    second: explosion 2_551
+  - first:
+      213: 5298897560050788842
+    second: explosion 2_552
+  - first:
+      213: -3480552022200178125
+    second: explosion 2_553
+  - first:
+      213: -9047501603182329875
+    second: explosion 2_554
+  - first:
+      213: -6031629718050951903
+    second: explosion 2_555
+  - first:
+      213: 1590722544786223452
+    second: explosion 2_556
+  - first:
+      213: -4335219093029018505
+    second: explosion 2_557
+  - first:
+      213: -3417516605338076612
+    second: explosion 2_558
+  - first:
+      213: -3784470340447841851
+    second: explosion 2_559
+  - first:
+      213: 2412926787695394953
+    second: explosion 2_560
+  - first:
+      213: -1638602109353080648
+    second: explosion 2_561
+  - first:
+      213: -341375827957795321
+    second: explosion 2_562
+  - first:
+      213: -7401573240089154160
+    second: explosion 2_563
+  - first:
+      213: 6371506743296670211
+    second: explosion 2_564
+  - first:
+      213: 6181611988361491771
+    second: explosion 2_565
+  - first:
+      213: 8535326756954166750
+    second: explosion 2_566
+  - first:
+      213: -1702323513061888719
+    second: explosion 2_567
+  - first:
+      213: 611166076923087825
+    second: explosion 2_568
+  - first:
+      213: 4196704394638253714
+    second: explosion 2_569
+  - first:
+      213: 649405277683014693
+    second: explosion 2_570
+  - first:
+      213: -2332041504108606232
+    second: explosion 2_571
+  - first:
+      213: 2112518159253740325
+    second: explosion 2_572
+  - first:
+      213: -5143112534118411623
+    second: explosion 2_573
+  - first:
+      213: -863901282652650641
+    second: explosion 2_574
+  - first:
+      213: -4554372763665300121
+    second: explosion 2_575
+  - first:
+      213: 1307638291033910530
+    second: explosion 2_576
+  - first:
+      213: -6410542022306088164
+    second: explosion 2_577
+  - first:
+      213: 9160998807084953308
+    second: explosion 2_578
+  - first:
+      213: -365098100973274252
+    second: explosion 2_579
+  - first:
+      213: -7320348221695256088
+    second: explosion 2_580
+  - first:
+      213: 7954021745060602888
+    second: explosion 2_581
+  - first:
+      213: -7728782139247495337
+    second: explosion 2_582
+  - first:
+      213: 5511811125578569238
+    second: explosion 2_583
+  - first:
+      213: -7075648111781425646
+    second: explosion 2_584
+  - first:
+      213: -7599446247982180582
+    second: explosion 2_585
+  - first:
+      213: 741426451311006050
+    second: explosion 2_586
+  - first:
+      213: -6793296807738440565
+    second: explosion 2_587
+  - first:
+      213: -6912979367715463692
+    second: explosion 2_588
+  - first:
+      213: 4551690148300317923
+    second: explosion 2_589
+  - first:
+      213: 8493850419134476546
+    second: explosion 2_590
+  - first:
+      213: 872757673230807755
+    second: explosion 2_591
+  - first:
+      213: -2805733594779364796
+    second: explosion 2_592
+  - first:
+      213: -5673166772431746205
+    second: explosion 2_593
+  - first:
+      213: -7816948409217849971
+    second: explosion 2_594
+  - first:
+      213: -2377471839157449334
+    second: explosion 2_595
+  - first:
+      213: 3277805575030297182
+    second: explosion 2_596
+  - first:
+      213: -2483830178317867507
+    second: explosion 2_597
+  - first:
+      213: -4584374276190694115
+    second: explosion 2_598
+  - first:
+      213: 2904679507379145207
+    second: explosion 2_599
+  - first:
+      213: 3595341147760477729
+    second: explosion 2_600
+  - first:
+      213: 4032882785262143795
+    second: explosion 2_601
+  - first:
+      213: -8798932693218071491
+    second: explosion 2_602
+  - first:
+      213: -5286533099790988289
+    second: explosion 2_603
+  - first:
+      213: 8304466290023944482
+    second: explosion 2_604
+  - first:
+      213: -610590164733718083
+    second: explosion 2_605
+  - first:
+      213: -1214862898477640891
+    second: explosion 2_606
+  - first:
+      213: -2565994132435833086
+    second: explosion 2_607
+  - first:
+      213: -5965565936218567742
+    second: explosion 2_608
+  - first:
+      213: -312174047074538437
+    second: explosion 2_609
+  - first:
+      213: -2818522012177484191
+    second: explosion 2_610
+  - first:
+      213: -294232218117030580
+    second: explosion 2_611
+  - first:
+      213: 4017075319928854400
+    second: explosion 2_612
+  - first:
+      213: -8433759409549567301
+    second: explosion 2_613
+  - first:
+      213: 5753825978978706481
+    second: explosion 2_614
+  - first:
+      213: -7934571681709114431
+    second: explosion 2_615
+  - first:
+      213: 6240475888244405286
+    second: explosion 2_616
+  - first:
+      213: -6981342978822813259
+    second: explosion 2_617
+  - first:
+      213: -1829808665029842035
+    second: explosion 2_618
+  - first:
+      213: 5197864414676996592
+    second: explosion 2_619
+  - first:
+      213: -508305181631637259
+    second: explosion 2_620
+  - first:
+      213: 5895088264168625784
+    second: explosion 2_621
+  - first:
+      213: 1805041053034073031
+    second: explosion 2_622
+  - first:
+      213: -8027691214481981630
+    second: explosion 2_623
+  - first:
+      213: -2566633964209392819
+    second: explosion 2_624
+  - first:
+      213: 8363218894974434008
+    second: explosion 2_625
+  - first:
+      213: 2129679787072900548
+    second: explosion 2_626
+  - first:
+      213: -1730835595790814676
+    second: explosion 2_627
+  - first:
+      213: 5584787540389897635
+    second: explosion 2_628
+  - first:
+      213: -573142997041201625
+    second: explosion 2_629
+  - first:
+      213: 4226534570732939647
+    second: explosion 2_630
+  - first:
+      213: 47188524922790692
+    second: explosion 2_631
+  - first:
+      213: 6614351790614273298
+    second: explosion 2_632
+  - first:
+      213: 7688637856483505883
+    second: explosion 2_633
+  - first:
+      213: -5194517491375001225
+    second: explosion 2_634
+  - first:
+      213: -8726769473753371951
+    second: explosion 2_635
+  - first:
+      213: 6561667859092556011
+    second: explosion 2_636
+  - first:
+      213: -942859372936431947
+    second: explosion 2_637
+  - first:
+      213: 6330404527348520797
+    second: explosion 2_638
+  - first:
+      213: -473879164916819580
+    second: explosion 2_639
+  - first:
+      213: 431342394042833881
+    second: explosion 2_640
+  - first:
+      213: -971426086187138753
+    second: explosion 2_641
+  - first:
+      213: 1076164787257050175
+    second: explosion 2_642
+  - first:
+      213: 1892063391745091943
+    second: explosion 2_643
+  - first:
+      213: 7723295433827070724
+    second: explosion 2_644
+  - first:
+      213: -3957490281143473418
+    second: explosion 2_645
+  - first:
+      213: -8409199811565310655
+    second: explosion 2_646
+  - first:
+      213: -3683948602435241215
+    second: explosion 2_647
+  - first:
+      213: -2656440816616819640
+    second: explosion 2_648
+  - first:
+      213: 8852633413694880904
+    second: explosion 2_649
+  - first:
+      213: 1140762599155193657
+    second: explosion 2_650
+  - first:
+      213: 2933127830154461579
+    second: explosion 2_651
+  - first:
+      213: 3950769544897739301
+    second: explosion 2_652
+  - first:
+      213: -8769781076924695020
+    second: explosion 2_653
+  - first:
+      213: -2542427468180546102
+    second: explosion 2_654
+  - first:
+      213: 748536212824935797
+    second: explosion 2_655
+  - first:
+      213: 1645909873011911626
+    second: explosion 2_656
+  - first:
+      213: 5092923550526357928
+    second: explosion 2_657
+  - first:
+      213: 3102726528572758791
+    second: explosion 2_658
+  - first:
+      213: 6331584799313043285
+    second: explosion 2_659
+  - first:
+      213: -820904351073057283
+    second: explosion 2_660
+  - first:
+      213: -3806612296977875853
+    second: explosion 2_661
+  - first:
+      213: -1937648331538662301
+    second: explosion 2_662
+  - first:
+      213: 1780081963446797335
+    second: explosion 2_663
+  - first:
+      213: -2653398663224841820
+    second: explosion 2_664
+  - first:
+      213: 5401761075204346659
+    second: explosion 2_665
+  - first:
+      213: 555470713741725569
+    second: explosion 2_666
+  - first:
+      213: 5910500962520826481
+    second: explosion 2_667
+  - first:
+      213: -6354157571737894540
+    second: explosion 2_668
+  - first:
+      213: -6959470816348159153
+    second: explosion 2_669
+  - first:
+      213: 3311914908808306396
+    second: explosion 2_670
+  - first:
+      213: -61015955883535146
+    second: explosion 2_671
+  - first:
+      213: 8873960265117947221
+    second: explosion 2_672
+  - first:
+      213: 3860996820436939170
+    second: explosion 2_673
+  - first:
+      213: 1317320204208290604
+    second: explosion 2_674
+  - first:
+      213: -4154240863646192743
+    second: explosion 2_675
+  - first:
+      213: 1803478990459297111
+    second: explosion 2_676
+  - first:
+      213: 8781177764387013303
+    second: explosion 2_677
+  - first:
+      213: 8658295143344738845
+    second: explosion 2_678
+  - first:
+      213: 2155024979384873775
+    second: explosion 2_679
+  - first:
+      213: 1733683004515463274
+    second: explosion 2_680
+  - first:
+      213: -3182543130273431038
+    second: explosion 2_681
+  - first:
+      213: -3401704724157425849
+    second: explosion 2_682
+  - first:
+      213: -6805437408648079283
+    second: explosion 2_683
+  - first:
+      213: -6005954204322179201
+    second: explosion 2_684
+  - first:
+      213: 1269886191496163506
+    second: explosion 2_685
+  - first:
+      213: 898568679756653560
+    second: explosion 2_686
+  - first:
+      213: -5822392931772811640
+    second: explosion 2_687
+  - first:
+      213: -1768964580924038032
+    second: explosion 2_688
+  - first:
+      213: 2912581818609848905
+    second: explosion 2_689
+  - first:
+      213: 3924855106915666171
+    second: explosion 2_690
+  - first:
+      213: -5227116335237587416
+    second: explosion 2_691
+  - first:
+      213: 3563122794426624445
+    second: explosion 2_692
+  - first:
+      213: 678331864064419159
+    second: explosion 2_693
+  - first:
+      213: 7888056727384799239
+    second: explosion 2_694
+  - first:
+      213: -2088168281258499122
+    second: explosion 2_695
+  - first:
+      213: 3527618090942993891
+    second: explosion 2_696
+  - first:
+      213: 7210694477534214290
+    second: explosion 2_697
+  - first:
+      213: -6156776291130801754
+    second: explosion 2_698
+  - first:
+      213: -4910739624331153553
+    second: explosion 2_699
+  - first:
+      213: -4108936272917015851
+    second: explosion 2_700
+  - first:
+      213: 5321632336034235893
+    second: explosion 2_701
+  - first:
+      213: 3690466404954437897
+    second: explosion 2_702
+  - first:
+      213: -8794770241078609320
+    second: explosion 2_703
+  - first:
+      213: -8350190915607105027
+    second: explosion 2_704
+  - first:
+      213: -7425816904221109573
+    second: explosion 2_705
+  - first:
+      213: -880697192824665400
+    second: explosion 2_706
+  - first:
+      213: -4992868456225486579
+    second: explosion 2_707
+  - first:
+      213: 8637074803720171219
+    second: explosion 2_708
+  - first:
+      213: 6105883354398318247
+    second: explosion 2_709
+  - first:
+      213: -737885560691081046
+    second: explosion 2_710
+  - first:
+      213: 4647336294655921211
+    second: explosion 2_711
+  - first:
+      213: 5541471876924785244
+    second: explosion 2_712
+  - first:
+      213: 6052703560156416342
+    second: explosion 2_713
+  - first:
+      213: -512638987652737950
+    second: explosion 2_714
+  - first:
+      213: 5654823550665552910
+    second: explosion 2_715
+  - first:
+      213: -7454669973257725914
+    second: explosion 2_716
+  - first:
+      213: -4263902368708876902
+    second: explosion 2_717
+  - first:
+      213: 6810508883190037973
+    second: explosion 2_718
+  - first:
+      213: 648487152740021919
+    second: explosion 2_719
+  - first:
+      213: -2556151321223249075
+    second: explosion 2_720
+  - first:
+      213: -3982576267386960112
+    second: explosion 2_721
+  - first:
+      213: -6822773708566923392
+    second: explosion 2_722
+  - first:
+      213: -3699216476817477905
+    second: explosion 2_723
+  - first:
+      213: -1546623436773419594
+    second: explosion 2_724
+  - first:
+      213: -7061343150366136972
+    second: explosion 2_725
+  - first:
+      213: -2750981216457702718
+    second: explosion 2_726
+  - first:
+      213: -7914418142565366608
+    second: explosion 2_727
+  - first:
+      213: 598074758348061153
+    second: explosion 2_728
+  - first:
+      213: -4235701352493927392
+    second: explosion 2_729
+  - first:
+      213: 2179230781077692138
+    second: explosion 2_730
+  - first:
+      213: 5170799570102965485
+    second: explosion 2_731
+  - first:
+      213: -4506387506515523213
+    second: explosion 2_732
+  - first:
+      213: 1941420539690145976
+    second: explosion 2_733
+  - first:
+      213: 1435553791611493952
+    second: explosion 2_734
+  - first:
+      213: -3913086213739189227
+    second: explosion 2_735
+  - first:
+      213: -1330367139528903961
+    second: explosion 2_736
+  - first:
+      213: -6067181743121227926
+    second: explosion 2_737
+  - first:
+      213: -6431816738220999001
+    second: explosion 2_738
+  - first:
+      213: -7216114655301897620
+    second: explosion 2_739
+  - first:
+      213: -3738614310668396086
+    second: explosion 2_740
+  - first:
+      213: -7666389927696575678
+    second: explosion 2_741
+  - first:
+      213: 8875639862524971390
+    second: explosion 2_742
+  - first:
+      213: -2356836990411693138
+    second: explosion 2_743
+  - first:
+      213: -1905024132166923957
+    second: explosion 2_744
+  - first:
+      213: 7841003624434630731
+    second: explosion 2_745
+  - first:
+      213: -8994262767419174836
+    second: explosion 2_746
+  - first:
+      213: -4284159597648473539
+    second: explosion 2_747
+  - first:
+      213: 5570347958302861391
+    second: explosion 2_748
+  - first:
+      213: -6403451808485995474
+    second: explosion 2_749
+  - first:
+      213: -2559291768505374393
+    second: explosion 2_750
+  - first:
+      213: -8398714429515648138
+    second: explosion 2_751
+  - first:
+      213: -7322973738036660040
+    second: explosion 2_752
+  - first:
+      213: -1610639821951395412
+    second: explosion 2_753
+  - first:
+      213: -8334858282599315116
+    second: explosion 2_754
+  - first:
+      213: 836908257154963799
+    second: explosion 2_755
+  - first:
+      213: 8833261621092678689
+    second: explosion 2_756
+  - first:
+      213: -7591965791134700480
+    second: explosion 2_757
+  - first:
+      213: -3078415086128353272
+    second: explosion 2_758
+  - first:
+      213: -7206446113185752477
+    second: explosion 2_759
+  - first:
+      213: -6222716341790630603
+    second: explosion 2_760
+  - first:
+      213: 6430027324882305067
+    second: explosion 2_761
+  - first:
+      213: -5381368516058408203
+    second: explosion 2_762
+  - first:
+      213: 4317412658586957821
+    second: explosion 2_763
+  - first:
+      213: 7260704978953512069
+    second: explosion 2_764
+  - first:
+      213: 3952527784080248538
+    second: explosion 2_765
+  - first:
+      213: 4184892593582509411
+    second: explosion 2_766
+  - first:
+      213: -212243959246092771
+    second: explosion 2_767
+  - first:
+      213: -8162188445429186785
+    second: explosion 2_768
+  - first:
+      213: 3669704922441859592
+    second: explosion 2_769
+  - first:
+      213: 3268245872678543764
+    second: explosion 2_770
+  - first:
+      213: 7477581312389891695
+    second: explosion 2_771
+  - first:
+      213: 486785316481782206
+    second: explosion 2_772
+  - first:
+      213: -3448725041141519636
+    second: explosion 2_773
+  - first:
+      213: 8201720342906445300
+    second: explosion 2_774
+  - first:
+      213: 7136003404105625388
+    second: explosion 2_775
+  - first:
+      213: 272221159597534690
+    second: explosion 2_776
+  - first:
+      213: -2345939837403611028
+    second: explosion 2_777
+  - first:
+      213: 841050461950789588
+    second: explosion 2_778
+  - first:
+      213: -3062610828679905554
+    second: explosion 2_779
+  - first:
+      213: -189489765404403641
+    second: explosion 2_780
+  - first:
+      213: 2314265168527413832
+    second: explosion 2_781
+  - first:
+      213: -6942014045922448640
+    second: explosion 2_782
+  - first:
+      213: -7026743054125299958
+    second: explosion 2_783
+  - first:
+      213: 7357766395022414109
+    second: explosion 2_784
+  - first:
+      213: -1552239427903394706
+    second: explosion 2_785
+  - first:
+      213: -5026759602958950117
+    second: explosion 2_786
+  - first:
+      213: 6484040058716581973
+    second: explosion 2_787
+  - first:
+      213: -9028005383948782870
+    second: explosion 2_788
+  - first:
+      213: -7972457502521107657
+    second: explosion 2_789
+  - first:
+      213: 5247472895680581714
+    second: explosion 2_790
+  - first:
+      213: -4315012112525306882
+    second: explosion 2_791
+  - first:
+      213: 8957631394367614966
+    second: explosion 2_792
+  - first:
+      213: -4315595438968472448
+    second: explosion 2_793
+  - first:
+      213: 6236440263594568106
+    second: explosion 2_794
+  - first:
+      213: -8257933117220534268
+    second: explosion 2_795
+  - first:
+      213: 3643375845354422975
+    second: explosion 2_796
+  - first:
+      213: 3660635431680827027
+    second: explosion 2_797
+  - first:
+      213: 4659713406298130081
+    second: explosion 2_798
+  - first:
+      213: 7965991030827105647
+    second: explosion 2_799
+  - first:
+      213: 3261439611656326309
+    second: explosion 2_800
+  - first:
+      213: 2654735687222091694
+    second: explosion 2_801
+  - first:
+      213: -7616605005759724148
+    second: explosion 2_802
+  - first:
+      213: -7123440494284175488
+    second: explosion 2_803
+  - first:
+      213: -1749577445160326816
+    second: explosion 2_804
+  - first:
+      213: -1340116941054690099
+    second: explosion 2_805
+  - first:
+      213: -7309218642190085937
+    second: explosion 2_806
+  - first:
+      213: 3968759192890852681
+    second: explosion 2_807
+  - first:
+      213: 5036378613529216759
+    second: explosion 2_808
+  - first:
+      213: 4165820354132910836
+    second: explosion 2_809
+  - first:
+      213: -2015446872884016742
+    second: explosion 2_810
+  - first:
+      213: 6860577882846578887
+    second: explosion 2_811
+  - first:
+      213: 4225484735756959610
+    second: explosion 2_812
+  - first:
+      213: 3379581481432501218
+    second: explosion 2_813
+  - first:
+      213: 3155122247113640250
+    second: explosion 2_814
+  - first:
+      213: -2278203221759195090
+    second: explosion 2_815
+  - first:
+      213: -4272183318210730248
+    second: explosion 2_816
+  - first:
+      213: -1895000467227542674
+    second: explosion 2_817
+  - first:
+      213: -6890675768290923181
+    second: explosion 2_818
+  - first:
+      213: 9042086380487953138
+    second: explosion 2_819
+  - first:
+      213: -8128835132268866172
+    second: explosion 2_820
+  - first:
+      213: -7704253109098423448
+    second: explosion 2_821
+  - first:
+      213: -693710599034375187
+    second: explosion 2_822
+  - first:
+      213: 3396116023955715627
+    second: explosion 2_823
+  - first:
+      213: 5299201252401803441
+    second: explosion 2_824
+  - first:
+      213: -1197941940287184215
+    second: explosion 2_825
+  - first:
+      213: 6651444602228345698
+    second: explosion 2_826
+  - first:
+      213: 6614653990574500043
+    second: explosion 2_827
+  - first:
+      213: 8532722457803938898
+    second: explosion 2_828
+  - first:
+      213: -1225461128264818669
+    second: explosion 2_829
+  - first:
+      213: -3984755727481432221
+    second: explosion 2_830
+  - first:
+      213: 996664384535490547
+    second: explosion 2_831
+  - first:
+      213: 6728874548293732709
+    second: explosion 2_832
+  - first:
+      213: 250208312332402704
+    second: explosion 2_833
+  - first:
+      213: 889652625986853663
+    second: explosion 2_834
+  - first:
+      213: 3376620897695555671
+    second: explosion 2_835
+  - first:
+      213: -940406243011519938
+    second: explosion 2_836
+  - first:
+      213: 3763309962676982334
+    second: explosion 2_837
+  - first:
+      213: -782792256523098913
+    second: explosion 2_838
+  - first:
+      213: -2192765993655657715
+    second: explosion 2_839
+  - first:
+      213: 1191486264324866035
+    second: explosion 2_840
+  - first:
+      213: -6336605378558916132
+    second: explosion 2_841
+  - first:
+      213: -8512530412852917803
+    second: explosion 2_842
+  - first:
+      213: -4509402254168639953
+    second: explosion 2_843
+  - first:
+      213: 3351214818073862307
+    second: explosion 2_844
+  - first:
+      213: 8176236180423244394
+    second: explosion 2_845
+  - first:
+      213: 5061321073061740604
+    second: explosion 2_846
+  - first:
+      213: -4773000658297037061
+    second: explosion 2_847
+  - first:
+      213: 76642546363404170
+    second: explosion 2_848
+  - first:
+      213: -4330708044555514819
+    second: explosion 2_849
+  - first:
+      213: 4531490921336743924
+    second: explosion 2_850
+  - first:
+      213: -7741900515885256172
+    second: explosion 2_851
+  - first:
+      213: 7870329934550488467
+    second: explosion 2_852
+  - first:
+      213: -1597692650103324141
+    second: explosion 2_853
+  - first:
+      213: 2383281705959926244
+    second: explosion 2_854
+  - first:
+      213: -2433845496462415907
+    second: explosion 2_855
+  - first:
+      213: -9039219423244433459
+    second: explosion 2_856
+  - first:
+      213: 699828289206194043
+    second: explosion 2_857
+  - first:
+      213: -3836597424537110598
+    second: explosion 2_858
+  - first:
+      213: 8370437120838574947
+    second: explosion 2_859
+  - first:
+      213: -853180762619297957
+    second: explosion 2_860
+  - first:
+      213: 3485334563827691454
+    second: explosion 2_861
+  - first:
+      213: -6253211839473742265
+    second: explosion 2_862
+  - first:
+      213: -4656634989509968564
+    second: explosion 2_863
+  - first:
+      213: -8947121267583671515
+    second: explosion 2_864
+  - first:
+      213: -1558233650523133483
+    second: explosion 2_865
+  - first:
+      213: -5688875179029160330
+    second: explosion 2_866
+  - first:
+      213: -450008356086850515
+    second: explosion 2_867
+  - first:
+      213: 2659381723047473449
+    second: explosion 2_868
+  - first:
+      213: 5160324020276888293
+    second: explosion 2_869
+  - first:
+      213: -6578584186745258875
+    second: explosion 2_870
+  - first:
+      213: 1057889323883202277
+    second: explosion 2_871
+  - first:
+      213: -5050329191786299745
+    second: explosion 2_872
+  - first:
+      213: 8600325755623086654
+    second: explosion 2_873
+  - first:
+      213: -7583953869183641817
+    second: explosion 2_874
+  - first:
+      213: 9075351833602251487
+    second: explosion 2_875
+  - first:
+      213: -5132974798808549104
+    second: explosion 2_876
+  - first:
+      213: -7212542744976435316
+    second: explosion 2_877
+  - first:
+      213: 7116859455683103651
+    second: explosion 2_878
+  - first:
+      213: 5550402370922449328
+    second: explosion 2_879
+  - first:
+      213: -3730878425384852707
+    second: explosion 2_880
+  - first:
+      213: -8945484275186567234
+    second: explosion 2_881
+  - first:
+      213: 8748187518061575898
+    second: explosion 2_882
+  - first:
+      213: 7752250723461227232
+    second: explosion 2_883
+  - first:
+      213: 7323059996036131575
+    second: explosion 2_884
+  - first:
+      213: 2140225557530084315
+    second: explosion 2_885
+  - first:
+      213: 5713279187457214116
+    second: explosion 2_886
+  - first:
+      213: -7875438130114375476
+    second: explosion 2_887
+  - first:
+      213: -8442661214820849622
+    second: explosion 2_888
+  - first:
+      213: 2551081237061101524
+    second: explosion 2_889
+  - first:
+      213: -1145625293335703706
+    second: explosion 2_890
+  - first:
+      213: 8535133663104351467
+    second: explosion 2_891
+  - first:
+      213: -7331328153626145440
+    second: explosion 2_892
+  - first:
+      213: 2838223188605837500
+    second: explosion 2_893
+  - first:
+      213: 7243847940261237360
+    second: explosion 2_894
+  - first:
+      213: 9204997721035746720
+    second: explosion 2_895
+  - first:
+      213: 4303323677427684173
+    second: explosion 2_896
+  - first:
+      213: -2059927852071501981
+    second: explosion 2_897
+  - first:
+      213: -7629137342162740358
+    second: explosion 2_898
+  - first:
+      213: 5071038972143046162
+    second: explosion 2_899
+  - first:
+      213: 2583905747552975236
+    second: explosion 2_900
+  - first:
+      213: -6213883729975476977
+    second: explosion 2_901
+  - first:
+      213: 4992201986946807888
+    second: explosion 2_902
+  - first:
+      213: 4661286716196053157
+    second: explosion 2_903
+  - first:
+      213: -155778038905955652
+    second: explosion 2_904
+  - first:
+      213: -7612957495777405080
+    second: explosion 2_905
+  - first:
+      213: 7011723389991984047
+    second: explosion 2_906
+  - first:
+      213: 8201960729300665899
+    second: explosion 2_907
+  - first:
+      213: 5899226302988117415
+    second: explosion 2_908
+  - first:
+      213: -2118258169627270993
+    second: explosion 2_909
+  - first:
+      213: -3159764683404828257
+    second: explosion 2_910
+  - first:
+      213: 1832874186762651600
+    second: explosion 2_911
+  - first:
+      213: -1733792072130618301
+    second: explosion 2_912
+  - first:
+      213: -56158293812474003
+    second: explosion 2_913
+  - first:
+      213: 4247321443986193688
+    second: explosion 2_914
+  - first:
+      213: 3109495967475056790
+    second: explosion 2_915
+  - first:
+      213: -1801869575457529566
+    second: explosion 2_916
+  - first:
+      213: -1653037302257958273
+    second: explosion 2_917
+  - first:
+      213: 5725862467035954842
+    second: explosion 2_918
+  - first:
+      213: 2817879027522402576
+    second: explosion 2_919
+  - first:
+      213: 3829585926072376325
+    second: explosion 2_920
+  - first:
+      213: -5365263272580648936
+    second: explosion 2_921
+  - first:
+      213: 5783846576921693007
+    second: explosion 2_922
+  - first:
+      213: 2332880890995154546
+    second: explosion 2_923
+  - first:
+      213: 5396116501447750761
+    second: explosion 2_924
+  - first:
+      213: 5515643350821327260
+    second: explosion 2_925
+  - first:
+      213: -3274523571778162389
+    second: explosion 2_926
+  - first:
+      213: 6257353418055385932
+    second: explosion 2_927
+  - first:
+      213: -5016567494612530853
+    second: explosion 2_928
+  - first:
+      213: 6316423895672106634
+    second: explosion 2_929
+  - first:
+      213: 2853605969291277800
+    second: explosion 2_930
+  - first:
+      213: -3048317591346894555
+    second: explosion 2_931
+  - first:
+      213: 1846187579251532557
+    second: explosion 2_932
+  - first:
+      213: 3101972554365338092
+    second: explosion 2_933
+  - first:
+      213: -5375584942928357135
+    second: explosion 2_934
+  - first:
+      213: -4077643388912742110
+    second: explosion 2_935
+  - first:
+      213: 1534500685340322985
+    second: explosion 2_936
+  - first:
+      213: -7647647660241858080
+    second: explosion 2_937
+  - first:
+      213: 998404515824884051
+    second: explosion 2_938
+  - first:
+      213: -8523192419489623055
+    second: explosion 2_939
+  - first:
+      213: 2827129144250047588
+    second: explosion 2_940
+  - first:
+      213: -5403993352753092272
+    second: explosion 2_941
+  - first:
+      213: 6036018820237280559
+    second: explosion 2_942
+  - first:
+      213: 1268747453812191812
+    second: explosion 2_943
+  - first:
+      213: -5872981743385820575
+    second: explosion 2_944
+  - first:
+      213: 7289353294800545488
+    second: explosion 2_945
+  - first:
+      213: 1256195422655158021
+    second: explosion 2_946
+  - first:
+      213: -7149757409972762685
+    second: explosion 2_947
+  - first:
+      213: 5351996075884059237
+    second: explosion 2_948
+  - first:
+      213: 9076599971291791133
+    second: explosion 2_949
+  - first:
+      213: 4550171126790432173
+    second: explosion 2_950
+  - first:
+      213: 5546690788412969954
+    second: explosion 2_951
+  - first:
+      213: -1541718407429028489
+    second: explosion 2_952
+  - first:
+      213: -3953075662074526068
+    second: explosion 2_953
+  - first:
+      213: -6209519936828653113
+    second: explosion 2_954
+  - first:
+      213: -3207664599684261877
+    second: explosion 2_955
+  - first:
+      213: 2189056746738824858
+    second: explosion 2_956
+  - first:
+      213: -6862054832147947550
+    second: explosion 2_957
+  - first:
+      213: 7635652288565957846
+    second: explosion 2_958
+  - first:
+      213: -6866240251645375907
+    second: explosion 2_959
+  - first:
+      213: -206928088531136370
+    second: explosion 2_960
+  - first:
+      213: -2767368400332018106
+    second: explosion 2_961
+  - first:
+      213: -3012648432101487135
+    second: explosion 2_962
+  - first:
+      213: 2167829681102488899
+    second: explosion 2_963
+  - first:
+      213: 2949399328806279220
+    second: explosion 2_964
+  - first:
+      213: -2726968495281192316
+    second: explosion 2_965
+  - first:
+      213: 3248863340859096135
+    second: explosion 2_966
+  - first:
+      213: -7515820576174348907
+    second: explosion 2_967
+  - first:
+      213: -4702646273904173173
+    second: explosion 2_968
+  - first:
+      213: -3920277638064534657
+    second: explosion 2_969
+  - first:
+      213: -3403986841412640182
+    second: explosion 2_970
+  - first:
+      213: 908397238497621140
+    second: explosion 2_971
+  - first:
+      213: 8171647055501484183
+    second: explosion 2_972
+  - first:
+      213: 614133447552246258
+    second: explosion 2_973
+  - first:
+      213: -781380056687509279
+    second: explosion 2_974
+  - first:
+      213: -3528187012193754336
+    second: explosion 2_975
+  - first:
+      213: 9002689402519890563
+    second: explosion 2_976
+  - first:
+      213: 7739090490754010129
+    second: explosion 2_977
+  - first:
+      213: 4678345031571016428
+    second: explosion 2_978
+  - first:
+      213: -4188148253176279899
+    second: explosion 2_979
+  - first:
+      213: -8349365575731608914
+    second: explosion 2_980
+  - first:
+      213: 8457079378543675065
+    second: explosion 2_981
+  - first:
+      213: -8746658378587585973
+    second: explosion 2_982
+  - first:
+      213: 331674143185573072
+    second: explosion 2_983
+  - first:
+      213: -7886330559919162712
+    second: explosion 2_984
+  - first:
+      213: 5690487743134290245
+    second: explosion 2_985
+  - first:
+      213: -3776149751336109964
+    second: explosion 2_986
+  - first:
+      213: -9013087549040653817
+    second: explosion 2_987
+  - first:
+      213: 2300596540567034526
+    second: explosion 2_988
+  - first:
+      213: -1571222865780094628
+    second: explosion 2_989
+  - first:
+      213: 9190727714562506237
+    second: explosion 2_990
+  - first:
+      213: -7253574758413976410
+    second: explosion 2_991
+  - first:
+      213: -2740976718361009128
+    second: explosion 2_992
+  - first:
+      213: -7891366954372654260
+    second: explosion 2_993
+  - first:
+      213: -3120775557435848370
+    second: explosion 2_994
+  - first:
+      213: 4067360833909373421
+    second: explosion 2_995
+  - first:
+      213: 5802127244519278958
+    second: explosion 2_996
+  - first:
+      213: -1620823945852543243
+    second: explosion 2_997
+  - first:
+      213: 1960417082113601870
+    second: explosion 2_998
+  - first:
+      213: -6926280015534817737
+    second: explosion 2_999
+  - first:
+      213: 2279992147305325674
+    second: explosion 2_1000
+  - first:
+      213: 5032834530239860702
+    second: explosion 2_1001
+  - first:
+      213: 5067913801566827452
+    second: explosion 2_1002
+  - first:
+      213: 1750067970348360166
+    second: explosion 2_1003
+  - first:
+      213: 5641187694658309153
+    second: explosion 2_1004
+  - first:
+      213: -4643402684912595613
+    second: explosion 2_1005
+  - first:
+      213: 377455075296385206
+    second: explosion 2_1006
+  - first:
+      213: -274426086010624684
+    second: explosion 2_1007
+  - first:
+      213: -3834918357661508646
+    second: explosion 2_1008
+  - first:
+      213: 3697712273121817337
+    second: explosion 2_1009
+  - first:
+      213: 2380783495764681956
+    second: explosion 2_1010
+  - first:
+      213: 8561550519901129117
+    second: explosion 2_1011
+  - first:
+      213: 8822256911079892941
+    second: explosion 2_1012
+  - first:
+      213: -2250707742487518180
+    second: explosion 2_1013
+  - first:
+      213: 4725162935368592943
+    second: explosion 2_1014
+  - first:
+      213: 4439374127370935777
+    second: explosion 2_1015
+  - first:
+      213: -5603687721395143967
+    second: explosion 2_1016
+  - first:
+      213: -8771391932746168394
+    second: explosion 2_1017
+  - first:
+      213: -310664816423408206
+    second: explosion 2_1018
+  - first:
+      213: 4193105629969735338
+    second: explosion 2_1019
+  - first:
+      213: 7149792230699682445
+    second: explosion 2_1020
+  - first:
+      213: 3404019340029866965
+    second: explosion 2_1021
+  - first:
+      213: 2240719095823766938
+    second: explosion 2_1022
+  - first:
+      213: 1898858984002691811
+    second: explosion 2_1023
+  - first:
+      213: 710211279197769628
+    second: explosion 2_1024
+  - first:
+      213: 2102118518219233199
+    second: explosion 2_1025
+  - first:
+      213: 1167271566054810156
+    second: explosion 2_1026
+  - first:
+      213: 1142835897897740290
+    second: explosion 2_1027
+  - first:
+      213: -440050983779461820
+    second: explosion 2_1028
+  - first:
+      213: 3837010219506814820
+    second: explosion 2_1029
+  - first:
+      213: -698834432652008562
+    second: explosion 2_1030
+  - first:
+      213: 403930754524653516
+    second: explosion 2_1031
+  - first:
+      213: -6306645760997743916
+    second: explosion 2_1032
+  - first:
+      213: -2145443261623349791
+    second: explosion 2_1033
+  - first:
+      213: -2363405480242132264
+    second: explosion 2_1034
+  - first:
+      213: 172614878198530698
+    second: explosion 2_1035
+  - first:
+      213: -4794621565171282891
+    second: explosion 2_1036
+  - first:
+      213: -899889151171098254
+    second: explosion 2_1037
+  - first:
+      213: -4176430571455960593
+    second: explosion 2_1038
+  - first:
+      213: -6589864432248983236
+    second: explosion 2_1039
+  - first:
+      213: 6156667560639047502
+    second: explosion 2_1040
+  - first:
+      213: 734229189852270926
+    second: explosion 2_1041
+  - first:
+      213: -4979112075543154266
+    second: explosion 2_1042
+  - first:
+      213: -3708552275609333432
+    second: explosion 2_1043
+  - first:
+      213: 6990571597122680140
+    second: explosion 2_1044
+  - first:
+      213: 8133062807172641263
+    second: explosion 2_1045
+  - first:
+      213: 7006562773566456333
+    second: explosion 2_1046
+  - first:
+      213: -8726753669298474261
+    second: explosion 2_1047
+  - first:
+      213: -4737002440377040329
+    second: explosion 2_1048
+  - first:
+      213: 5061440200164062567
+    second: explosion 2_1049
+  - first:
+      213: 6688168802281287922
+    second: explosion 2_1050
+  - first:
+      213: 6106333600860980474
+    second: explosion 2_1051
+  - first:
+      213: -5386355341024736603
+    second: explosion 2_1052
+  - first:
+      213: 1789101569049427378
+    second: explosion 2_1053
+  - first:
+      213: -7022252353846841080
+    second: explosion 2_1054
+  - first:
+      213: -4392078597326695671
+    second: explosion 2_1055
+  - first:
+      213: -591701082962909629
+    second: explosion 2_1056
+  - first:
+      213: 5057033661241977503
+    second: explosion 2_1057
+  - first:
+      213: 9098823406854813410
+    second: explosion 2_1058
+  - first:
+      213: 7245524457363554330
+    second: explosion 2_1059
+  - first:
+      213: -6467462802399503086
+    second: explosion 2_1060
+  - first:
+      213: -2567990714232839573
+    second: explosion 2_1061
+  - first:
+      213: 8001461908857498726
+    second: explosion 2_1062
+  - first:
+      213: 926299079952795408
+    second: explosion 2_1063
+  - first:
+      213: 6204426453998971632
+    second: explosion 2_1064
+  - first:
+      213: 8193510080813673126
+    second: explosion 2_1065
+  - first:
+      213: 6794717144959729041
+    second: explosion 2_1066
+  - first:
+      213: -7222484496809184976
+    second: explosion 2_1067
+  - first:
+      213: 1030305691753792390
+    second: explosion 2_1068
+  - first:
+      213: 1493622122115655765
+    second: explosion 2_1069
+  - first:
+      213: 1406447408179384515
+    second: explosion 2_1070
+  - first:
+      213: -7805165254836094792
+    second: explosion 2_1071
+  - first:
+      213: -4962740198530339080
+    second: explosion 2_1072
+  - first:
+      213: 7479675570696810140
+    second: explosion 2_1073
+  - first:
+      213: -6370036951613133762
+    second: explosion 2_1074
+  - first:
+      213: 8686699474317502722
+    second: explosion 2_1075
+  - first:
+      213: -6887230251063552841
+    second: explosion 2_1076
+  - first:
+      213: -2170048596628405291
+    second: explosion 2_1077
+  - first:
+      213: -2437538974210296857
+    second: explosion 2_1078
+  - first:
+      213: 4553435230034395940
+    second: explosion 2_1079
+  - first:
+      213: -570930318393021207
+    second: explosion 2_1080
+  - first:
+      213: -3285078214907002645
+    second: explosion 2_1081
+  - first:
+      213: 7291154687983087005
+    second: explosion 2_1082
+  - first:
+      213: 5060719651857675772
+    second: explosion 2_1083
+  - first:
+      213: 4030108190461425187
+    second: explosion 2_1084
+  - first:
+      213: -3244323077100681045
+    second: explosion 2_1085
+  - first:
+      213: 908474904481521491
+    second: explosion 2_1086
+  - first:
+      213: -1468722904490919559
+    second: explosion 2_1087
+  - first:
+      213: 4628766531653383521
+    second: explosion 2_1088
+  - first:
+      213: 6767237985462053996
+    second: explosion 2_1089
+  - first:
+      213: 1266422207572185104
+    second: explosion 2_1090
+  - first:
+      213: -5198411544835685679
+    second: explosion 2_1091
+  - first:
+      213: -3329877661394216192
+    second: explosion 2_1092
+  - first:
+      213: -171607135794391236
+    second: explosion 2_1093
+  - first:
+      213: 702650793567385746
+    second: explosion 2_1094
+  - first:
+      213: 5405206656224637665
+    second: explosion 2_1095
+  - first:
+      213: 7916215937798146607
+    second: explosion 2_1096
+  - first:
+      213: -2541276308764517330
+    second: explosion 2_1097
+  - first:
+      213: 7584844338531771874
+    second: explosion 2_1098
+  - first:
+      213: 3491497389535019384
+    second: explosion 2_1099
+  - first:
+      213: 6026864236547615834
+    second: explosion 2_1100
+  - first:
+      213: 5996190370061059061
+    second: explosion 2_1101
+  - first:
+      213: 4706430393033349048
+    second: explosion 2_1102
+  - first:
+      213: 6455461231118759080
+    second: explosion 2_1103
+  - first:
+      213: -6036263711693680137
+    second: explosion 2_1104
+  - first:
+      213: 425364244106081844
+    second: explosion 2_1105
+  - first:
+      213: -1744641478590778781
+    second: explosion 2_1106
+  - first:
+      213: -5777851109274734839
+    second: explosion 2_1107
+  - first:
+      213: 2273598809068149369
+    second: explosion 2_1108
+  - first:
+      213: 7000129353519327377
+    second: explosion 2_1109
+  - first:
+      213: 3628414225181249906
+    second: explosion 2_1110
+  - first:
+      213: -2561800203146254412
+    second: explosion 2_1111
+  - first:
+      213: 5166747773937076499
+    second: explosion 2_1112
+  - first:
+      213: -1617611672660810693
+    second: explosion 2_1113
+  - first:
+      213: 6600911836114828690
+    second: explosion 2_1114
+  - first:
+      213: -3808379546531588747
+    second: explosion 2_1115
+  - first:
+      213: 8417828314086594693
+    second: explosion 2_1116
+  - first:
+      213: 7856340115018876637
+    second: explosion 2_1117
+  - first:
+      213: 3506324113152910950
+    second: explosion 2_1118
+  - first:
+      213: 5654210986245158146
+    second: explosion 2_1119
+  - first:
+      213: -8699200447054505432
+    second: explosion 2_1120
+  - first:
+      213: -8319831451343789511
+    second: explosion 2_1121
+  - first:
+      213: -3441489826723144295
+    second: explosion 2_1122
+  - first:
+      213: 5536173616685943032
+    second: explosion 2_1123
+  - first:
+      213: 3752254440307749174
+    second: explosion 2_1124
+  - first:
+      213: -1826384711473938258
+    second: explosion 2_1125
+  - first:
+      213: 4637774199081525308
+    second: explosion 2_1126
+  - first:
+      213: 4032264999000835148
+    second: explosion 2_1127
+  - first:
+      213: -3583816209390619499
+    second: explosion 2_1128
+  - first:
+      213: -4852165776950213517
+    second: explosion 2_1129
+  - first:
+      213: -3826834295817373495
+    second: explosion 2_1130
+  - first:
+      213: -1898345419771768641
+    second: explosion 2_1131
+  - first:
+      213: -5025250367105756343
+    second: explosion 2_1132
+  - first:
+      213: -8915130250931490062
+    second: explosion 2_1133
+  - first:
+      213: 1808756190180679387
+    second: explosion 2_1134
+  - first:
+      213: 5525551431369109364
+    second: explosion 2_1135
+  - first:
+      213: 3202085893925728605
+    second: explosion 2_1136
+  - first:
+      213: -8498093221662810095
+    second: explosion 2_1137
+  - first:
+      213: 7485296946276752929
+    second: explosion 2_1138
+  - first:
+      213: 3159952553943702603
+    second: explosion 2_1139
+  - first:
+      213: 6397210108836269298
+    second: explosion 2_1140
+  - first:
+      213: -1453940559058707815
+    second: explosion 2_1141
+  - first:
+      213: -7608731708500776148
+    second: explosion 2_1142
+  - first:
+      213: -3344697909705800182
+    second: explosion 2_1143
+  - first:
+      213: 5462972510031097092
+    second: explosion 2_1144
+  - first:
+      213: 1721063133395543005
+    second: explosion 2_1145
+  - first:
+      213: -2133665682180520987
+    second: explosion 2_1146
+  - first:
+      213: 6163517187688252142
+    second: explosion 2_1147
+  - first:
+      213: 2837227171811133651
+    second: explosion 2_1148
+  - first:
+      213: -3494862504055650633
+    second: explosion 2_1149
+  - first:
+      213: -5793976526915428142
+    second: explosion 2_1150
+  - first:
+      213: 4592751700757710277
+    second: explosion 2_1151
+  - first:
+      213: 7131591913173037303
+    second: explosion 2_1152
+  - first:
+      213: -8853022162420669640
+    second: explosion 2_1153
+  - first:
+      213: -5421200387924236290
+    second: explosion 2_1154
+  - first:
+      213: -2944659829933985522
+    second: explosion 2_1155
+  - first:
+      213: -1630626273806346163
+    second: explosion 2_1156
+  - first:
+      213: 4575442548162844896
+    second: explosion 2_1157
+  - first:
+      213: -6812110519359682103
+    second: explosion 2_1158
+  - first:
+      213: -6147871603219544410
+    second: explosion 2_1159
+  - first:
+      213: 1794511798250914506
+    second: explosion 2_1160
+  - first:
+      213: -3117275107221254155
+    second: explosion 2_1161
+  - first:
+      213: 6949545655981551466
+    second: explosion 2_1162
+  - first:
+      213: -605189585879150542
+    second: explosion 2_1163
+  - first:
+      213: -7929634977253616005
+    second: explosion 2_1164
+  - first:
+      213: 3838487467639764711
+    second: explosion 2_1165
+  - first:
+      213: -6452614512505645464
+    second: explosion 2_1166
+  - first:
+      213: -9118124575649583080
+    second: explosion 2_1167
+  - first:
+      213: -4213543748652670870
+    second: explosion 2_1168
+  - first:
+      213: -9191990489887872920
+    second: explosion 2_1169
+  - first:
+      213: -1509550380475102896
+    second: explosion 2_1170
+  - first:
+      213: -3870579900746381845
+    second: explosion 2_1171
+  - first:
+      213: -1976407414622806881
+    second: explosion 2_1172
+  - first:
+      213: -5610882033657322837
+    second: explosion 2_1173
+  - first:
+      213: -7299479409433277049
+    second: explosion 2_1174
+  - first:
+      213: 2334694875929427160
+    second: explosion 2_1175
+  - first:
+      213: -9098689087625181553
+    second: explosion 2_1176
+  - first:
+      213: 7359799071266963512
+    second: explosion 2_1177
+  - first:
+      213: -4776925958529058288
+    second: explosion 2_1178
+  - first:
+      213: 585595431446158538
+    second: explosion 2_1179
+  - first:
+      213: -5363732791997967329
+    second: explosion 2_1180
+  - first:
+      213: 3413765251858944020
+    second: explosion 2_1181
+  - first:
+      213: -4821520437880122510
+    second: explosion 2_1182
+  - first:
+      213: -7978470953982172658
+    second: explosion 2_1183
+  - first:
+      213: 151868251090741678
+    second: explosion 2_1184
+  - first:
+      213: -6192471130760529191
+    second: explosion 2_1185
+  - first:
+      213: -4562177070577942501
+    second: explosion 2_1186
+  - first:
+      213: 1608756521852945557
+    second: explosion 2_1187
+  - first:
+      213: 7921618716242024439
+    second: explosion 2_1188
+  - first:
+      213: -4251619236665888421
+    second: explosion 2_1189
+  - first:
+      213: 3309804684606222651
+    second: explosion 2_1190
+  - first:
+      213: 1799378518525936863
+    second: explosion 2_1191
+  - first:
+      213: -7258115960026618528
+    second: explosion 2_1192
+  - first:
+      213: 1263981097258759741
+    second: explosion 2_1193
+  - first:
+      213: 1963824932200796456
+    second: explosion 2_1194
+  - first:
+      213: -1969938243454191587
+    second: explosion 2_1195
+  - first:
+      213: 781737160154265353
+    second: explosion 2_1196
+  - first:
+      213: 8733723899723885845
+    second: explosion 2_1197
+  - first:
+      213: 5544915616309545176
+    second: explosion 2_1198
+  - first:
+      213: 3578032351372963922
+    second: explosion 2_1199
+  - first:
+      213: -6742214082479289664
+    second: explosion 2_1200
+  - first:
+      213: 4374120599941688086
+    second: explosion 2_1201
+  - first:
+      213: 3518981957429466128
+    second: explosion 2_1202
+  - first:
+      213: 9028300305678595962
+    second: explosion 2_1203
+  - first:
+      213: -8315003292004405517
+    second: explosion 2_1204
+  - first:
+      213: 7563140868532132945
+    second: explosion 2_1205
+  - first:
+      213: 3204486448776260029
+    second: explosion 2_1206
+  - first:
+      213: -7279598851092021442
+    second: explosion 2_1207
+  - first:
+      213: 8577751869130817877
+    second: explosion 2_1208
+  - first:
+      213: 6510278289311941061
+    second: explosion 2_1209
+  - first:
+      213: 8199055213849839528
+    second: explosion 2_1210
+  - first:
+      213: -2071637507362292545
+    second: explosion 2_1211
+  - first:
+      213: -8419884594382750540
+    second: explosion 2_1212
+  - first:
+      213: -54604522447553437
+    second: explosion 2_1213
+  - first:
+      213: 6167414854771476392
+    second: explosion 2_1214
+  - first:
+      213: 2377858070389374336
+    second: explosion 2_1215
+  - first:
+      213: -7159682910849254941
+    second: explosion 2_1216
+  - first:
+      213: -8886082113284092398
+    second: explosion 2_1217
+  - first:
+      213: -1993106496530387945
+    second: explosion 2_1218
+  - first:
+      213: 6545375574262092851
+    second: explosion 2_1219
+  - first:
+      213: -1007865972529875451
+    second: explosion 2_1220
+  - first:
+      213: 9000067910884360785
+    second: explosion 2_1221
+  - first:
+      213: -1702905424860183651
+    second: explosion 2_1222
+  - first:
+      213: 4380871096517915797
+    second: explosion 2_1223
+  - first:
+      213: -389529444512276791
+    second: explosion 2_1224
+  - first:
+      213: 3720472092036489746
+    second: explosion 2_1225
+  - first:
+      213: -6832584820782879703
+    second: explosion 2_1226
+  - first:
+      213: -897885966445625368
+    second: explosion 2_1227
+  - first:
+      213: -6079131999294966122
+    second: explosion 2_1228
+  - first:
+      213: -7572397186172381753
+    second: explosion 2_1229
+  - first:
+      213: 1208242762549633327
+    second: explosion 2_1230
+  - first:
+      213: 8317711888904661289
+    second: explosion 2_1231
+  - first:
+      213: 6353827430252752078
+    second: explosion 2_1232
+  - first:
+      213: 3978391086957359955
+    second: explosion 2_1233
+  - first:
+      213: -5078503067102452841
+    second: explosion 2_1234
+  - first:
+      213: -2978677222628695890
+    second: explosion 2_1235
+  - first:
+      213: 590440935585105937
+    second: explosion 2_1236
+  - first:
+      213: 7588509311163205429
+    second: explosion 2_1237
+  - first:
+      213: -4660940126437407827
+    second: explosion 2_1238
+  - first:
+      213: 626105021621245323
+    second: explosion 2_1239
+  - first:
+      213: -8820707679670365837
+    second: explosion 2_1240
+  - first:
+      213: -5080841616078103865
+    second: explosion 2_1241
+  - first:
+      213: -2612847630541836401
+    second: explosion 2_1242
+  - first:
+      213: 8870644777677778765
+    second: explosion 2_1243
+  - first:
+      213: 4509332685981966673
+    second: explosion 2_1244
+  - first:
+      213: -4992781868314724253
+    second: explosion 2_1245
+  - first:
+      213: -8432773075338321932
+    second: explosion 2_1246
+  - first:
+      213: 8081589782938797526
+    second: explosion 2_1247
+  - first:
+      213: -4931895887324247712
+    second: explosion 2_1248
+  - first:
+      213: -6603021034266227638
+    second: explosion 2_1249
+  - first:
+      213: -4673547751270039326
+    second: explosion 2_1250
+  - first:
+      213: -3983221238543837729
+    second: explosion 2_1251
+  - first:
+      213: -1639459549294868802
+    second: explosion 2_1252
+  - first:
+      213: -4406614787159240118
+    second: explosion 2_1253
+  - first:
+      213: 8257869620690444637
+    second: explosion 2_1254
+  - first:
+      213: -7515108059622970841
+    second: explosion 2_1255
+  - first:
+      213: 3462527260796830731
+    second: explosion 2_1256
+  - first:
+      213: -1275586531643806370
+    second: explosion 2_1257
+  - first:
+      213: -3298556099682476831
+    second: explosion 2_1258
+  - first:
+      213: 3777439787573915949
+    second: explosion 2_1259
+  - first:
+      213: 1717742968677403107
+    second: explosion 2_1260
+  - first:
+      213: 2612562252253673330
+    second: explosion 2_1261
+  - first:
+      213: 5176360183994814359
+    second: explosion 2_1262
+  - first:
+      213: 7680088228338617795
+    second: explosion 2_1263
+  - first:
+      213: 1134010483869643768
+    second: explosion 2_1264
+  - first:
+      213: 8590443359025461741
+    second: explosion 2_1265
+  - first:
+      213: 4877416834819656527
+    second: explosion 2_1266
+  - first:
+      213: -1942511778315716055
+    second: explosion 2_1267
+  - first:
+      213: -4512043186335260551
+    second: explosion 2_1268
+  - first:
+      213: -8927470031380904828
+    second: explosion 2_1269
+  - first:
+      213: -2769955280289785151
+    second: explosion 2_1270
+  - first:
+      213: -2544223744675393838
+    second: explosion 2_1271
+  - first:
+      213: -4137417837536164820
+    second: explosion 2_1272
+  - first:
+      213: 5773483495951765685
+    second: explosion 2_1273
+  - first:
+      213: 1562450925585466354
+    second: explosion 2_1274
+  - first:
+      213: -2344199908831784141
+    second: explosion 2_1275
+  - first:
+      213: 4751287631235819884
+    second: explosion 2_1276
+  - first:
+      213: 271471368378325478
+    second: explosion 2_1277
+  - first:
+      213: -2499172338739303977
+    second: explosion 2_1278
+  - first:
+      213: 5025212549063088936
+    second: explosion 2_1279
+  - first:
+      213: 4891848382767161614
+    second: explosion 2_1280
+  - first:
+      213: 2630428220282447059
+    second: explosion 2_1281
+  - first:
+      213: -4431250021230016980
+    second: explosion 2_1282
+  - first:
+      213: -3990144571365174035
+    second: explosion 2_1283
+  - first:
+      213: 6785969690265821104
+    second: explosion 2_1284
+  - first:
+      213: -8891234711256797652
+    second: explosion 2_1285
+  - first:
+      213: 4366568928495418047
+    second: explosion 2_1286
+  - first:
+      213: 1852918939064529356
+    second: explosion 2_1287
+  - first:
+      213: 8961049969460517892
+    second: explosion 2_1288
+  - first:
+      213: -8639529827303091263
+    second: explosion 2_1289
+  - first:
+      213: 8269644687799278803
+    second: explosion 2_1290
+  - first:
+      213: 6798788932603887259
+    second: explosion 2_1291
+  - first:
+      213: -6460719830546281981
+    second: explosion 2_1292
+  - first:
+      213: 4351526899388770904
+    second: explosion 2_1293
+  - first:
+      213: 6505322580367697986
+    second: explosion 2_1294
+  - first:
+      213: -3195816283322589143
+    second: explosion 2_1295
+  - first:
+      213: 6274800509611453378
+    second: explosion 2_1296
+  - first:
+      213: 8575726282571293525
+    second: explosion 2_1297
+  - first:
+      213: -1812097092929065035
+    second: explosion 2_1298
+  - first:
+      213: -46259313189741163
+    second: explosion 2_1299
+  - first:
+      213: 7542791871355610807
+    second: explosion 2_1300
+  - first:
+      213: -3903906024834768476
+    second: explosion 2_1301
+  - first:
+      213: 6694043745501365764
+    second: explosion 2_1302
+  - first:
+      213: -1179908314074901032
+    second: explosion 2_1303
+  - first:
+      213: -763979427763837580
+    second: explosion 2_1304
+  - first:
+      213: -5770831735839531498
+    second: explosion 2_1305
+  - first:
+      213: -588348279586599013
+    second: explosion 2_1306
+  - first:
+      213: -6856872180194139551
+    second: explosion 2_1307
+  - first:
+      213: 4583295941965742123
+    second: explosion 2_1308
+  - first:
+      213: -9060867497981605434
+    second: explosion 2_1309
+  - first:
+      213: -4459486496209157392
+    second: explosion 2_1310
+  - first:
+      213: 3891455579790891819
+    second: explosion 2_1311
+  - first:
+      213: 8864944521521842965
+    second: explosion 2_1312
+  - first:
+      213: -7255917047359358391
+    second: explosion 2_1313
+  - first:
+      213: -39840671005091065
+    second: explosion 2_1314
+  - first:
+      213: 4485490119705334684
+    second: explosion 2_1315
+  - first:
+      213: -7669397984749115070
+    second: explosion 2_1316
+  - first:
+      213: -1469320201280399903
+    second: explosion 2_1317
+  - first:
+      213: -5470613955767964354
+    second: explosion 2_1318
+  - first:
+      213: 8972269863679125401
+    second: explosion 2_1319
+  - first:
+      213: 746933534801689229
+    second: explosion 2_1320
+  - first:
+      213: -4212682029311698079
+    second: explosion 2_1321
+  - first:
+      213: 7192481884894920891
+    second: explosion 2_1322
+  - first:
+      213: 7583607682974423254
+    second: explosion 2_1323
+  - first:
+      213: -2799261686067255171
+    second: explosion 2_1324
+  - first:
+      213: 8182323925900237325
+    second: explosion 2_1325
+  - first:
+      213: -4930421482770461831
+    second: explosion 2_1326
+  - first:
+      213: -2837602053901821589
+    second: explosion 2_1327
+  - first:
+      213: -8765139944711031016
+    second: explosion 2_1328
+  - first:
+      213: -764976230283767031
+    second: explosion 2_1329
+  - first:
+      213: 8686007930468761909
+    second: explosion 2_1330
+  - first:
+      213: 3309704031311485462
+    second: explosion 2_1331
+  - first:
+      213: 2703691136110668179
+    second: explosion 2_1332
+  - first:
+      213: -1422062933819649322
+    second: explosion 2_1333
+  - first:
+      213: -1229339774844096337
+    second: explosion 2_1334
+  - first:
+      213: 3461987503167542533
+    second: explosion 2_1335
+  - first:
+      213: 8669972964885623513
+    second: explosion 2_1336
+  - first:
+      213: -6558303844293255307
+    second: explosion 2_1337
+  - first:
+      213: -8996577890644962874
+    second: explosion 2_1338
+  - first:
+      213: 7993025301449564366
+    second: explosion 2_1339
+  - first:
+      213: -2806124103575821191
+    second: explosion 2_1340
+  - first:
+      213: 6116114607203565284
+    second: explosion 2_1341
+  - first:
+      213: 3177922820323819245
+    second: explosion 2_1342
+  - first:
+      213: 8929030015764425765
+    second: explosion 2_1343
+  - first:
+      213: -7150304784538088169
+    second: explosion 2_1344
+  - first:
+      213: 7616960310983651513
+    second: explosion 2_1345
+  - first:
+      213: 7094831673526959585
+    second: explosion 2_1346
+  - first:
+      213: -60965547839064520
+    second: explosion 2_1347
+  - first:
+      213: -3551375760926785525
+    second: explosion 2_1348
+  - first:
+      213: -7421744926277075822
+    second: explosion 2_1349
+  - first:
+      213: 535292644981580413
+    second: explosion 2_1350
+  - first:
+      213: -4266839556143821891
+    second: explosion 2_1351
+  - first:
+      213: -2143161341929241885
+    second: explosion 2_1352
+  - first:
+      213: -8253097706770683743
+    second: explosion 2_1353
+  - first:
+      213: -6879659403125165892
+    second: explosion 2_1354
+  - first:
+      213: 4278400968135997313
+    second: explosion 2_1355
+  - first:
+      213: 3775720677966496904
+    second: explosion 2_1356
+  - first:
+      213: 6689215859563762419
+    second: explosion 2_1357
+  - first:
+      213: -1190353825608849866
+    second: explosion 2_1358
+  - first:
+      213: -4955771019807661589
+    second: explosion 2_1359
+  - first:
+      213: 4122805014011153246
+    second: explosion 2_1360
+  - first:
+      213: -4975883255351116916
+    second: explosion 2_1361
+  - first:
+      213: 3577323912138611101
+    second: explosion 2_1362
+  - first:
+      213: -5333836629204027577
+    second: explosion 2_1363
+  - first:
+      213: 621367521086048077
+    second: explosion 2_1364
+  - first:
+      213: 1358654079727076555
+    second: explosion 2_1365
+  - first:
+      213: 2873034108640290323
+    second: explosion 2_1366
+  - first:
+      213: 6717921716897065961
+    second: explosion 2_1367
+  - first:
+      213: -5218266437287767034
+    second: explosion 2_1368
+  - first:
+      213: 3600486390069585756
+    second: explosion 2_1369
+  - first:
+      213: 5264047567254962851
+    second: explosion 2_1370
+  - first:
+      213: -543712244735138767
+    second: explosion 2_1371
+  - first:
+      213: -7812843053002479586
+    second: explosion 2_1372
+  - first:
+      213: 7534452937173135863
+    second: explosion 2_1373
+  - first:
+      213: 3422402779775778457
+    second: explosion 2_1374
+  - first:
+      213: -9053089153084061349
+    second: explosion 2_1375
+  - first:
+      213: -3428440387239608932
+    second: explosion 2_1376
+  - first:
+      213: -6767383442975408748
+    second: explosion 2_1377
+  - first:
+      213: 3328543836556969951
+    second: explosion 2_1378
+  - first:
+      213: 5418098468253890258
+    second: explosion 2_1379
+  - first:
+      213: -4712458258713031844
+    second: explosion 2_1380
+  - first:
+      213: 5638485788078364914
+    second: explosion 2_1381
+  - first:
+      213: -4503370471341191842
+    second: explosion 2_1382
+  - first:
+      213: -2192869631826047086
+    second: explosion 2_1383
+  - first:
+      213: 1316286123814310963
+    second: explosion 2_1384
+  - first:
+      213: 8510182986447089019
+    second: explosion 2_1385
+  - first:
+      213: -5993719213587317260
+    second: explosion 2_1386
+  - first:
+      213: -3123575378336913076
+    second: explosion 2_1387
+  - first:
+      213: -3755034011669017869
+    second: explosion 2_1388
+  - first:
+      213: 4591798250437816572
+    second: explosion 2_1389
+  - first:
+      213: -4143411842245752935
+    second: explosion 2_1390
+  - first:
+      213: 6123715325389338734
+    second: explosion 2_1391
+  - first:
+      213: 2770164279341897429
+    second: explosion 2_1392
+  - first:
+      213: 6965575207860643441
+    second: explosion 2_1393
+  - first:
+      213: 1024912904695239576
+    second: explosion 2_1394
+  - first:
+      213: -4212698448577487764
+    second: explosion 2_1395
+  - first:
+      213: -4910307857157441263
+    second: explosion 2_1396
+  - first:
+      213: 8999781008869714752
+    second: explosion 2_1397
+  - first:
+      213: 7126759408228644457
+    second: explosion 2_1398
+  - first:
+      213: 5810321709251377697
+    second: explosion 2_1399
+  - first:
+      213: 8290245161642704740
+    second: explosion 2_1400
+  - first:
+      213: 994022217924724810
+    second: explosion 2_1401
+  - first:
+      213: -634990535379417941
+    second: explosion 2_1402
+  - first:
+      213: 8446689490390862939
+    second: explosion 2_1403
+  - first:
+      213: 6964327433199658786
+    second: explosion 2_1404
+  - first:
+      213: -5256387319388628657
+    second: explosion 2_1405
+  - first:
+      213: 7336907940582112925
+    second: explosion 2_1406
+  - first:
+      213: -4451549334138178888
+    second: explosion 2_1407
+  - first:
+      213: 8999978916573235823
+    second: explosion 2_1408
+  - first:
+      213: 4365590652434363059
+    second: explosion 2_1409
+  - first:
+      213: -8349596184353611927
+    second: explosion 2_1410
+  - first:
+      213: -6493238069707106923
+    second: explosion 2_1411
+  - first:
+      213: 1292843362221576670
+    second: explosion 2_1412
+  - first:
+      213: 3356806044062391382
+    second: explosion 2_1413
+  - first:
+      213: 1858903332277715868
+    second: explosion 2_1414
+  - first:
+      213: 1584711349216539967
+    second: explosion 2_1415
+  - first:
+      213: -6809316250871171247
+    second: explosion 2_1416
+  - first:
+      213: 1356261639444876168
+    second: explosion 2_1417
+  - first:
+      213: -3357364333354584557
+    second: explosion 2_1418
+  - first:
+      213: 3008659802713178316
+    second: explosion 2_1419
+  - first:
+      213: -7410763504664149364
+    second: explosion 2_1420
+  - first:
+      213: -2413504136777328691
+    second: explosion 2_1421
+  - first:
+      213: -1952549357912367079
+    second: explosion 2_1422
+  - first:
+      213: -4523905617918349354
+    second: explosion 2_1423
+  - first:
+      213: 6291979747456743269
+    second: explosion 2_1424
+  - first:
+      213: 5086222797571019437
+    second: explosion 2_1425
+  - first:
+      213: 5787715136131866241
+    second: explosion 2_1426
+  - first:
+      213: 4328534259335884780
+    second: explosion 2_1427
+  - first:
+      213: -4702111967330253710
+    second: explosion 2_1428
+  - first:
+      213: 1337934193418961173
+    second: explosion 2_1429
+  - first:
+      213: 7671475217211466988
+    second: explosion 2_1430
+  - first:
+      213: 9028275608057855261
+    second: explosion 2_1431
+  - first:
+      213: -3087958001186163466
+    second: explosion 2_1432
+  - first:
+      213: 6863164440026181943
+    second: explosion 2_1433
+  - first:
+      213: 1210344896448510380
+    second: explosion 2_1434
+  - first:
+      213: 3590671899947212275
+    second: explosion 2_1435
+  - first:
+      213: 5228542329774848615
+    second: explosion 2_1436
+  - first:
+      213: 3431930459245518548
+    second: explosion 2_1437
+  - first:
+      213: -4166264432042965612
+    second: explosion 2_1438
+  - first:
+      213: -8946899761074373683
+    second: explosion 2_1439
+  - first:
+      213: -3232858022905761006
+    second: explosion 2_1440
+  - first:
+      213: -7062610861873450374
+    second: explosion 2_1441
+  - first:
+      213: 1340567921778998439
+    second: explosion 2_1442
+  - first:
+      213: 3229887548682214151
+    second: explosion 2_1443
+  - first:
+      213: -3941798495984373440
+    second: explosion 2_1444
+  - first:
+      213: 8444736689487074456
+    second: explosion 2_1445
+  - first:
+      213: 8453809470965062112
+    second: explosion 2_1446
+  - first:
+      213: -3481834439264770044
+    second: explosion 2_1447
+  - first:
+      213: -7684422359139168241
+    second: explosion 2_1448
+  - first:
+      213: -715328585045744249
+    second: explosion 2_1449
+  - first:
+      213: -4273949721757910945
+    second: explosion 2_1450
+  - first:
+      213: -6215640177826893079
+    second: explosion 2_1451
+  - first:
+      213: -2962460653829616862
+    second: explosion 2_1452
+  - first:
+      213: 7778426328772022179
+    second: explosion 2_1453
+  - first:
+      213: 2223079295451828302
+    second: explosion 2_1454
+  - first:
+      213: -1701223313534208622
+    second: explosion 2_1455
+  - first:
+      213: 8250448542287561709
+    second: explosion 2_1456
+  - first:
+      213: 8027919608698162305
+    second: explosion 2_1457
+  - first:
+      213: -7862321130143826056
+    second: explosion 2_1458
+  - first:
+      213: -3231928730085314463
+    second: explosion 2_1459
+  - first:
+      213: 4167434387100553772
+    second: explosion 2_1460
+  - first:
+      213: 327001170824337741
+    second: explosion 2_1461
+  - first:
+      213: -5254368465007149053
+    second: explosion 2_1462
+  - first:
+      213: -7705351071425253294
+    second: explosion 2_1463
+  - first:
+      213: -3520179876318686756
+    second: explosion 2_1464
+  - first:
+      213: -4638062406046494843
+    second: explosion 2_1465
+  - first:
+      213: -8267517444309651942
+    second: explosion 2_1466
+  - first:
+      213: 8744517171877603161
+    second: explosion 2_1467
+  - first:
+      213: -2979139273195913122
+    second: explosion 2_1468
+  - first:
+      213: 2355927904205961213
+    second: explosion 2_1469
+  - first:
+      213: -5252759005990845463
+    second: explosion 2_1470
+  - first:
+      213: -1162754527993301539
+    second: explosion 2_1471
+  - first:
+      213: 5072941211075746570
+    second: explosion 2_1472
+  - first:
+      213: -1767292238806903700
+    second: explosion 2_1473
+  - first:
+      213: -5625837203584180700
+    second: explosion 2_1474
+  - first:
+      213: 1979449481637570903
+    second: explosion 2_1475
+  - first:
+      213: -7311268056842936722
+    second: explosion 2_1476
+  - first:
+      213: 4304760174433791055
+    second: explosion 2_1477
+  - first:
+      213: -8603259540688256181
+    second: explosion 2_1478
+  - first:
+      213: 6051276417289645675
+    second: explosion 2_1479
+  - first:
+      213: 8226798775172489965
+    second: explosion 2_1480
+  - first:
+      213: 8296198552363445586
+    second: explosion 2_1481
+  - first:
+      213: -969653651980714486
+    second: explosion 2_1482
+  - first:
+      213: 7386849694276025853
+    second: explosion 2_1483
+  - first:
+      213: -241906014857344776
+    second: explosion 2_1484
+  - first:
+      213: 7351905842606364003
+    second: explosion 2_1485
+  - first:
+      213: 6348926622894621986
+    second: explosion 2_1486
+  - first:
+      213: -9192522050831783260
+    second: explosion 2_1487
+  - first:
+      213: 1616806265986738578
+    second: explosion 2_1488
+  - first:
+      213: -3024276192763290651
+    second: explosion 2_1489
+  - first:
+      213: 255729665958298172
+    second: explosion 2_1490
+  - first:
+      213: 8796221167224902005
+    second: explosion 2_1491
+  - first:
+      213: 192544033428547845
+    second: explosion 2_1492
+  - first:
+      213: -4243808950629082339
+    second: explosion 2_1493
+  - first:
+      213: 6432048746265665506
+    second: explosion 2_1494
+  - first:
+      213: -3364105162435026479
+    second: explosion 2_1495
+  - first:
+      213: -3547400693765675495
+    second: explosion 2_1496
+  - first:
+      213: 2219565205518430000
+    second: explosion 2_1497
+  - first:
+      213: -2135128169556092146
+    second: explosion 2_1498
+  - first:
+      213: 2880391310638226772
+    second: explosion 2_1499
+  - first:
+      213: 124044114088355044
+    second: explosion 2_1500
+  - first:
+      213: 2564496017701988971
+    second: explosion 2_1501
+  - first:
+      213: -3447004953475308993
+    second: explosion 2_1502
+  - first:
+      213: 5383835934771856053
+    second: explosion 2_1503
+  - first:
+      213: -4436260554247679050
+    second: explosion 2_1504
+  - first:
+      213: -1859005119967545424
+    second: explosion 2_1505
+  - first:
+      213: -188702782246459335
+    second: explosion 2_1506
+  - first:
+      213: -4339758436255178083
+    second: explosion 2_1507
+  - first:
+      213: 7895238502634478742
+    second: explosion 2_1508
+  - first:
+      213: 3256444515387607904
+    second: explosion 2_1509
+  - first:
+      213: -2922448569770805796
+    second: explosion 2_1510
+  - first:
+      213: 446299371940543466
+    second: explosion 2_1511
+  - first:
+      213: -3758754275940006771
+    second: explosion 2_1512
+  - first:
+      213: -7390142860808935230
+    second: explosion 2_1513
+  - first:
+      213: -348848835132069010
+    second: explosion 2_1514
+  - first:
+      213: -6091363226012564526
+    second: explosion 2_1515
+  - first:
+      213: 1155667263032958448
+    second: explosion 2_1516
+  - first:
+      213: -6619412056740377340
+    second: explosion 2_1517
+  - first:
+      213: 1089190379559508762
+    second: explosion 2_1518
+  - first:
+      213: -8012418343580505712
+    second: explosion 2_1519
+  - first:
+      213: 5878326696912067310
+    second: explosion 2_1520
+  - first:
+      213: 1467622336797191
+    second: explosion 2_1521
+  - first:
+      213: 543728452951810693
+    second: explosion 2_1522
+  - first:
+      213: -8497235255323676916
+    second: explosion 2_1523
+  - first:
+      213: -7754826005793381216
+    second: explosion 2_1524
+  - first:
+      213: 5460063784010658039
+    second: explosion 2_1525
+  - first:
+      213: 2182240953623264062
+    second: explosion 2_1526
+  - first:
+      213: -6214048082003130829
+    second: explosion 2_1527
+  - first:
+      213: -314697840653897684
+    second: explosion 2_1528
+  - first:
+      213: -4796980128151553702
+    second: explosion 2_1529
+  - first:
+      213: 2143204062048092709
+    second: explosion 2_1530
+  - first:
+      213: -5215869134453460547
+    second: explosion 2_1531
+  - first:
+      213: 262776694680678918
+    second: explosion 2_1532
+  - first:
+      213: 552111776747546303
+    second: explosion 2_1533
+  - first:
+      213: -6047248563462643087
+    second: explosion 2_1534
+  - first:
+      213: -6477778046993366231
+    second: explosion 2_1535
+  - first:
+      213: 1147364052764319432
+    second: explosion 2_1536
+  - first:
+      213: -4560586359306858502
+    second: explosion 2_1537
+  - first:
+      213: -7340680506925231207
+    second: explosion 2_1538
+  - first:
+      213: 1847056416423280962
+    second: explosion 2_1539
+  - first:
+      213: -7304088124139982105
+    second: explosion 2_1540
+  - first:
+      213: 8057644427847962170
+    second: explosion 2_1541
+  - first:
+      213: 6795280965548569220
+    second: explosion 2_1542
+  - first:
+      213: 7414593644767581063
+    second: explosion 2_1543
+  - first:
+      213: -1079614094305033006
+    second: explosion 2_1544
+  - first:
+      213: -4143736872253687770
+    second: explosion 2_1545
+  - first:
+      213: -7710315483865617605
+    second: explosion 2_1546
+  - first:
+      213: -82837129020579663
+    second: explosion 2_1547
+  - first:
+      213: -1996012494787896530
+    second: explosion 2_1548
+  - first:
+      213: 3952362183869519502
+    second: explosion 2_1549
+  - first:
+      213: 2194454248084339320
+    second: explosion 2_1550
+  - first:
+      213: -4908867979113384345
+    second: explosion 2_1551
+  - first:
+      213: -9124152276925681893
+    second: explosion 2_1552
+  - first:
+      213: -1199322247533215199
+    second: explosion 2_1553
+  - first:
+      213: 7067002807915731187
+    second: explosion 2_1554
+  - first:
+      213: -6030254304595885520
+    second: explosion 2_1555
+  - first:
+      213: -1474963986617752556
+    second: explosion 2_1556
+  - first:
+      213: -8230150748387148481
+    second: explosion 2_1557
+  - first:
+      213: -5027697894050307174
+    second: explosion 2_1558
+  - first:
+      213: 7598099243899238222
+    second: explosion 2_1559
+  - first:
+      213: -1485193640561883113
+    second: explosion 2_1560
+  - first:
+      213: 879166606415450935
+    second: explosion 2_1561
+  - first:
+      213: 5918317114987503394
+    second: explosion 2_1562
+  - first:
+      213: -4590788602141244985
+    second: explosion 2_1563
+  - first:
+      213: 306540423285799944
+    second: explosion 2_1564
+  - first:
+      213: 2327630386521440226
+    second: explosion 2_1565
+  - first:
+      213: -4765893480820305494
+    second: explosion 2_1566
+  - first:
+      213: -4461515881552932471
+    second: explosion 2_1567
+  - first:
+      213: -8277522798928851680
+    second: explosion 2_1568
+  - first:
+      213: -817108138350168226
+    second: explosion 2_1569
+  - first:
+      213: 8695571517171477407
+    second: explosion 2_1570
+  - first:
+      213: -723712764133770964
+    second: explosion 2_1571
+  - first:
+      213: 4668653353776299449
+    second: explosion 2_1572
+  - first:
+      213: 4359733814005934790
+    second: explosion 2_1573
+  - first:
+      213: 1905392467380104915
+    second: explosion 2_1574
+  - first:
+      213: -8591738811386356105
+    second: explosion 2_1575
+  - first:
+      213: -6076296700010779146
+    second: explosion 2_1576
+  - first:
+      213: 1615293515589276743
+    second: explosion 2_1577
+  - first:
+      213: -5474438234024341507
+    second: explosion 2_1578
+  - first:
+      213: -4141695347265052975
+    second: explosion 2_1579
+  - first:
+      213: 8054159715052984645
+    second: explosion 2_1580
+  - first:
+      213: 5892383224727660926
+    second: explosion 2_1581
+  - first:
+      213: -2654324726082513017
+    second: explosion 2_1582
+  - first:
+      213: -5425347615315929501
+    second: explosion 2_1583
+  - first:
+      213: 8528283570409291868
+    second: explosion 2_1584
+  - first:
+      213: -8242430882475959082
+    second: explosion 2_1585
+  - first:
+      213: 3076879708519783704
+    second: explosion 2_1586
+  - first:
+      213: -4015443201870542359
+    second: explosion 2_1587
+  - first:
+      213: -6124871561410564126
+    second: explosion 2_1588
+  - first:
+      213: 1403949366436311338
+    second: explosion 2_1589
+  - first:
+      213: -4389240094384212503
+    second: explosion 2_1590
+  - first:
+      213: -164018876469805263
+    second: explosion 2_1591
+  - first:
+      213: 8207981595775676838
+    second: explosion 2_1592
+  - first:
+      213: -7989957804889682729
+    second: explosion 2_1593
+  - first:
+      213: -6126969110534877284
+    second: explosion 2_1594
+  - first:
+      213: 8913840572446188719
+    second: explosion 2_1595
+  - first:
+      213: 8573745774063491636
+    second: explosion 2_1596
+  - first:
+      213: 37550968838897905
+    second: explosion 2_1597
+  - first:
+      213: -9134293184531991092
+    second: explosion 2_1598
+  - first:
+      213: -3103261802460714636
+    second: explosion 2_1599
+  - first:
+      213: -7579439451188918660
+    second: explosion 2_1600
+  - first:
+      213: -4615545987943805626
+    second: explosion 2_1601
+  - first:
+      213: 6958052802151602756
+    second: explosion 2_1602
+  - first:
+      213: 9145862056909072452
+    second: explosion 2_1603
+  - first:
+      213: -138564456203218114
+    second: explosion 2_1604
+  - first:
+      213: 5771958564941918705
+    second: explosion 2_1605
+  - first:
+      213: -3857237508360022342
+    second: explosion 2_1606
+  - first:
+      213: 6791798675711959159
+    second: explosion 2_1607
+  - first:
+      213: 5237183753457340916
+    second: explosion 2_1608
+  - first:
+      213: -8789565644677585620
+    second: explosion 2_1609
+  - first:
+      213: -4204290970370155536
+    second: explosion 2_1610
+  - first:
+      213: -6356950374111421246
+    second: explosion 2_1611
+  - first:
+      213: 1713403778577337590
+    second: explosion 2_1612
+  - first:
+      213: -802990260983983044
+    second: explosion 2_1613
+  - first:
+      213: -5438391276469979441
+    second: explosion 2_1614
+  - first:
+      213: 8335767809142381501
+    second: explosion 2_1615
+  - first:
+      213: 7759880912809135016
+    second: explosion 2_1616
+  - first:
+      213: -1655070760095659347
+    second: explosion 2_1617
+  - first:
+      213: -2296524224515240934
+    second: explosion 2_1618
+  - first:
+      213: 4487431158382303097
+    second: explosion 2_1619
+  - first:
+      213: -6688576774652748555
+    second: explosion 2_1620
+  - first:
+      213: -6783607159214781421
+    second: explosion 2_1621
+  - first:
+      213: 3832410078955528211
+    second: explosion 2_1622
+  - first:
+      213: 3184523063029757199
+    second: explosion 2_1623
+  - first:
+      213: 4244468610227286837
+    second: explosion 2_1624
+  - first:
+      213: -8579530974715369941
+    second: explosion 2_1625
+  - first:
+      213: -5232529710625859728
+    second: explosion 2_1626
+  - first:
+      213: -4878080384032362198
+    second: explosion 2_1627
+  - first:
+      213: 5407849187505374199
+    second: explosion 2_1628
+  - first:
+      213: 4202479793535523235
+    second: explosion 2_1629
+  - first:
+      213: -6278678620380779189
+    second: explosion 2_1630
+  - first:
+      213: -2695429602224850905
+    second: explosion 2_1631
+  - first:
+      213: -6695264000895501458
+    second: explosion 2_1632
+  - first:
+      213: -1053448517780000283
+    second: explosion 2_1633
+  - first:
+      213: 3545110959264620963
+    second: explosion 2_1634
+  - first:
+      213: 894272703479966073
+    second: explosion 2_1635
+  - first:
+      213: -4872916824951691160
+    second: explosion 2_1636
+  - first:
+      213: 3994310618329187434
+    second: explosion 2_1637
+  - first:
+      213: 5457459997971289008
+    second: explosion 2_1638
+  - first:
+      213: -8464881659450146608
+    second: explosion 2_1639
+  - first:
+      213: -9182008052374158173
+    second: explosion 2_1640
+  - first:
+      213: -5525664644877409518
+    second: explosion 2_1641
+  - first:
+      213: 613642416059364282
+    second: explosion 2_1642
+  - first:
+      213: 8279279841677073878
+    second: explosion 2_1643
+  - first:
+      213: -8718860165558487733
+    second: explosion 2_1644
+  - first:
+      213: -679399001063940580
+    second: explosion 2_1645
+  - first:
+      213: 6531707169283292399
+    second: explosion 2_1646
+  - first:
+      213: -1277819425286745051
+    second: explosion 2_1647
+  - first:
+      213: -859926462650421669
+    second: explosion 2_1648
+  - first:
+      213: 6146822582656395388
+    second: explosion 2_1649
+  - first:
+      213: -8486616329866043643
+    second: explosion 2_1650
+  - first:
+      213: 7846214949452839988
+    second: explosion 2_1651
+  - first:
+      213: -4685903528029668403
+    second: explosion 2_1652
+  - first:
+      213: -3213245210919210136
+    second: explosion 2_1653
+  - first:
+      213: 6885869879583665193
+    second: explosion 2_1654
+  - first:
+      213: -4459988729142658438
+    second: explosion 2_1655
+  - first:
+      213: -7392774259647197703
+    second: explosion 2_1656
+  - first:
+      213: -7135524214719418574
+    second: explosion 2_1657
+  - first:
+      213: 562489325257245614
+    second: explosion 2_1658
+  - first:
+      213: 8164980605175161492
+    second: explosion 2_1659
+  - first:
+      213: 4281024273002390108
+    second: explosion 2_1660
+  - first:
+      213: 3934549518045683020
+    second: explosion 2_1661
+  - first:
+      213: -2686625877823940173
+    second: explosion 2_1662
+  - first:
+      213: 6976160997584819987
+    second: explosion 2_1663
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: explosion 2_0
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ec2145d4805fd00800000000000000
+      internalID: 1005719220003196571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44142f589702f3370800000000000000
+      internalID: 8304391944204861764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b9a7142ab41ddd0800000000000000
+      internalID: -2463104360939611373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_3
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d82cfeb506fe33e0800000000000000
+      internalID: -2071948274004383528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_4
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd59a9a921d2405a0800000000000000
+      internalID: -6556065599618116129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_5
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c3632aa957d0090800000000000000
+      internalID: -8066662050543813547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128f977bcd894ca10800000000000000
+      internalID: 1928834614159865889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5fcf14d54ba1cd0800000000000000
+      internalID: -2586556723338873403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8391d05098aed9c00800000000000000
+      internalID: 909140574014871864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_9
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1d1618f6516b700800000000000000
+      internalID: 555655172683059676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3201e74c5ea650190800000000000000
+      internalID: -7996868028249796573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196667906d9c28890800000000000000
+      internalID: -7457176111853181295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84897d412c5577aa0800000000000000
+      internalID: -6163363272971544504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_13
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc95f14fb036fb0800000000000000
+      internalID: -4655864446645056395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0afcd0afccd68610800000000000000
+      internalID: 1623227500028819981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce62d5f070a2b5950800000000000000
+      internalID: 6438786302067156716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dffadeb9ab698180800000000000000
+      internalID: -9112633994211819566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6391a3459b6261300800000000000000
+      internalID: 222407809025317174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_18
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee05d94e862171e0800000000000000
+      internalID: -2201936350241550611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44704af4828a04ea0800000000000000
+      internalID: -5890523421512300732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_20
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af19e53cf03db2ff0800000000000000
+      internalID: -59722105383644678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_21
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6757349f92952df40800000000000000
+      internalID: 5751757710916023670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b4a95dd6a39c840800000000000000
+      internalID: 5244787484459158301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad88a472326c29f90800000000000000
+      internalID: -6948273420793902886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_24
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037ea848d59290cd0800000000000000
+      internalID: -2591494628942616784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_25
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bc2ad10dea209c0800000000000000
+      internalID: -3962412513258976425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_26
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a6122fb14b62a50800000000000000
+      internalID: 6496077544647911962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_27
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926636fcd5c3fafa0800000000000000
+      internalID: -5787340622538774999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bc5fc0e00e6e610800000000000000
+      internalID: 1650252664429464478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_29
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c265d8b985fc3390800000000000000
+      internalID: -7837119279671188792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b28b8a8f2259870800000000000000
+      internalID: 8688889507459115848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388fd045a18f5a980800000000000000
+      internalID: -8528137527393126269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_32
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b532e48448360d0800000000000000
+      internalID: -3430753045042734245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_33
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4bf6e843930dfb0800000000000000
+      internalID: -4625133919418731291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_34
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702f6900bf0ef2440800000000000000
+      internalID: 4913393087135805959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_35
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e197cfa98a1b9a0800000000000000
+      internalID: -6219004226807718295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_36
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21501d89a28fba5b0800000000000000
+      internalID: -5355914469990922990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_37
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75278bda36db9cba0800000000000000
+      internalID: -6068110787091074473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbad7cf93846a460800000000000000
+      internalID: 7252563663813192670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96de7048967464440800000000000000
+      internalID: 4919698161461095785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_40
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1bbde70a5ba0c90800000000000000
+      internalID: -7202744953097965116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_41
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e6d8ac675bb3770800000000000000
+      internalID: 8591660235948387914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_42
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca95b7d2c3265890800000000000000
+      internalID: -7469743612197758265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_43
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70e299a2ce0b0b70800000000000000
+      internalID: 8866196520640372862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_44
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52fd5f0fd676ebd0800000000000000
+      internalID: -2601261034352283041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_45
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117ac2b83764f030800000000000000
+      internalID: 3527557901353382167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db508ee3d41dadf50800000000000000
+      internalID: 6907063108224157117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_47
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48f10f406a5efdb0800000000000000
+      internalID: -4756264786767775669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e65e7d0f8874810800000000000000
+      internalID: 1749517548252393019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_49
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9522459b528f01e0800000000000000
+      internalID: -2229419960667331174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_50
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4fac8aa53133d00800000000000000
+      internalID: 951125226405164266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_51
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4147b6597497aa710800000000000000
+      internalID: 1705308757269640212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_52
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11107fba9919f7560800000000000000
+      internalID: 7313724409074090257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_53
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed52f9eab3f27000800000000000000
+      internalID: 32356131459456483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f339e0ebd9bd8ab90800000000000000
+      internalID: -7230287731198356673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_55
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bd164ccaf585580800000000000000
+      internalID: -8838209073080837335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4eaff8de5352f60800000000000000
+      internalID: 8008866806787400872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_57
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1edad8aff0686a0800000000000000
+      internalID: -6447448247741062716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_58
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402c13163bf2f7ba0800000000000000
+      internalID: -6089095723705318908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_59
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3058e1312b7c260800000000000000
+      internalID: 7117853531268514780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_60
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e400583a13a680800000000000000
+      internalID: -8745117222260383264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion 2_61
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f30ade9abc463d70800000000000000
+      internalID: 9022483267896083443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
