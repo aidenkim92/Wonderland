@@ -17,6 +17,12 @@ public class BananaMonster : MonoBehaviour
 
     public GameObject[] prefab;
 
+    public float timeBetweenShots;
+    private float shotCounter;
+    public GameObject bullet;
+    public Transform firePoint;
+    public Transform banana;
+
     //Initialization
     private void Start()
     {
@@ -30,6 +36,15 @@ public class BananaMonster : MonoBehaviour
     private void FixedUpdate()
     {
         move();
+        shotCounter -= Time.deltaTime;
+
+        if (shotCounter <= 0)
+        {
+            shotCounter = timeBetweenShots;
+
+            var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
+            newBullet.transform.localScale = banana.localScale;
+        }
 
     }
 
