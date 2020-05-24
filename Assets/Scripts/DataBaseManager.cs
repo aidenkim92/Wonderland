@@ -11,11 +11,11 @@ public class DataBaseManager : MonoBehaviour
     {
         if(instance != null)
         {
-            Destroy(this.gameObject);
+            Destroy(this);
         }
         else
         {
-            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(this);
             instance = this;
         }
     }

@@ -23,7 +23,7 @@ public class SaveNLoad : MonoBehaviour
         public List<int> playerItemInventoryCount;
 
         public string mapName;
-        public string sceneName;
+        public int sceneNumber;
 
         public List<bool> swList;
         public List<string> swNameList;
@@ -38,6 +38,13 @@ public class SaveNLoad : MonoBehaviour
     public Data data;
 
     private Vector3 vector;
+    private GameManager gm;
+
+    private void Start()
+    {
+        gm = FindObjectOfType<GameManager>();
+        
+    }
 
     public void callSave()
     {
@@ -48,6 +55,7 @@ public class SaveNLoad : MonoBehaviour
         data.playerY = player.transform.position.y;
         data.playerZ = player.transform.position.z;
         data.playerCurrentHP = player.curHealth;
+        data.sceneNumber = SceneManager.GetActiveScene().buildIndex;
 
         data.mapName = player.currentMapName;
         
@@ -129,9 +137,8 @@ public class SaveNLoad : MonoBehaviour
 
             inventory.LoadItem(itemList);
 
-            GameManager gm = FindObjectOfType<GameManager>();
             gm.LoadStart();
-            SceneManager.LoadScene(data.sceneName);
+            SceneManager.LoadScene(data.sceneNumber);
         }
         else
         {

@@ -9,7 +9,7 @@ public class Spikes : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();    
+        player = FindObjectOfType<Player>();
     }
     
      void OnTriggerEnter2D(Collider2D col) // When triggered

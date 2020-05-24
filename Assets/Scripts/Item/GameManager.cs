@@ -6,10 +6,23 @@ public class GameManager : MonoBehaviour
 {
     private Player player;
     private new CameraController camera;
+    public static GameManager instance;
 
     public void LoadStart()
     {
         StartCoroutine(LoadWaitCoroutine());
+    }
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            DontDestroyOnLoad(this);
+            instance = this;
+        }
     }
 
     IEnumerator LoadWaitCoroutine()
