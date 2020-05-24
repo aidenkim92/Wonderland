@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private Player player;
-    private  CameraController camera;
+    private new CameraController camera;
 
     public void LoadStart()
     {
