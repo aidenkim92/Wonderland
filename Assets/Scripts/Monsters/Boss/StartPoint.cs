@@ -6,7 +6,7 @@ public class StartPoint : MonoBehaviour
 {
     public string startPoint;
     private Player player;
-    private CameraController camera;
+    private new CameraController camera;
     void Start()
     {
         player = FindObjectOfType<Player>();

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
     public Transform firePosition;
-    [SerializeField] private GameObject[] projectile;
+    public GameObject[] projectile;
     public int spellIndex = 0;
     // Update is called once per frame
     void Update()

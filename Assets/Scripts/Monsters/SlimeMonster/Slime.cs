@@ -123,11 +123,11 @@ public class Slime : MonoBehaviour
 
             //Probability that for dropping items.
             int probability;
-            probability = Random.RandomRange(0, 5);
+            probability = Random.Range(0, 5);
 
             if (probability == 3)
             {
-                int getRandPrefab = Random.RandomRange(0, prefab.Length-1);
+                int getRandPrefab = Random.Range(0, prefab.Length-1);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
             AudioManager.instance.PlaySFX(6);

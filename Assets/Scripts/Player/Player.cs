@@ -172,7 +172,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("MovingPlatForm"))
+        if(other.gameObject.tag  == ("MovingPlatForm"))
         {
             this.transform.parent = other.transform;
             Debug.Log("MOVING");

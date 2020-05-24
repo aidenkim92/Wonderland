@@ -23,6 +23,9 @@ public class BananaMonster : MonoBehaviour
     public Transform firePoint;
     public Transform banana;
 
+    public bool itemDropped = false;
+    public int probability;
+
     //Initialization
     private void Start()
     {
@@ -68,19 +71,27 @@ public class BananaMonster : MonoBehaviour
                 Player.instance.currentExp += 10;
                 
             }
-            int probability;
-
-            probability = Random.RandomRange(0, 5);
-
-            if (probability == 3)
-            {
-                int getRandPrefab = Random.RandomRange(0, prefab.Length);
-                Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-            }
+            int chance;
+            chance = Random.Range(0, 3);
+            calculateProbability(chance);
+            
             AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
 
         }
+
+    }
+    public void calculateProbability(int chance)
+    {
+        itemDropped = false;
+
+        if (probability == 3)
+        {
+            int getRandPrefab = Random.Range(0, prefab.Length);
+            Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+            itemDropped = true;
+        }
+
 
     }
 
