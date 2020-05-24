@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * This Class manages the level instance and respawns player at a Checkpoint
+ * @author Shahil
+ * */
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
@@ -17,6 +21,7 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(RespawnCo());
     }
 
+    //Class Respawns player at checkpoint when they die with max health
     private IEnumerator RespawnCo()
     {
         Player.instance.gameObject.SetActive(false);

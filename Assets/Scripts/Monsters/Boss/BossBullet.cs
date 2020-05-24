@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Class represents a bullet object which the boss shoots
+ * @author Shahil
+ * */
 public class BossBullet : MonoBehaviour
 {
 
-    public float speed;
+    public float speed; //speed of bullet
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +23,10 @@ public class BossBullet : MonoBehaviour
     {
 
 
-        transform.position += new Vector3(-speed * transform.localScale.x * Time.deltaTime, 0f, 0f);
+        transform.position += new Vector3(-speed * transform.localScale.x * Time.deltaTime, 0f, 0f); //Moves bullet according to time scale
     }
 
+    //If bullet hits player, it damages player and destroys itself
     private void OnTriggerEnter2D (Collider2D other)
     {
         Debug.Log("IT GETS HERE");

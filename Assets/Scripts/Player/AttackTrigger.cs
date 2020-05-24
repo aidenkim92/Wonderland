@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ * This Class Adds a trigger to the player which is used to damage monsters
+ * */
 public class AttackTrigger : MonoBehaviour
 {
     public int damage = 20;
