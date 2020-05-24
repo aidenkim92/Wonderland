@@ -7,12 +7,6 @@ public class Banana_Bullet : MonoBehaviour
     public float speed;
     public bool isDestroyed = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //transform.position += new Vector3(-speed* transform.localScale.x * Time.deltaTime, 0f, 0f);
-        AudioManager.instance.PlaySFX(6);
-    }
 
     // Update is called once per frame
     void Update()
