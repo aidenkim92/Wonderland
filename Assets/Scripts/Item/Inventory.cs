@@ -107,7 +107,7 @@ public class Inventory : MonoBehaviour
         {
             selectedTabImages[i].GetComponent<Image>().color = color;
         }
-        Debug.Log(tabDescription[selectedTab]);
+        //Debug.Log(tabDescription[selectedTab]);
         StartCoroutine(SelectedTabEffectCoroutine());
     }// Only selected item should be flashed
     IEnumerator SelectedTabEffectCoroutine()
