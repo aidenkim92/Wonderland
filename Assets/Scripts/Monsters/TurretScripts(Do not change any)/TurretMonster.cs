@@ -21,7 +21,7 @@ public class TurretMonster : MonoBehaviour
 
     //References
     public GameObject bullet;
-    private Transform target;
+    //private Transform target;
     public Animator anim;
     public Transform shootPointLeft, shootPointRight;
 
@@ -34,7 +34,7 @@ public class TurretMonster : MonoBehaviour
 
      void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         curHealth = maxHealth;
     }
 
@@ -44,12 +44,12 @@ public class TurretMonster : MonoBehaviour
         anim.SetBool("LookingRight", lookingRight);
         RangeCheck();
 
-        if(target.transform.position.x > transform.position.x)
+        if(Player.instance.transform.position.x > transform.position.x)
         {
             lookingRight = true;
         }
 
-        if(target.transform.position.x < transform.position.x)
+        if(Player.instance.transform.position.x < transform.position.x)
         {
             lookingRight = false;
         }
@@ -72,7 +72,7 @@ public class TurretMonster : MonoBehaviour
 
      void RangeCheck()
     {
-        distance = Vector3.Distance(transform.position, target.transform.position);
+        distance = Vector3.Distance(transform.position, Player.instance.transform.position);
 
         if(distance < wakeRange)
         {
@@ -93,7 +93,7 @@ public class TurretMonster : MonoBehaviour
 
         if(bulletTimer >= shootInterval)
         {
-            Vector2 direction = target.transform.position - transform.position;
+            Vector2 direction = Player.instance.transform.position - transform.position;
             direction.Normalize();
 
             if(!attackingRight)
