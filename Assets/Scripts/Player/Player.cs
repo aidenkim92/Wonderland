@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+  
     //Gain experiences and up the level
     public int character_LV = 1;
     public int currentExp = 0;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
 
     //Stats
     public int curHealth = 0;
-    public int maxHealth = 7;
+    public int maxHealth = 100;
 
     //References
     private Rigidbody2D rigid;
