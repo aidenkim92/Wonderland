@@ -12,6 +12,8 @@ TagManager:
   - MovingPlatform
   - Boss
   - StartPointForBoss
+  - Border
+  - BorderBullet
   layers:
   - Default
   - TransparentFX
