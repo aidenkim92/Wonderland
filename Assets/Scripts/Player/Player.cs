@@ -162,11 +162,12 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
+            //Added for testing - Aiden
+            Destroy(gameObject);
+
             AudioManager.instance.PlaySFX(2);
             LevelManager.instance.RespawnPlayer();
-
         }
-
     }
 
     //Moving Platform
@@ -185,7 +186,6 @@ public class Player : MonoBehaviour
     //When get damage
     public void Damage(int damage)
     {
-
         curHealth -= damage;
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
