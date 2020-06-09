@@ -82,11 +82,15 @@ public class BigBoss : MonoBehaviour
         GameObject bulletB = Instantiate(bulletObjB, transform.position, transform.rotation);
         Rigidbody2D rigidB = bulletA.GetComponent<Rigidbody2D>();
         bulletB.transform.position = transform.position + Vector3.left * 0.3f;
-        Vector3 dirVecA = Player.instance.transform.position - (transform.position + Vector3.right * 0.3f);
-        Vector3 dirVecB = Player.instance.transform.position - (transform.position + Vector3.right * 0.3f);
 
-        rigidA.AddForce(dirVecA.normalized * 4, ForceMode2D.Impulse);
-        rigidB.AddForce(dirVecB.normalized * 4, ForceMode2D.Impulse);
+        if(Player.instance.curHealth > 0)
+        {
+            Vector3 dirVecA = Player.instance.transform.position - (transform.position + Vector3.right * 0.3f);
+            Vector3 dirVecB = Player.instance.transform.position - (transform.position + Vector3.right * 0.3f);
+
+            rigidA.AddForce(dirVecA.normalized * 4, ForceMode2D.Impulse);
+            rigidB.AddForce(dirVecB.normalized * 4, ForceMode2D.Impulse);
+        }
 
         curPatternCount++;
 
@@ -109,11 +113,15 @@ public class BigBoss : MonoBehaviour
             Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
             bullet.transform.position = transform.position;
 
-            Vector2 dirVec = Player.instance.transform.position - transform.position;
-            Vector2 randVec = new Vector2(Random.Range(-0.5f, 0.5f), Random.Range(0f, 2f));
-            
-            dirVec += randVec;
-            rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
+            if(Player.instance.curHealth > 0)
+            {
+                Vector2 dirVec = Player.instance.transform.position - transform.position;
+                Vector2 randVec = new Vector2(Random.Range(-0.5f, 0.5f), Random.Range(0f, 2f));
+                dirVec += randVec;
+                rigid.AddForce(dirVec.normalized * 3, ForceMode2D.Impulse);
+
+            }
+
         }
 
 

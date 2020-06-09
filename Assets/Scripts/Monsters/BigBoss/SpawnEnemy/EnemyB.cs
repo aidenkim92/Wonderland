@@ -12,10 +12,13 @@ public class EnemyB : MonoBehaviour
     Rigidbody2D rigid;
     public Sprite[] sprites;
 
-     void Update()
+    void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Player.instance.transform.position, speed * Time.deltaTime);
-        
+        if(Player.instance.curHealth > 0)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, Player.instance.transform.position, speed * Time.deltaTime);
+        }
+
     }
     void Awake()
     {

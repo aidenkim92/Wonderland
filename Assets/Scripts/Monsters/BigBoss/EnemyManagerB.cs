@@ -14,7 +14,7 @@ public class EnemyManagerB : MonoBehaviour
     {
         curSpawnDelay += Time.deltaTime;
 
-        if(curSpawnDelay > maxSpawnDelay)
+        if(curSpawnDelay > maxSpawnDelay && Player.instance.curHealth >0)
         {
             SpawnEnemy();
             maxSpawnDelay = Random.Range(0.5f, 3f);
