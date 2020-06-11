@@ -25,8 +25,8 @@ public class Door : MonoBehaviour
             //Input is key'e', then enter to the scene depends on transfermapname
             if(Input.GetKeyDown("e"))
             {
-                player.currentMapName = transferMapName;
-                SceneManager.LoadScene(transferMapName);
+                player.currentMapName = "Boss";
+                SceneManager.LoadScene("Boss");
             }
         }
     }
@@ -38,8 +38,8 @@ public class Door : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                player.currentMapName = transferMapName;
-                SceneManager.LoadScene(transferMapName);
+                player.currentMapName = "Boss";
+                SceneManager.LoadScene("Boss");
             }
         }
     }
