@@ -40,11 +40,10 @@ public class SaveNLoad : MonoBehaviour
     private Vector3 vector;
     private GameManager gm;
 
-    private void Start()
-    {
-        gm = FindObjectOfType<GameManager>();
+
         
-    }
+        
+
 
     public void callSave()
     {
@@ -57,7 +56,7 @@ public class SaveNLoad : MonoBehaviour
         data.playerCurrentHP = player.curHealth;
         data.sceneNumber = SceneManager.GetActiveScene().buildIndex;
 
-        data.mapName = player.currentMapName;
+        //data.mapName = player.currentMapName;
         
         Debug.Log("basic datas suceeed");
         data.playerItemInventory.Clear();
@@ -102,9 +101,10 @@ public class SaveNLoad : MonoBehaviour
             database = FindObjectOfType<DataBaseManager>();
             player = FindObjectOfType<Player>();
             inventory = FindObjectOfType<Inventory>();
+            gm = FindObjectOfType<GameManager>();
 
 
-            player.currentMapName = data.mapName;
+            //player.currentMapName = data.mapName;
             
             vector.Set(data.playerX, data.playerY, data.playerZ);
             player.transform.position = vector;

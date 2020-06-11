@@ -8,11 +8,12 @@ public class SceneManaging : MonoBehaviour
 
     public PauseMenu menu;
     public SaveNLoad sl;
+    public GameObject[] objectActivate;
 
     public void nextScene()
     {
 
-        
+        this.objectActivated();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Player.instance.transform.position = new Vector3(142, 10, 0);
 
@@ -26,6 +27,15 @@ public class SceneManaging : MonoBehaviour
 
 
     }
+
+    public void objectActivated()
+    {
+        for(int i = 0; i< objectActivate.Length; i++)
+        {
+            objectActivate[i].SetActive(true);
+        }
+    }
+
     public void quitGame()
     {
         menu.Resume();
@@ -41,6 +51,7 @@ public class SceneManaging : MonoBehaviour
     public void load()
     {
 
+        this.objectActivated();
         menu.Resume();
         sl.callLoad();
         
