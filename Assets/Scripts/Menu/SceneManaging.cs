@@ -52,10 +52,14 @@ public class SceneManaging : MonoBehaviour
     {
 
         this.objectActivated();
-        menu.Resume();
         sl.callLoad();
-        
-        
+        if(SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            menu.Resume();
+        }
+       
+
+
 
     }
 

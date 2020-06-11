@@ -34,6 +34,7 @@ public class SaveNLoad : MonoBehaviour
     private Player player;
     private DataBaseManager database;
     private Inventory inventory;
+    private UIManager ui;
 
     public Data data;
 
@@ -50,6 +51,7 @@ public class SaveNLoad : MonoBehaviour
         database = FindObjectOfType<DataBaseManager>();
         player = FindObjectOfType<Player>();
         inventory = FindObjectOfType<Inventory>();
+        gm = FindObjectOfType<GameManager>();
         data.playerX = player.transform.position.x;
         data.playerY = player.transform.position.y;
         data.playerZ = player.transform.position.z;
@@ -104,7 +106,7 @@ public class SaveNLoad : MonoBehaviour
             gm = FindObjectOfType<GameManager>();
 
 
-            //player.currentMapName = data.mapName;
+            player.currentMapName = data.mapName;
             
             vector.Set(data.playerX, data.playerY, data.playerZ);
             player.transform.position = vector;

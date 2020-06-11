@@ -1489,6 +1489,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735191433}
   m_CullTransparentMesh: 0
+--- !u!1 &889584704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2178417163262454585, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+    type: 3}
+  m_PrefabInstance: {fileID: 1845696411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930312124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,8 +1751,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1149469688}
-        m_MethodName: callLoad
+      - m_Target: {fileID: 1149469690}
+        m_MethodName: load
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1810,6 +1816,7 @@ GameObject:
   - component: {fileID: 1149469689}
   - component: {fileID: 1149469690}
   - component: {fileID: 1149469688}
+  - component: {fileID: 1149469691}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1893,6 +1900,19 @@ MonoBehaviour:
   - {fileID: 1143114872}
   - {fileID: 1024660763}
   - {fileID: 1005540023}
+--- !u!114 &1149469691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149469686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b77367627d6d2d4c9cecf9497e345dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 889584704}
 --- !u!1 &1223512857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,6 +3105,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 622803749}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1680039534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1080874793195632635, guid: 2ca695312cce2e64e9e0ecdb96bde592,
+    type: 3}
+  m_PrefabInstance: {fileID: 622803749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680039530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1936b37a023b54496e2e3e6acba10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715971390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3443,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1076982164838893170, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1680039534}
     - target: {fileID: 1076982164838893172, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_Camera
@@ -3541,6 +3578,36 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 1024660763}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.data[1]
+      value: 
+      objectReference: {fileID: 1005540023}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.data[2]
+      value: 
+      objectReference: {fileID: 1143114872}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.data[3]
+      value: 
+      objectReference: {fileID: 173506032}
+    - target: {fileID: 2178417163416088931, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: objectActivate.Array.data[4]
+      value: 
+      objectReference: {fileID: 1680039530}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d7d73dbbfcea6f46a0c6294b093a520, type: 3}
 --- !u!1 &1868822300

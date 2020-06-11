@@ -11,16 +11,16 @@ public class Spell : MonoBehaviour
     public float cooldownTime;
     public float nextFireTime;
     private bool isCooldown;
-    public Image[] imageCooldown;
-    public GameObject[] spellG;
+    //public Image[] imageCooldown;
+    //public GameObject[] spellG;
 
     private void Start()
     {
         //Sets all spells with the G symbol to be turned off
-        for (int i = 0; i < spellG.Length; i++) {
+        /*for (int i = 0; i < spellG.Length; i++) {
             spellG[i].SetActive(false);
         }
-        spellG[spellIndex].SetActive(true);
+        spellG[spellIndex].SetActive(true);*/
     }
     // Update is called once per frame
     void Update()
@@ -33,7 +33,7 @@ public class Spell : MonoBehaviour
             }
         }
         //Image Cooldown
-        if (isCooldown)
+       /* if (isCooldown)
         {
             for (int i = 0; i < imageCooldown.Length; i++)
             {
@@ -57,18 +57,18 @@ public class Spell : MonoBehaviour
                     imageCooldown[i].fillAmount = 0;
                 }
             }
-        }
+        }*/
     }
 
     //Selecting spell using buttons
     public void setSpell(int Index) {
         //Makes sure not to change spells while one is in cooldown
-        if (!isCooldown)
+       /* if (!isCooldown)
         {
             spellG[spellIndex].SetActive(false);
             spellG[Index].SetActive(true);
             spellIndex = Index;
-        }
+        }*/
     }
 
     //Shooting the spell function
