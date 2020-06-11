@@ -12,6 +12,7 @@ TagManager:
   - MovingPlatform
   - Boss
   - StartPointForBoss
+  - Collectable
   layers:
   - Default
   - TransparentFX

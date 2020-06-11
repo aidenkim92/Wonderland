@@ -4,6 +4,7 @@ using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class Player : MonoBehaviour
     //[SerializeField] private GameObject[] spellPrefab;
     //[SerializeField] private Transform spellExit;
     //[SerializeField] private GameObject[] blocks;
+    public int coins = 0;
+    public Text coinText;
 
     //Stats
     public int curHealth = 0;
@@ -178,6 +181,16 @@ public class Player : MonoBehaviour
             Debug.Log("MOVING");
         }
         
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Collectable")
+        {
+            Destroy(collision.gameObject);
+            coins++;
+            coinText.text = coins.ToString();
+        }
     }
 
 

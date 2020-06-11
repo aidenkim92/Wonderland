@@ -18,6 +18,7 @@ public class SaveNLoad : MonoBehaviour
         public float playerZ;
 
         public int playerCurrentHP;
+        public int coins;
 
         public List<int> playerItemInventory;
         public List<int> playerItemInventoryCount;
@@ -56,6 +57,7 @@ public class SaveNLoad : MonoBehaviour
         data.playerY = player.transform.position.y;
         data.playerZ = player.transform.position.z;
         data.playerCurrentHP = player.curHealth;
+        data.coins = player.coins;
         data.sceneNumber = SceneManager.GetActiveScene().buildIndex;
 
         //data.mapName = player.currentMapName;
@@ -112,6 +114,7 @@ public class SaveNLoad : MonoBehaviour
             player.transform.position = vector;
 
             player.curHealth = data.playerCurrentHP;
+            player.coins = data.coins;
             database.var = data.varNumberList.ToArray();
             database.var_name = data.varNameList.ToArray();
             database.switches = data.swList.ToArray();
