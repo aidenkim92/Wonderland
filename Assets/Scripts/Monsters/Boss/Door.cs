@@ -25,7 +25,9 @@ public class Door : MonoBehaviour
             //Input is key'e', then enter to the scene depends on transfermapname
             if(Input.GetKeyDown("e"))
             {
-                LoadNextLevel();
+                SceneManager.LoadScene(4);
+                Player.instance.transform.position = new Vector3(-5, -2, 0);
+
             }
         }
     }
@@ -36,7 +38,8 @@ public class Door : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                LoadNextLevel();
+                SceneManager.LoadScene(4);
+                Player.instance.transform.position = new Vector3(136, -1, 0);
             }
         }
     }

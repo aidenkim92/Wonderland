@@ -12,7 +12,7 @@ public class Spikes : MonoBehaviour
         player = FindObjectOfType<Player>();
     }
     
-     void OnTriggerEnter2D(Collider2D col) // When triggered
+     void OnTriggerStay2D(Collider2D col) // When triggered
     {
         if (col.CompareTag("Player"))
         {
