@@ -38,7 +38,10 @@ public class SceneManaging : MonoBehaviour
 
     public void quitGame()
     {
-        menu.Resume();
+        if(SceneManager.GetActiveScene().buildIndex != 0) {
+            menu.Resume();
+        }
+        
         Application.Quit();
     }
 
