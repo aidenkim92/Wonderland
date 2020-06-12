@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6248741079362886434, guid: b4e1df8ea4ef9af4bb0230c265112a83,
+  m_Sprite: {fileID: -3693486103535584935, guid: db4e4742b8d244b479c0e975104d1854,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -105,3 +105,6 @@ MonoBehaviour:
     type: 3}
   maxShotDelay: 0
   curShotDelay: 0
+  patternIndex: 0
+  curPatternCount: 0
+  maxPatternCount: 
