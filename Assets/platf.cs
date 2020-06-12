@@ -6,25 +6,42 @@ using UnityEngine.SceneManagement;
 
 public class platf : MonoBehaviour
 {
-    
 
-    public double time;
+
+    public double time = 0d;
     public double currentTime;
     public VideoPlayer vp;
 
     private void start()
     {
-        time = vp.clip.length;
+       
+        vp = gameObject.GetComponent<VideoPlayer>();
+        vp.Play();
+        
+        
+       
+        
+        
     }
 
 
 
     void Update()
     {
-        currentTime = gameObject.GetComponent<VideoPlayer>().time;
-        if (currentTime >= time)
+        //Debug.Log(vp.time);
+
+        if(vp.time >= 32d)
+        {
+            //SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);
+        }
+
+        if(Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene(2);
         }
+
+       
+       
     }
 }
