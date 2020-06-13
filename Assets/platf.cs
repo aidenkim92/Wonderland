@@ -8,8 +8,8 @@ public class platf : MonoBehaviour
 {
 
 
-    public double time = 0d;
-    public double currentTime;
+    public double videoLength;
+    
     public VideoPlayer vp;
 
     private void start()
@@ -30,7 +30,7 @@ public class platf : MonoBehaviour
     {
         //Debug.Log(vp.time);
 
-        if(vp.time >= 32d)
+        if(vp.time >= videoLength)
         {
             //SceneManager.LoadScene(2);
             SceneManager.LoadScene(2);
