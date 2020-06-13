@@ -17,9 +17,10 @@ public class BigBossBullet : MonoBehaviour
 
      void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "BorderBullet" || collision.gameObject.tag == "Border")
+        if(collision.gameObject.tag == "Border" || collision.gameObject.tag == "PlatForm")
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

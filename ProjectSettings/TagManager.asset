@@ -13,7 +13,6 @@ TagManager:
   - Boss
   - StartPointForBoss
   - Border
-  - BorderBullet
   - BigBossBullet
   - PlayerBullet
   layers:
@@ -32,7 +31,7 @@ TagManager:
   - MovingPlatform
   - StartPointForBoss
   - BigBoss
-  - BorderBullet
+  - 
   - Border
   - 
   - 

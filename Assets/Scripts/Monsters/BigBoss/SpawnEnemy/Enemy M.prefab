@@ -145,11 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  speed: 7
-  playerRange: 0
-  sprites:
-  - {fileID: 212824960237799810, guid: 058d4e66efe760b4b9db34496d2243a4, type: 3}
-  - {fileID: -248907664063782151, guid: 058d4e66efe760b4b9db34496d2243a4, type: 3}
+  speed: 8
 --- !u!1 &3817795969283411374
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 4
   go: {fileID: 3817795969021864542}
+  explosionEffect: {fileID: 4124230555891205313, guid: 4d8302202ac841442bfbbdcc4ac3cf09,
+    type: 3}
 --- !u!61 &3817795969283411376
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -111,6 +111,7 @@ public class Player : MonoBehaviour
                 if (canDoubleJump)
                 {
                     canDoubleJump = false;
+          
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
                     rigid.AddForce(Vector2.up * (jumpPower / 2), ForceMode2D.Impulse);
                     //Do not erase this

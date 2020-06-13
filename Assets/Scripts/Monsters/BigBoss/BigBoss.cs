@@ -9,18 +9,14 @@ public class BigBoss : MonoBehaviour
     public int health;
     public float speed;
     public string BossName;
-    SpriteRenderer spriteRenderer;
 
-    public Sprite[] sprites;
     public GameObject bulletObjA;
     public GameObject bulletObjB;
 
-    //Delete this.
-    public float maxShotDelay;
-    public float curShotDelay;
+    //Testing
+    public GameObject bulletObjC;
 
     Animator anim;
-
 
     //Testing
     public int patternIndex;
@@ -51,7 +47,8 @@ public class BigBoss : MonoBehaviour
 
     void Think()
     {
-        patternIndex = patternIndex == 3 ? 0 : patternIndex + 1;
+        //patternIndex = patternIndex == 3 ? 0 : patternIndex + 1;
+        patternIndex = patternIndex == 4 ? 0 : patternIndex + 1;
         curPatternCount = 0;
 
         switch(patternIndex)
@@ -68,19 +65,20 @@ public class BigBoss : MonoBehaviour
             case 3:
                 FireAround();
                 break;
-
+            case 4:
+                FireTowards();
+                break;
         }
     }
 
     void FireForward()
     {
-        Debug.Log("check");
         GameObject bulletA = Instantiate(bulletObjA, transform.position, transform.rotation);
         Rigidbody2D rigidA = bulletA.GetComponent<Rigidbody2D>();
         bulletA.transform.position = transform.position + Vector3.left * 0.3f;
 
         GameObject bulletB = Instantiate(bulletObjB, transform.position, transform.rotation);
-        Rigidbody2D rigidB = bulletA.GetComponent<Rigidbody2D>();
+        Rigidbody2D rigidB = bulletB.GetComponent<Rigidbody2D>();
         bulletB.transform.position = transform.position + Vector3.left * 0.3f;
 
         if(Player.instance.curHealth > 0)
@@ -96,7 +94,7 @@ public class BigBoss : MonoBehaviour
 
         if(curPatternCount < maxPatternCount[patternIndex])
         {
-            Invoke("FireForward", 2);
+            Invoke("FireForward", 3f);
         }
         else
         {
@@ -124,12 +122,11 @@ public class BigBoss : MonoBehaviour
 
         }
 
-
         curPatternCount++;
 
         if (curPatternCount < maxPatternCount[patternIndex])
         {
-            Invoke("FireShot", 3.5f);
+            Invoke("FireShot", 2.5f);
         }
         else
         {
@@ -191,55 +188,55 @@ public class BigBoss : MonoBehaviour
             Invoke("Think", 3);
         }
     }
-    void Update()
+
+    void FireTowards()
     {
-        if(BossName == "BB")
+       
+
+        if(Player.instance.curHealth > 0)
         {
-            return;
-        }
-
-
-       // Fire();
-       // Reload();
-    }
-
-    void Fire()
-    {
-        if(curShotDelay < maxShotDelay)
-        {
-            return;
-        }
-
-        if(BossName == "BB")
-        {
-            //GameObject bullet = Instantiate(bulletObjA, transform.position, transform.rotation);
-            //Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
-            //Vector3 dirVec = Player.instance.transform.position - transform.position;
-            //rigid.AddForce(dirVec * 10, ForceMode2D.Impulse);
-            
-            for(int i =0; i < 360; i+= 13)
+            var bl = new List<Transform>();
+            for (int i = 0; i < 360; i += 13)
             {
-                GameObject bullet = Instantiate(bulletObjA, transform.position, transform.rotation);
-                Destroy(bullet, 2f);
-                bullet.transform.position = Player.instance.transform.position;
-                bullet.transform.rotation = Quaternion.Euler(0, 0, i);
+                var temp = Instantiate(bulletObjC);
+                Destroy(temp, 2f);
+                temp.transform.position = this.transform.position;
+                bl.Add(temp.transform);
+                temp.transform.rotation = Quaternion.Euler(0, 0, i);
+
             }
-            
+            StartCoroutine(BulletToTarget(bl));
         }
 
+        curPatternCount++;
 
-
-        curShotDelay = 0;
+        if (curPatternCount < maxPatternCount[patternIndex])
+        {
+            Invoke("FireAround", 0.7f);
+        }
+        else
+        {
+            Invoke("Think", 3);
+        }
     }
-
-    void Reload()
+    //For Fire Towards!
+    IEnumerator BulletToTarget(List<Transform> bullet)
     {
-        curShotDelay += Time.deltaTime;
+        yield return new WaitForSeconds(0.5f);
+
+        for(int i = 0; i < bullet.Count; i++)
+        {
+            var target_dir = Player.instance.transform.position - bullet[i].position;
+            var angle = Mathf.Atan2(target_dir.y, target_dir.x) * Mathf.Rad2Deg;
+            bullet[i].rotation = Quaternion.Euler(0, 0, angle);
+        }
+        bullet.Clear();
     }
+
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if(BossName == "BB")
+
+        if (BossName == "BB")
         {
             anim = GetComponent<Animator>();
         }
@@ -256,10 +253,8 @@ public class BigBoss : MonoBehaviour
         if(BossName == "BB")
         {
             health -= damage;
-
             anim.SetTrigger("OnHit");
         }
         
     }
-
 }

@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: b4e1df8ea4ef9af4bb0230c265112a83
+guid: 45d0d8f9ffa3c7d429ddfed9d0095e41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: -6772355523196347670
+    second: BigbossIdle_0
   - first:
-      213: 2287940250583960180
-    second: Boss_1
+      213: -3123479133470354235
+    second: BigbossIdle_1
   - first:
-      213: 4935984790844978548
-    second: Boss_2
-  - first:
-      213: -1341004319433955295
-    second: Boss_3
+      213: 6292350935641442080
+    second: BigbossIdle_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,55 +95,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: BigbossIdle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 9
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_1
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 1
-        width: 73
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47a006f298560cf10800000000000000
-      internalID: 2287940250583960180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_2
-      rect:
-        serializedVersion: 2
-        x: 160
         y: 0
-        width: 73
-        height: 76
+        width: 64
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +109,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475bb0be304208440800000000000000
-      internalID: 4935984790844978548
+      spriteID: aea1a3b7882c302a0800000000000000
+      internalID: -6772355523196347670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_3
+      name: BigbossIdle_1
       rect:
         serializedVersion: 2
-        x: 251
-        y: 7
-        width: 66
-        height: 66
+        x: 70
+        y: 0
+        width: 64
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +130,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128efd92dabc36de0800000000000000
-      internalID: -1341004319433955295
+      spriteID: 5c4972ae64c27a4d0800000000000000
+      internalID: -3123479133470354235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigbossIdle_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027410176dbe25750800000000000000
+      internalID: 6292350935641442080
       vertices: []
       indices: 
       edges: []

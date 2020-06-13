@@ -6,12 +6,8 @@ public class EnemyB : MonoBehaviour
 {
     public int health;
     public float speed;
-    public float playerRange;
-   
-    SpriteRenderer spriteRenderer;
     Rigidbody2D rigid;
-    public Sprite[] sprites;
-
+    
     void Update()
     {
         if(Player.instance.curHealth > 0)
@@ -22,9 +18,8 @@ public class EnemyB : MonoBehaviour
     }
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         rigid = GetComponent<Rigidbody2D>();
-        rigid.velocity = Vector2.down * speed;
+        rigid.velocity = Vector2.zero * speed;
     }
     void Damage(int damage)
     {
@@ -33,9 +28,5 @@ public class EnemyB : MonoBehaviour
             Destroy(gameObject);
         }
         health -= damage;
-    }
-    void ReturnSprite()
-    {
-        spriteRenderer.sprite = sprites[0];
     }
 }

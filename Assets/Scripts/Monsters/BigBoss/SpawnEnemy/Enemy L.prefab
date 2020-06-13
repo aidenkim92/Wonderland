@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 6
   go: {fileID: 7723665064516785765}
+  explosionEffect: {fileID: 4124230555891205313, guid: 4d8302202ac841442bfbbdcc4ac3cf09,
+    type: 3}
 --- !u!61 &7723665063726635564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -217,8 +219,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 120
-  speed: 5
-  playerRange: 0
-  sprites:
-  - {fileID: 212824960237799810, guid: 058d4e66efe760b4b9db34496d2243a4, type: 3}
-  - {fileID: -248907664063782151, guid: 058d4e66efe760b4b9db34496d2243a4, type: 3}
+  speed: 10
