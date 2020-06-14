@@ -34,13 +34,13 @@ public class platf : MonoBehaviour
         {
             //SceneManager.LoadScene(2);
             SceneManager.LoadScene(2);
-            Player.instance.transform.position = new Vector3(142, 10, 0);
+            Player.instance.transform.position = new Vector3(130, 26, 0);
         }
 
         if(Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene(2);
-            Player.instance.transform.position = new Vector3(142, 10, 0);
+            Player.instance.transform.position = new Vector3(130, 26, 0);
         }
 
        
