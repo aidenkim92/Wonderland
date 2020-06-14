@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int character_LV = 1;
     public int currentExp = 0;
     public int maxExp = 100;
+   
 
     //Reference for transfering map
     public string currentMapName;
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
     //Stats
     public int curHealth = 0;
     public int maxHealth = 7;
+    public bool isDead;
 
     //References
     private Rigidbody2D rigid;
@@ -64,6 +66,7 @@ public class Player : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         m_facingRight = true;
+        isDead = false;
         //saveNLoad = FindObjectOfType<SaveNLoad>();
     }
 
@@ -164,8 +167,10 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
+            isDead = true;
             AudioManager.instance.PlaySFX(2);
             LevelManager.instance.RespawnPlayer();
+            isDead = false;
 
         }
 
@@ -215,8 +220,11 @@ public class Player : MonoBehaviour
         //check
         if (curHealth <= 0)
         {
+
+            isDead = true;
             AudioManager.instance.PlaySFX(2);
             LevelManager.instance.RespawnPlayer();
+            isDead = false;
 
         }
         AudioManager.instance.PlaySFX(5);
