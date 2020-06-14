@@ -194,6 +194,7 @@ public class Player : MonoBehaviour
     {
         if(collision.tag == "Collectable")
         {
+            AudioManager.instance.PlaySFX(7);
             Destroy(collision.gameObject);
             coins++;
             coinText.text = coins.ToString();
