@@ -17,7 +17,6 @@ public class AudioManager : MonoBehaviour
     public AudioSource bgm, levelEndMusic;
 
 
-
     void Awake()
     {
         instance = this;

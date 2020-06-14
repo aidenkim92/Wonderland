@@ -180,6 +180,13 @@ public class Player : MonoBehaviour
             this.transform.parent = other.transform;
             Debug.Log("MOVING");
         }
+
+        if(other.gameObject.tag == "Bird")
+        {
+            Destroy(other.gameObject);
+            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+
+        }
         
     }
 

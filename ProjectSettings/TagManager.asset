@@ -13,6 +13,7 @@ TagManager:
   - Boss
   - StartPointForBoss
   - Collectable
+  - Bird
   layers:
   - Default
   - TransparentFX
