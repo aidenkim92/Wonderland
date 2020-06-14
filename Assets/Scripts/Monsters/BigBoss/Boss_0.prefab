@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6980975854626671206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.22, y: -2.46, z: 0}
-  m_LocalScale: {x: 1.705, y: 1.652, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,7 +103,10 @@ MonoBehaviour:
     type: 3}
   bulletObjB: {fileID: 2707860195888884055, guid: 5eb05601f1836544d8d467ff3fccce6f,
     type: 3}
-  bulletObjC: {fileID: 0}
+  bulletObjC: {fileID: 2707860195888884055, guid: 30bd82356d0e02c4db6c6da79de2a516,
+    type: 3}
+  bulletSpecial: {fileID: 6149607960728194352, guid: 52cc6e96f202016488131a17f65a1111,
+    type: 3}
   patternIndex: 0
   curPatternCount: 0
   maxPatternCount: 

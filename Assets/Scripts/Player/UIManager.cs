@@ -4,26 +4,25 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    //Define variaables that for UI components
-
+    //Variables for Player UI components
     public Slider healthBar;
     public Text HPText;
     public Player player;
     public static UIManager instance;
     private static bool UIExists;
 
-
+    //Variables for Big boss UI components
     public Text bigBossHealthText;
     public Slider bigBossHealthBar;
     public GameObject bigbossHealthBargo;
-    private GameObject thebb;
-    private BigBoss bb;
+
+    //Awake method to define instance variable for singleton pattern
     void Awake()
     {
         instance = this;
-        
     }
 
+    //Singletone for UI components
     void Start()
     {
         if(!UIExists)
@@ -34,9 +33,10 @@ public class UIManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }       
+        }
     }
 
+    //Update the frame per second
     void Update()
     {
         ResetPlayer();
@@ -59,19 +59,9 @@ public class UIManager : MonoBehaviour
 
         if(Player.instance.currentMapName == "BigBoss")
         {
-            Invoke("checking", 0.5f);
-           
+            bigbossHealthBargo.SetActive(true);
+            bigBossHealthText.text = "HP: " + bigBossHealthBar.value;
         }
-
     }
 
-   private void checking()
-    {
-        thebb = GameObject.FindGameObjectWithTag("BigBoss");
-        bb = thebb.GetComponent<BigBoss>();
-        bigbossHealthBargo.SetActive(true);
-        bigBossHealthBar.maxValue = bb.maxHealth;
-        bigBossHealthBar.value = bb.health;
-        bigBossHealthText.text = "HP: " + bb.health;
-    }
 }

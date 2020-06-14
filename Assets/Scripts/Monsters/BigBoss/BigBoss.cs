@@ -6,35 +6,40 @@ using UnityEngine.UIElements;
 
 public class BigBoss : MonoBehaviour
 {
+    //Variables for the big boss status.
     public int health;
     public int maxHealth;
     public float speed;
     public string BossName;
 
+    //For bullet prefab that is used for attack
     public GameObject bulletObjA;
     public GameObject bulletObjB;
-
-    //Testing
     public GameObject bulletObjC;
+    public GameObject bulletSpecial;
 
+    //Reference animator
     Animator anim;
 
-    //Testing
+    //For pattern variables for  attack
     public int patternIndex;
     public int curPatternCount;
     public int[] maxPatternCount;
 
+    //when the object is enable
     void OnEnable()
      {
         if(BossName == "BB")
         {
-
             maxHealth = 3000;
             health = 3000;
+            UIManager.instance.bigBossHealthBar.value = health;
+            UIManager.instance.bigBossHealthBar.maxValue = maxHealth;
             Invoke("Stop", 2);
         }
      }
 
+    //Stop when the amount of bullets are shooted
     void Stop()
     {
         if (!gameObject.activeSelf)
@@ -47,6 +52,7 @@ public class BigBoss : MonoBehaviour
         Invoke("Think", 2);
     }
 
+    //Attack logic method for the several different attack
     void Think()
     {
         //patternIndex = patternIndex == 3 ? 0 : patternIndex + 1;
@@ -73,6 +79,7 @@ public class BigBoss : MonoBehaviour
         }
     }
 
+    //Fire forward to the player with the number of bullets
     void FireForward()
     {
         GameObject bulletA = Instantiate(bulletObjA, transform.position, transform.rotation);
@@ -104,12 +111,13 @@ public class BigBoss : MonoBehaviour
         }       
     }
 
+    //Fire shot to the player with combined two bullets
     void FireShot()
     {
      
         for(int i  =0; i < 5; i++)
         {
-            GameObject bullet = Instantiate(bulletObjB, transform.position, transform.rotation);
+            GameObject bullet = Instantiate(bulletObjC, transform.position, transform.rotation);
             Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
             bullet.transform.position = transform.position;
 
@@ -136,9 +144,10 @@ public class BigBoss : MonoBehaviour
         }
     }
 
+    //Fire arc shape
     void FireArc()
     {
-        GameObject bullet = Instantiate(bulletObjA, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletObjB, transform.position, transform.rotation);
         Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
         bullet.transform.position = transform.position;
         bullet.transform.rotation = Quaternion.identity;
@@ -146,9 +155,6 @@ public class BigBoss : MonoBehaviour
         Vector2 dirVec = new Vector2(Mathf.Cos(Mathf.PI *5* curPatternCount/ maxPatternCount[patternIndex]), -1);
      
         rigid.AddForce(dirVec.normalized * 5, ForceMode2D.Impulse);
-
-
-
 
         curPatternCount++;
 
@@ -162,6 +168,7 @@ public class BigBoss : MonoBehaviour
         }
     }
 
+    //Fire around which 360degree to the space
     void FireAround()
     {
         int roundNum = 50;
@@ -191,16 +198,16 @@ public class BigBoss : MonoBehaviour
         }
     }
 
+    //Fire towards method which it shoot towards to the player for special attack
     void FireTowards()
     {
        
-
         if(Player.instance.curHealth > 0)
         {
             var bl = new List<Transform>();
             for (int i = 0; i < 360; i += 13)
             {
-                var temp = Instantiate(bulletObjC);
+                var temp = Instantiate(bulletSpecial);
                 Destroy(temp, 2f);
                 temp.transform.position = this.transform.position;
                 bl.Add(temp.transform);
@@ -221,7 +228,7 @@ public class BigBoss : MonoBehaviour
             Invoke("Think", 3);
         }
     }
-    //For Fire Towards!
+    //For fire towards method
     IEnumerator BulletToTarget(List<Transform> bullet)
     {
         yield return new WaitForSeconds(0.5f);
@@ -235,6 +242,7 @@ public class BigBoss : MonoBehaviour
         bullet.Clear();
     }
 
+    //Awake method for the initialize
     void Awake()
     {
         if (BossName == "BB")
@@ -244,16 +252,20 @@ public class BigBoss : MonoBehaviour
     }
 
 
-    //Aiden needs to add the animator when it gets damage by the player.
+    //Getting Damage by player
     public void Damage(int damage)
     {
-        if(health <= 0)
-        {
-            return;
-        }
         if(BossName == "BB")
         {
             health -= damage;
+            UIManager.instance.bigBossHealthBar.value = health;
+            if (health <= 0)
+            {
+                health = 0;
+                UIManager.instance.bigBossHealthBar.value = health;
+                Destroy(gameObject);
+                return;
+            }
             anim.SetTrigger("OnHit");
         }
     }
