@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BigMomma : MonoBehaviour
 {
@@ -109,16 +110,20 @@ public class BigMomma : MonoBehaviour
         //Depends on the monster status it updates player current stats.
         if (curHealth <= 0)
         {
+            AudioManager.instance.PlaySFX(6);
+            Destroy(gameObject);
             if (player.currentExp == player.maxExp)
             {
                 player.currentExp = 0;
                 player.character_LV += 1;
+                SceneManager.LoadScene(3);
                 
 
             }
             else
             {
                 player.currentExp += 10;
+                SceneManager.LoadScene(3);
 
             }
 
