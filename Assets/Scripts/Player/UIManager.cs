@@ -5,20 +5,23 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     //Define variaables that for UI components
-    public Slider expBar;
-    public Text expText;
-    public Text levelText;
+
     public Slider healthBar;
     public Text HPText;
     public Player player;
-
     public static UIManager instance;
-
     private static bool UIExists;
 
+
+    public Text bigBossHealthText;
+    public Slider bigBossHealthBar;
+    public GameObject bigbossHealthBargo;
+    private GameObject thebb;
+    private BigBoss bb;
     void Awake()
     {
         instance = this;
+        
     }
 
     void Start()
@@ -31,7 +34,7 @@ public class UIManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }
+        }       
     }
 
     void Update()
@@ -53,12 +56,22 @@ public class UIManager : MonoBehaviour
         {
             HPText.text = "HP: " + player.curHealth + "/" + player.maxHealth;
         }
-        expBar.maxValue = player.maxExp;
-        expBar.value = player.currentExp;
-        
-        expText.text = "Exp: " + player.currentExp + "/" + player.maxExp;
 
-        levelText.text = "Level: " + player.character_LV;
+        if(Player.instance.currentMapName == "BigBoss")
+        {
+            Invoke("checking", 0.5f);
+           
+        }
 
+    }
+
+   private void checking()
+    {
+        thebb = GameObject.FindGameObjectWithTag("BigBoss");
+        bb = thebb.GetComponent<BigBoss>();
+        bigbossHealthBargo.SetActive(true);
+        bigBossHealthBar.maxValue = bb.maxHealth;
+        bigBossHealthBar.value = bb.health;
+        bigBossHealthText.text = "HP: " + bb.health;
     }
 }

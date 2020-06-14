@@ -33,18 +33,11 @@ public class Projectile : MonoBehaviour
             {
                 collision.SendMessageUpwards("Damage", damage);
             }
+            else if((collision.isTrigger == true) && collision.CompareTag("BigBoss"))
+            {
+                collision.SendMessageUpwards("Damage", damage);
+            }
             
         }
-
-
-        ////Testing - Aiden.
-        //if(collision.gameObject.tag == "Boss" || collision.gameObject.tag == "Enemy"
-        //    || collision.gameObject.tag == "BorderBullet")
-        //{
-        //    GameObject clone = Instantiate(impactEffect, transform.position, transform.rotation);
-        //    Destroy(gameObject);
-        //    Destroy(clone, 1f);
-        //    collision.SendMessageUpwards("Damage", damage);
-        //}
     }
 }

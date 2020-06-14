@@ -17,6 +17,7 @@ TagManager:
   - PlayerBullet
   - BorderBullet
   - BigBossSpecialBullet
+  - BigBoss
   layers:
   - Default
   - TransparentFX

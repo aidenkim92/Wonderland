@@ -24,20 +24,19 @@ public class LevelManager : MonoBehaviour
     //Class Respawns player at checkpoint when they die with max health
     private IEnumerator RespawnCo()
     {
-        Player.instance.gameObject.SetActive(false);
-        yield return new WaitForSeconds(waitToRespawn);
+        if (Player.instance.currentMapName != "BigBoss")
+        {
+            Player.instance.gameObject.SetActive(false);
+            yield return new WaitForSeconds(waitToRespawn);
 
-        AudioManager.instance.PlaySFX(4);
-        Player.instance.gameObject.SetActive(true);
+            AudioManager.instance.PlaySFX(4);
+            Player.instance.gameObject.SetActive(true);
 
-        Player.instance.transform.position = CheckpointController.instance.spawnPoint;
+            Player.instance.transform.position = CheckpointController.instance.spawnPoint;
 
-        Player.instance.curHealth = Player.instance.maxHealth;
-        
-        UIManager.instance.ResetPlayer();
-        
+            Player.instance.curHealth = Player.instance.maxHealth;
 
-
-
+            UIManager.instance.ResetPlayer();
+        }
     }
 }

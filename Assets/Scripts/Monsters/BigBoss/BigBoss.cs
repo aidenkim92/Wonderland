@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class BigBoss : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
     public float speed;
     public string BossName;
 
@@ -23,15 +24,16 @@ public class BigBoss : MonoBehaviour
     public int curPatternCount;
     public int[] maxPatternCount;
 
-
-     void OnEnable()
-    {
+    void OnEnable()
+     {
         if(BossName == "BB")
         {
+
+            maxHealth = 3000;
             health = 3000;
             Invoke("Stop", 2);
         }
-    }
+     }
 
     void Stop()
     {
@@ -235,7 +237,6 @@ public class BigBoss : MonoBehaviour
 
     void Awake()
     {
-
         if (BossName == "BB")
         {
             anim = GetComponent<Animator>();
@@ -255,6 +256,5 @@ public class BigBoss : MonoBehaviour
             health -= damage;
             anim.SetTrigger("OnHit");
         }
-        
     }
 }
