@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        coinText.text = coins.ToString();
         /*
          *  if(Input.GetKeyDown(KeyCode.F5))
         {
