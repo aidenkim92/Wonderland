@@ -2,15 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Slime : MonoBehaviour
+public class BigMomma : MonoBehaviour
 {
     //Define varaibles
     private Collider2D coll;
     private Rigidbody2D rb;
     private Animator anim;
-    public int curHealth = 100;
+    public int curHealth = 500;
 
 
     [SerializeField] public LayerMask ground;
@@ -108,22 +107,18 @@ public class Slime : MonoBehaviour
     private void checkHealth()
     {
         //Depends on the monster status it updates player current stats.
-
-
-        if ((curHealth <= 0 && player.transform.position.x >= 270) || curHealth<=0)
+        if (curHealth <= 0)
         {
             if (player.currentExp == player.maxExp)
             {
                 player.currentExp = 0;
                 player.character_LV += 1;
-                SceneManager.LoadScene(3);
                 
 
             }
             else
             {
                 player.currentExp += 10;
-                SceneManager.LoadScene(3);
 
             }
 
@@ -133,7 +128,7 @@ public class Slime : MonoBehaviour
 
             if (probability == 3)
             {
-                int getRandPrefab = Random.Range(0, prefab.Length-1);
+                int getRandPrefab = Random.Range(0, prefab.Length - 1);
                 Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             }
             AudioManager.instance.PlaySFX(6);
