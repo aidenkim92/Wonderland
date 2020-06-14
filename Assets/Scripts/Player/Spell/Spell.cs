@@ -54,7 +54,7 @@ public class Spell : MonoBehaviour
             {
                 if (i != spellIndex)
                 {
-                    imageCooldown[i].fillAmount = 0;
+                    //imageCooldown[i].fillAmount = 0;
                 }
             }
         }
