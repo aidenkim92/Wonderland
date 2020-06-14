@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class SpecialBullet : MonoBehaviour
 {
     public float speed = 10f;
+    public int damage = 10;
     // Start is called before the first frame update
     private void Start()
     {
@@ -18,7 +20,11 @@ public class SpecialBullet : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collision)
-    {
-        //give damage
+    { 
+       if (collision.gameObject.tag == "Player")
+      {
+            Player.instance.Damage(damage);
+           Destroy(gameObject);
+       }
     }
 }

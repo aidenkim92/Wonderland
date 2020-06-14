@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4768402722532943317}
   - component: {fileID: 4090390440109449358}
   - component: {fileID: 2475497465649407419}
-  m_Layer: 14
+  m_Layer: 15
   m_Name: Bullet B
   m_TagString: BigBossBullet
   m_Icon: {fileID: 0}

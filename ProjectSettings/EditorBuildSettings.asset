@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/check2.unity
     guid: 89c1fb7c54c38cc4d8959d3ec81d6015
+  - enabled: 1
+    path: Assets/Scenes/Bigboss.unity
+    guid: 0b2120b2c458c4148be3a13f8d378f26
   m_configObjects: {}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3813202667037481679}
   - component: {fileID: 8525224485390093874}
   - component: {fileID: 6634958277276189261}
-  m_Layer: 10
+  m_Layer: 17
   m_Name: FirePrefab
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}

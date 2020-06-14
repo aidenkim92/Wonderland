@@ -19,7 +19,11 @@ public class BigBossBullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "Border" || collision.gameObject.tag == "PlatForm")
         {
-            //gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        if(collision.gameObject.tag == "Player")
+        { 
+            Player.instance.Damage(damage);
             Destroy(gameObject);
         }
     }
