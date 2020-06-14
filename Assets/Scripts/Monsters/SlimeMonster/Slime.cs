@@ -110,20 +110,25 @@ public class Slime : MonoBehaviour
         //Depends on the monster status it updates player current stats.
 
 
-        if ((curHealth <= 0 && player.transform.position.x >= 270) || curHealth<=0)
+        if ((curHealth <=0))
         {
+
+            if(Player.instance.transform.position.x >= 270)
+            {
+                SceneManager.LoadScene(3);
+            }
             if (player.currentExp == player.maxExp)
             {
                 player.currentExp = 0;
                 player.character_LV += 1;
-                SceneManager.LoadScene(3);
+                
                 
 
             }
             else
             {
                 player.currentExp += 10;
-                SceneManager.LoadScene(3);
+                
 
             }
 
