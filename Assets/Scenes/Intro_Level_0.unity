@@ -5299,6 +5299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396584066}
   - component: {fileID: 396584065}
+  - component: {fileID: 396584067}
   m_Layer: 0
   m_Name: Robot Jump
   m_TagString: Untagged
@@ -5371,6 +5372,25 @@ Transform:
   m_Father: {fileID: 776583018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360}
+--- !u!95 &396584067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396584064}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5cb18077588299641a92155ded1fcf79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &412379715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,12 +5672,12 @@ PrefabInstance:
     - target: {fileID: 1080874793195632638, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 293.37
+      value: 135.95
       objectReference: {fileID: 0}
     - target: {fileID: 1080874793195632638, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.38
+      value: 26.12
       objectReference: {fileID: 0}
     - target: {fileID: 1080874793195632638, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
