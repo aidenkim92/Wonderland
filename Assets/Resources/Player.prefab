@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1080874793195632635}
   - component: {fileID: 1080874793195632634}
   - component: {fileID: 1080874793195632609}
+  - component: {fileID: 373715130302781360}
   - component: {fileID: 5800626599036446350}
   m_Layer: 10
   m_Name: Player
@@ -173,6 +174,7 @@ MonoBehaviour:
   coinText: {fileID: 0}
   curHealth: 100
   maxHealth: 100
+  isDead: 0
 --- !u!111 &1080874793195632634
 Animation:
   m_ObjectHideFlags: 0
@@ -202,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackTrigger: {fileID: 1080874793681832865}
---- !u!114 &5800626599036446350
+--- !u!114 &373715130302781360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,6 +212,24 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080874793195632633}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdc994dd6d239a48afd5db50df9260f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePosition: {fileID: 5800626600206686155}
+  projectile: {fileID: 472196727686516687, guid: 8d3bd53e315828948b037f619d9abb7d,
+    type: 3}
+  cooldownTime: 5
+  imageCooldown: {fileID: 0}
+  spellG: {fileID: 0}
+--- !u!114 &5800626599036446350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080874793195632633}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8466332326b56e14aa70e9f158042f99, type: 3}
   m_Name: 
@@ -365,7 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2267eba55cd2bf344aeee6d172de9104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
 --- !u!1 &5800626600206686154
 GameObject:
   m_ObjectHideFlags: 0
