@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spikes : MonoBehaviour
 {
@@ -19,11 +20,16 @@ public class Spikes : MonoBehaviour
      void OnTriggerStay2D(Collider2D col) // When triggered
     {
         
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("Player") && SceneManager.GetActiveScene().name.Equals("Level3"))
+        {
+            player.Damage(player.curHealth);
+            
+
+        }
+
+        else if (col.CompareTag("Player"))
         {
             player.Damage(1);
-
-            //Start coroutine
             StartCoroutine(player.Knockback(0.02f, 2, player.transform.position));
         }
 
