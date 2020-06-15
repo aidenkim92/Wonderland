@@ -16,19 +16,27 @@ public class TimerController : MonoBehaviour
 
     private float elapsedTime;
 
+
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
         timeCounter.text = "Time: 00:00:00";
         timerGoing = false;
-        BeginTimer();
     }
 
-    //This can also be called from a GameController Script using TimeController.instance.BeginTimer();
+    //Begin timer
     public void BeginTimer() {
         timerGoing = true;
         elapsedTime = 0f;
@@ -36,10 +44,12 @@ public class TimerController : MonoBehaviour
         StartCoroutine(UpdateTimer());
     }
 
+    //Pause timer
     public void EndTimer() {
         timerGoing = false;
     }
 
+    //Update timer
     private IEnumerator UpdateTimer() {
         while (timerGoing) {
             elapsedTime += Time.deltaTime;
