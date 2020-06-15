@@ -287,8 +287,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 290373581
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 1202703396990205916, guid: 327280103ee11ac4485ea52777af9695,
     type: 3}
@@ -337,7 +337,7 @@ MonoBehaviour:
   maxHealth: 100
   distance: 0
   wakeRange: 6
-  shootInterval: 0.5
+  shootInterval: 0.2
   bulletSpeed: 2
   bulletTimer: 0
   awake: 0

@@ -24,7 +24,7 @@ public class Spikes : MonoBehaviour
             player.Damage(1);
 
             //Start coroutine
-            StartCoroutine(player.Knockback(0.02f, 20, player.transform.position));
+            StartCoroutine(player.Knockback(0.02f, 2, player.transform.position));
         }
 
         

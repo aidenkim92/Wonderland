@@ -14,15 +14,11 @@ public class Checkpoint : MonoBehaviour
     public bool isChecked; //Whether player has turned checkpoint on or not
     // Start is called before the first frame update
     void Start()
-    {
-
-    }
+    {  }
 
     // Update is called once per frame
     void Update()
-    {
-
-    }
+    {}
 
     /*
      * Checks if player has walked past the chekpoint. 
@@ -50,8 +46,5 @@ public class Checkpoint : MonoBehaviour
     {
         theSR.sprite = cpOff;
         isChecked = false;
-    }
-
-
-    
+    } 
 }
