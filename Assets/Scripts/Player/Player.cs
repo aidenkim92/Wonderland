@@ -189,7 +189,7 @@ public class Player : MonoBehaviour
 
         if(other.gameObject.tag == "Bird")
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 
         }
