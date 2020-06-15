@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroLevelEnding.unity
     guid: f245350a8c489b0479d47af729f18da0
   - enabled: 1
+    path: Assets/Scenes/HellIntroScene.unity
+    guid: 31a102fb3375ced48a7af4da79202b85
+  - enabled: 1
+    path: Assets/Scenes/Hell.unity
+    guid: 6191751e17f602b4fab0ec34969e8c4a
+  - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: b0d396327bb77ce468248cfd62239ad7
   - enabled: 0
