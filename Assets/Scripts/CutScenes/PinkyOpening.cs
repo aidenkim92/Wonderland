@@ -32,13 +32,13 @@ public class PinkyOpening : MonoBehaviour
         {
             //SceneManager.LoadScene(2);
             SceneManager.LoadScene(5);
-            Player.instance.transform.position = new Vector3(130, 26, 0);
+            Player.instance.transform.position = new Vector3(146, -1, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene(5);
-            Player.instance.transform.position = new Vector3(130, 26, 0);
+            Player.instance.transform.position = new Vector3(146, -1, 0);
         }
 
 

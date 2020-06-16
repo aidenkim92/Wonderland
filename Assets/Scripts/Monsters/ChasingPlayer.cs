@@ -73,7 +73,7 @@ public class ChasingPlayer : MonoBehaviour
     {
         if(player.transform.position.x >= cutSceneTrigger.position.x)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
         
     }
