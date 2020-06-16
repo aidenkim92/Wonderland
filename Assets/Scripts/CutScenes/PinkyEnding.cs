@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
-public class LoadHell : MonoBehaviour
+public class PinkyEnding : MonoBehaviour
 {
     public double videoLength;
 
@@ -27,14 +27,14 @@ public class LoadHell : MonoBehaviour
         if (vp.time >= videoLength)
         {
             //SceneManager.LoadScene(2);
-            SceneManager.LoadScene(8);
-            Player.instance.transform.position = new Vector3(-1, 0, 0);
+            SceneManager.LoadScene(7);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            SceneManager.LoadScene(8);
-            Player.instance.transform.position = new Vector3(-1, 0, 0);
+            SceneManager.LoadScene(7);
+            
         }
 
 

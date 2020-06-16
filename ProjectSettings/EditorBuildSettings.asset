@@ -18,14 +18,23 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroLevelEnding.unity
     guid: f245350a8c489b0479d47af729f18da0
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/PinkyOpening.unity
+    guid: c29a22efa245ec74ea21bef3f3c2d2a9
+  - enabled: 1
+    path: Assets/Scenes/Pinky.unity
     guid: b0d396327bb77ce468248cfd62239ad7
+  - enabled: 1
+    path: Assets/Scenes/PinkyClosing.unity
+    guid: efde54dabb8b08c42b755cab0df8b2af
   - enabled: 1
     path: Assets/Scenes/HellIntroScene.unity
     guid: 31a102fb3375ced48a7af4da79202b85
   - enabled: 1
     path: Assets/Scenes/Hell.unity
     guid: 6191751e17f602b4fab0ec34969e8c4a
+  - enabled: 1
+    path: Assets/Scenes/HellClosing.unity
+    guid: 3e23fe3076051f847a4ecaba407191b6
   - enabled: 0
     path: Assets/Scenes/Boss.unity
     guid: 322af091bb9661546a630713741d2b97
