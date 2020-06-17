@@ -95,7 +95,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3497308252910583841}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 100
-  prefab: []
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -129,6 +128,7 @@ MonoBehaviour:
   rightCap: 31
   jumpLength: 1
   jumpHeight: 7
+  prefab: []
 --- !u!95 &3497308252910583840
 Animator:
   serializedVersion: 3

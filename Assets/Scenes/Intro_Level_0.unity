@@ -6083,6 +6083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 3497308252910583843, guid: bab40005cf1fbb84dadf408f33ddc165,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9598,6 +9603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989628831027484542, guid: 5a4695f21b4989648b4409cb149b423a,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a4695f21b4989648b4409cb149b423a, type: 3}

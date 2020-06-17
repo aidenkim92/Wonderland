@@ -131,6 +131,7 @@ public class Slime : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+
             player.Damage(2);
             player.gameObject.GetComponent<Animation>().Play("RedFlash_Player");
             player.Knockback(2, 20, player.transform.transform.position);
