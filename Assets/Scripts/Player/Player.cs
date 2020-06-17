@@ -224,9 +224,14 @@ public class Player : MonoBehaviour
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
         //Just use reference with this gameObject.
-        if(curHealth >= 1)
+        if(curHealth >= 2)
         {
+
             gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+            if(curHealth == 0)
+            {
+                gameObject.GetComponent<Animation>().Stop("RedFlash_Player");
+            }
         }
         else
         {
