@@ -35,9 +35,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HellClosing.unity
     guid: 3e23fe3076051f847a4ecaba407191b6
+  - enabled: 1
+    path: Assets/Scenes/BossOpening.unity
+    guid: 9c21453cba6a89343b6bc3f00d0383e6
   - enabled: 0
     path: Assets/Scenes/Boss.unity
     guid: 322af091bb9661546a630713741d2b97
+  - enabled: 1
+    path: Assets/Scenes/BossEnding.unity
+    guid: 32c31633ea45cc84ba2b4223421b89f3
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

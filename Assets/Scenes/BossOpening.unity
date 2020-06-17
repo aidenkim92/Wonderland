@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1522203347
+--- !u!1 &1974788123
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,9 +129,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1522203350}
-  - component: {fileID: 1522203349}
-  - component: {fileID: 1522203348}
+  - component: {fileID: 1974788126}
+  - component: {fileID: 1974788125}
+  - component: {fileID: 1974788124}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -139,37 +139,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1522203348
+--- !u!114 &1974788124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522203347}
+  m_GameObject: {fileID: 1974788123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6445e115d370d7c49a972e6692d8aa40, type: 3}
+  m_Script: {fileID: 11500000, guid: e68dc44e9d41d174ab99b525f834c694, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoLength: 19.15
-  vp: {fileID: 1522203349}
---- !u!328 &1522203349
+  videoLength: 0
+  vp: {fileID: 0}
+--- !u!328 &1974788125
 VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522203347}
+  m_GameObject: {fileID: 1974788123}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: cd6a7dbafe99b4e4bbb4701b0fe2dda1, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 1960103169}
+  m_TargetCamera: {fileID: 0}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
@@ -187,21 +187,21 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!4 &1522203350
+--- !u!4 &1974788126
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522203347}
+  m_GameObject: {fileID: 1974788123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.94248, y: -122.25275, z: -6.1796875}
+  m_LocalPosition: {x: 28.89702, y: -2.907287, z: -66.890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1960103167
+--- !u!1 &2128090398
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,9 +209,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1960103170}
-  - component: {fileID: 1960103169}
-  - component: {fileID: 1960103168}
+  - component: {fileID: 2128090401}
+  - component: {fileID: 2128090400}
+  - component: {fileID: 2128090399}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -219,21 +219,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1960103168
+--- !u!81 &2128090399
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960103167}
+  m_GameObject: {fileID: 2128090398}
   m_Enabled: 1
---- !u!20 &1960103169
+--- !u!20 &2128090400
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960103167}
+  m_GameObject: {fileID: 2128090398}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -270,13 +270,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1960103170
+--- !u!4 &2128090401
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960103167}
+  m_GameObject: {fileID: 2128090398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
