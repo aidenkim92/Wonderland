@@ -107,7 +107,6 @@ public class Slime : MonoBehaviour
     //Check health
     private void checkHealth()
     {
-        //Depends on the monster status it updates player current stats.
 
 
         if ((curHealth <=0))

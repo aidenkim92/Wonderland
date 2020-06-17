@@ -47,6 +47,8 @@ public class BananaMonster : MonoBehaviour
 
             var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
             newBullet.transform.localScale = banana.localScale;
+
+            Destroy(newBullet, 3);
         }
 
     }
@@ -80,6 +82,8 @@ public class BananaMonster : MonoBehaviour
             int getRandPrefab = Random.Range(0, prefab.Length);
             Instantiate(prefab[getRandPrefab], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
             itemDropped = true;
+
+
         }
 
 
