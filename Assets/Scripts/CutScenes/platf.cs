@@ -40,7 +40,7 @@ public class platf : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene(2);
-            Player.instance.transform.position = new Vector3(280, 40, 0);
+            Player.instance.transform.position = new Vector3(130, 26, 0);
         }
 
        
