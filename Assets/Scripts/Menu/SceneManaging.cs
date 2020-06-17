@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * This Class manages the current Scenes when it pauses and unpauses*
+ * @Author Shahil/*/
 public class SceneManaging : MonoBehaviour
 {
 
