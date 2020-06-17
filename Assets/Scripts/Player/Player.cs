@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         animator.SetBool("Grounded", grounded);
         //Getting actual the Player speed in the animator
         animator.SetFloat("Speed", Mathf.Abs(rigid.velocity.x));
-
+        coinText.text = coins.ToString();
 
         //To move left but facing right
         if (Input.GetAxis("Horizontal") < 0 && m_facingRight)
@@ -174,7 +174,7 @@ public class Player : MonoBehaviour
             AudioManager.instance.PlaySFX(7);
             Destroy(collision.gameObject);
             coins++;
-            coinText.text = coins.ToString();
+            
         }
     }
 

@@ -57,8 +57,10 @@ public class Shop : MonoBehaviour
         player = FindObjectOfType<Player>();
         if (player.coins >= increaseDmgPrice)
         {
-            AttackTrigger.damage += 100;
+            AttackTrigger.damage += 10;
+            player.coins -= increaseDmgPrice;
             increaseDmgPrice += 10;
+            
             increaseDmgText.text = increaseDmgPrice.ToString(); 
 
         }
@@ -70,9 +72,11 @@ public class Shop : MonoBehaviour
         player = FindObjectOfType<Player>();
         if (player.coins >= increaseHealthPrice)
         {
-            player.curHealth += 100;
-            player.maxHealth += 100;
+            player.curHealth += 20;
+            player.maxHealth += 20;
+            player.coins -= increaseHealthPrice;
             increaseHealthPrice += 10;
+            
             increaseHealthText.text = increaseHealthPrice.ToString();
 
         }

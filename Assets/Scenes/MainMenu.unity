@@ -1340,7 +1340,7 @@ PrefabInstance:
     - target: {fileID: 1080874793195632635, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
       propertyPath: coins
-      value: 10000
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1080874793195632638, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
@@ -4219,6 +4219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277566756619909422, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Increase Health(Cost):'
       objectReference: {fileID: 0}
     - target: {fileID: 4849967648626483820, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}

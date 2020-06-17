@@ -1211,8 +1211,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 290373581
-  m_SortingLayer: 2
+  m_SortingLayerID: 1203817981
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1, y: 1, z: 0}
@@ -6086,17 +6086,17 @@ PrefabInstance:
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 238.26
+      value: 237.65
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.51
+      value: 28.6
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.61
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
@@ -6151,7 +6151,7 @@ PrefabInstance:
     - target: {fileID: 3497308252910583871, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: rightCap
-      value: 238
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583871, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
@@ -6174,6 +6174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: drop
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497308252910583871, guid: bab40005cf1fbb84dadf408f33ddc165,
+        type: 3}
+      propertyPath: ground.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab40005cf1fbb84dadf408f33ddc165, type: 3}
@@ -7624,12 +7629,12 @@ PrefabInstance:
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 289.53
+      value: 289.58
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.75
+      value: 21.52
       objectReference: {fileID: 0}
     - target: {fileID: 3497308252910583868, guid: bab40005cf1fbb84dadf408f33ddc165,
         type: 3}
@@ -7797,7 +7802,9 @@ MonoBehaviour:
   rightCap: 290
   jumpLength: 1
   jumpHeight: 5
-  prefab: []
+  prefab:
+  - {fileID: 343167770463126130, guid: 264ec90b60dc88547a7b50adc5876908, type: 3}
+  - {fileID: 6138512444154647022, guid: 09a8d69a430dd134fb36ee91ac2bd219, type: 3}
 --- !u!4 &1150997403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7271352599128161643, guid: a6de05fd35b21164fb31911b51e06bbf,
