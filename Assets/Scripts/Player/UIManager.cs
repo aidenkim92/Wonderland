@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,14 @@ public class UIManager : MonoBehaviour
     public Text bigBossHealthText;
     public Slider bigBossHealthBar;
     public GameObject bigbossHealthBargo;
+
+
+    //Testing timer counter
+    public Text timeCounter;
+    private TimeSpan timePlaying;
+    private bool timerGoing;
+    private float elapsedTime;
+
 
     //Awake method to define instance variable for singleton pattern
     void Awake()
@@ -35,6 +44,11 @@ public class UIManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        //Testing for the time counter
+        timeCounter.text = "Time: 00:00:00";
+        timerGoing = false;
+        BeginTimer();
     }
 
     //Update the frame per second
@@ -67,7 +81,40 @@ public class UIManager : MonoBehaviour
         {
             bigbossHealthBargo.SetActive(false);
         }
+        if (Player.instance.currentMapName == "BigBoss" && bigBossHealthBar.value == 0)
+        {
+            Debug.Log(timeCounter.text);
+            EndTimer();
+        }
 
+    }
+
+    //Testing for the timer counter
+    public void BeginTimer()
+    {
+        timerGoing = true;
+        elapsedTime = 0f;
+
+        StartCoroutine(UpdateTimer());
+    }
+
+    //Pause timer
+    public void EndTimer()
+    {
+        timerGoing = false;
+    }
+
+    //Update timer
+    private IEnumerator UpdateTimer()
+    {
+        while (timerGoing)
+        {
+            elapsedTime += Time.deltaTime;
+            timePlaying = TimeSpan.FromSeconds(elapsedTime);
+            string timeString = "Time: " + timePlaying.ToString("mm':'ss':'ff");
+            timeCounter.text = timeString;
+            yield return null;
+        }
     }
 
 }

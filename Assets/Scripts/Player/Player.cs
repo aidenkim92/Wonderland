@@ -54,7 +54,6 @@ public class Player : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         m_facingRight = true;
         isDead = false;
-        TimerController.instance.BeginTimer();
     }
 
     void Update()
