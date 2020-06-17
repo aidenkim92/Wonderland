@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-//using System.Numerics;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -251,7 +250,14 @@ public class BigBoss : MonoBehaviour
         }
     }
 
-
+    //Updating the frame per second
+     void Update()
+    {
+        if(Player.instance.currentMapName != "BigBoss")
+        {
+            health = maxHealth;
+        }
+    }
     //Getting Damage by player
     public void Damage(int damage)
     {

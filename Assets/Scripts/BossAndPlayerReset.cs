@@ -5,13 +5,13 @@ using UnityEngine;
 public class BossAndPlayerReset : MonoBehaviour
 {
 
-    private BigBoss boss;
+    //private BigBoss boss;
     private Player player;
     public Transform respawnPos;
     // Start is called before the first frame update
     void Start()
     {
-        boss = FindObjectOfType<BigBoss>();
+        //boss = FindObjectOfType<BigBoss>();
         player = FindObjectOfType<Player>();
         
     }
@@ -21,9 +21,9 @@ public class BossAndPlayerReset : MonoBehaviour
     {
         if(player.curHealth<= 0)
         {
-            LevelManager.instance.RespawnPlayerForBoss(respawnPos);
-            boss.health = 3000;
-
+           //LevelManager.instance.RespawnPlayer();
+            //LevelManager.instance.RespawnPlayerForBoss(respawnPos);
+            //boss.health = boss.maxHealth;
         }
         
     }

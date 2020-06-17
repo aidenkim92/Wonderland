@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -62,6 +63,11 @@ public class UIManager : MonoBehaviour
             bigbossHealthBargo.SetActive(true);
             bigBossHealthText.text = "HP: " + bigBossHealthBar.value;
         }
+        else
+        {
+            bigbossHealthBargo.SetActive(false);
+        }
+
     }
 
 }

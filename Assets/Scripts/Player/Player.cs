@@ -99,10 +99,33 @@ public class Player : MonoBehaviour
             AudioManager.instance.PlaySFX(1);
         }
 
-        if(curHealth <= 0)
+        //check
+        if (curHealth <= 0)
         {
-            Destroy(gameObject);
+
+            isDead = true;
+            AudioManager.instance.PlaySFX(2);
+            if (Player.instance.currentMapName != "BigBoss")
+            {
+                SceneManager.LoadScene(2);
+                LevelManager.instance.RespawnPlayer();
+            }
+            else if (Player.instance.currentMapName == "BigBoss")
+            {
+                //Testing for Respawn
+                currentMapName = "";
+                SceneManager.LoadScene(2);
+                Player.instance.gameObject.SetActive(false);
+                AudioManager.instance.PlaySFX(4);
+                Player.instance.gameObject.SetActive(true);
+                Player.instance.transform.position = CheckpointController.instance.spawnPoint;
+                Player.instance.curHealth = Player.instance.maxHealth;
+
+                UIManager.instance.ResetPlayer();
+            }        
+
         }
+        isDead = false;
     }
 
 
@@ -135,7 +158,8 @@ public class Player : MonoBehaviour
             rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
         }
 
-        if (curHealth <= 0)
+        /*
+         *   if (curHealth <= 0)
         {
             isDead = true;
             if(Player.instance.currentMapName != "BigBoss")
@@ -143,9 +167,17 @@ public class Player : MonoBehaviour
                 AudioManager.instance.PlaySFX(2);
                 LevelManager.instance.RespawnPlayer();
             }
+            else if(Player.instance.currentMapName == "BigBoss")
+            {
+                //Testing for Respawn
+                currentMapName = "";
+                //SceneManager.LoadScene(2);
+            }
             isDead = false;
            
         }
+         */
+
 
     }
 
@@ -187,22 +219,10 @@ public class Player : MonoBehaviour
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
         //Just use reference with this gameObject.
-        gameObject.GetComponent<Animation>().Play("RedFlash_Player");
-
-        //check
-        if (curHealth <= 0)
+        if(curHealth > 0)
         {
-
-            isDead = true;
-            AudioManager.instance.PlaySFX(2);
-           if(Player.instance.currentMapName != "BigBoss")
-            {
-                LevelManager.instance.RespawnPlayer();
-            }
-            isDead = false;
-
+            gameObject.GetComponent<Animation>().Play("RedFlash_Player");
         }
-      //  AudioManager.instance.PlaySFX(5);
     }
 
     //For knockback reaction

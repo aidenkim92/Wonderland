@@ -12,6 +12,7 @@ public class CheckpointController : MonoBehaviour
     //variables
     public static CheckpointController instance; //Singleton instance
     private Checkpoint[] checkpoints; //Array of checkpoints
+    //testingForrespawnfrom the bigbossScene
     public Vector3 spawnPoint; //Player respawn point
 
 
