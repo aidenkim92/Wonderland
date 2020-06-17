@@ -20,13 +20,13 @@ public class LevelManager : MonoBehaviour
     {
         //commented out for later. do not remove.
         //StartCoroutine(RespawnCo(null));
+        Debug.Log("Testing2222");
         Invoke("respawn", waitToRespawn);
     }
 
     private void respawn()
     {
         Debug.Log("Testing");
-        Player.instance.gameObject.SetActive(false);
         Player.instance.gameObject.SetActive(false);
         AudioManager.instance.PlaySFX(4);
         Player.instance.gameObject.SetActive(true);

@@ -100,15 +100,17 @@ public class Player : MonoBehaviour
 
         //when the player is dead
         //it should load scene depends on the player current scene.
-        if (curHealth <= 0)
+        if (curHealth <= 0 && !isDead)
         {
 
             isDead = true;
-            //AudioManager.instance.PlaySFX(2);
+           
             if (Player.instance.currentMapName != "BigBoss")
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                
+                Debug.Log("Dead");
                 LevelManager.instance.RespawnPlayer();
+                isDead = false;
             }
             else if (Player.instance.currentMapName == "BigBoss")
             {
@@ -124,10 +126,11 @@ public class Player : MonoBehaviour
                 Player.instance.curHealth = Player.instance.maxHealth;
 
                 UIManager.instance.ResetPlayer();
-            }        
-
+                isDead = false;
+            }
+           
         }
-        isDead = false;
+        
     }
 
 

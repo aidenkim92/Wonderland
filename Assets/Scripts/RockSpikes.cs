@@ -5,28 +5,16 @@ using UnityEngine;
 
 public class RockSpikes : MonoBehaviour
 {
-    private Player player;
+    //Parent reference
     public Transform parent;
 
-    void Start()
-    {
-        player = FindObjectOfType<Player>();
-
-
-
-    }
-
+    //Trigger on when the colide with this object
     void OnTriggerStay2D(Collider2D col) // When triggered
     {
 
         if (col.CompareTag("Player"))
         {
-            player.Damage(player.curHealth);
-
-           
-            
+            Player.instance.Damage(50);
         }
-
-
     }
 }

@@ -41,6 +41,7 @@ public class CheckpointController : MonoBehaviour
     {
       for(int i = 0; i<checkpoints.Length; i++)
         {
+            Debug.Log("check for the check points controller");
             checkpoints[i].ResetCheckPoint();
         }
     }

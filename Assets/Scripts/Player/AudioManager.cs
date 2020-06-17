@@ -52,7 +52,7 @@ public class AudioManager : MonoBehaviour
         
         if(PauseMenu.isPaused == false) //If game is not paused
         {
-            //soundEffects[soundToPlay].Stop();//Stop sound effect 
+            soundEffects[soundToPlay].Stop();//Stop sound effect 
             soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f); //randomize pitch
             soundEffects[soundToPlay].Play(); //play sound effect
         }
