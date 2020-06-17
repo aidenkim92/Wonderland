@@ -10,8 +10,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public float waitToRespawn;
-    //testing
-    public GameObject goForRespawnFromBigboss;
+    
     void Awake()
     {
         instance = this;
@@ -19,6 +18,7 @@ public class LevelManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
+        //commented out for later. do not remove.
         //StartCoroutine(RespawnCo(null));
         Invoke("respawn", waitToRespawn);
     }
@@ -27,21 +27,19 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Testing");
         Player.instance.gameObject.SetActive(false);
-        // yield return new WaitForSeconds(waitToRespawn);
         Player.instance.gameObject.SetActive(false);
         AudioManager.instance.PlaySFX(4);
         Player.instance.gameObject.SetActive(true);
 
-        //testing
-       
         Player.instance.transform.position = CheckpointController.instance.spawnPoint;
-        //Player.instance.transform.position = goForRespawnFromBigboss.transform.position;
+
 
         Player.instance.curHealth = Player.instance.maxHealth;
 
         UIManager.instance.ResetPlayer();
     }
 
+    //commented out for later. do not remove.
     /*
      * public void RespawnPlayerForBoss(Transform position)
     {

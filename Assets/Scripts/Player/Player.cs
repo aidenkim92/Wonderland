@@ -99,7 +99,8 @@ public class Player : MonoBehaviour
             AudioManager.instance.PlaySFX(1);
         }
 
-        //check
+        //when the player is dead
+        //it should load scene depends on the player current scene.
         if (curHealth <= 0)
         {
 
@@ -107,13 +108,15 @@ public class Player : MonoBehaviour
             AudioManager.instance.PlaySFX(2);
             if (Player.instance.currentMapName != "BigBoss")
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 LevelManager.instance.RespawnPlayer();
             }
             else if (Player.instance.currentMapName == "BigBoss")
             {
-                //Testing for Respawn
+                
                 currentMapName = "";
+                //should be changed the load scene as Hell scene later when
+                //Shahil finish the hell scene.
                 SceneManager.LoadScene(2);
                 Player.instance.gameObject.SetActive(false);
                 AudioManager.instance.PlaySFX(4);
@@ -158,6 +161,8 @@ public class Player : MonoBehaviour
             rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
         }
 
+
+        //Commented out due to we can use this code later.
         /*
          *   if (curHealth <= 0)
         {
@@ -219,9 +224,13 @@ public class Player : MonoBehaviour
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
         //Just use reference with this gameObject.
-        if(curHealth > 0)
+        if(curHealth >= 1)
         {
             gameObject.GetComponent<Animation>().Play("RedFlash_Player");
+        }
+        else
+        {
+            gameObject.GetComponent<Animation>().Stop("RedFlash_Player");
         }
     }
 
