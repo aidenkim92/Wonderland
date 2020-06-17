@@ -4,40 +4,38 @@ using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-  
     //Gain experiences and up the level
     public int character_LV = 1;
     public int currentExp = 0;
     public int maxExp = 100;
+   
 
     //Reference for transfering map
     public string currentMapName;
     //private SaveNLoad saveNLoad;
 
-    //Floats
+    //Movement
     public float maxSpeed = 3f;
     public float speed = 50f;
     public float jumpPower = 150f;
+    private bool m_facingRight;
 
     //For double jumping
     public bool canDoubleJump;
     public bool grounded;
 
-    //ForSpells
-    private bool m_facingRight;
-    //private bool spellUsed;
-    //public float SpellCastTime = 0.5f;
-    //private Coroutine spellRoutine;
-    //[SerializeField] private GameObject[] spellPrefab;
-    //[SerializeField] private Transform spellExit;
-    //[SerializeField] private GameObject[] blocks;
+    //Coins
+    public int coins = 0;
+    public Text coinText;
 
     //Stats
     public int curHealth = 0;
-    public int maxHealth = 100;
+    public int maxHealth = 7;
+    public bool isDead;
 
     //References
     private Rigidbody2D rigid;
@@ -62,11 +60,14 @@ public class Player : MonoBehaviour
         rigid = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         m_facingRight = true;
+        isDead = false;
+        TimerController.instance.BeginTimer();
         //saveNLoad = FindObjectOfType<SaveNLoad>();
     }
 
     void Update()
     {
+        //coinText.text = coins.ToString();
         /*
          *  if(Input.GetKeyDown(KeyCode.F5))
         {
@@ -111,7 +112,6 @@ public class Player : MonoBehaviour
                 if (canDoubleJump)
                 {
                     canDoubleJump = false;
-          
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
                     rigid.AddForce(Vector2.up * (jumpPower / 2), ForceMode2D.Impulse);
                     //Do not erase this
@@ -121,15 +121,6 @@ public class Player : MonoBehaviour
             }
             AudioManager.instance.PlaySFX(1);
         }
-
-        //SPELL TESTING--------------------------------------------------
-        /*If player is staying still and key 1 is used (prevent animation overlaping) and if player can see the target
-        if (Input.GetKeyDown(KeyCode.Alpha1) && Mathf.Abs(rigid.velocity.x) < 0.1f && InLineOfSight()) {
-            ActivateBlocks();
-            if (!spellUsed) spellRoutine = StartCoroutine(spellAttack());
-        }
-        */
-
     }
 
     void FixedUpdate()
@@ -163,16 +154,16 @@ public class Player : MonoBehaviour
 
         if (curHealth <= 0)
         {
-            //Added for testing - Aiden
-            Destroy(gameObject);
-
+            isDead = true;
             AudioManager.instance.PlaySFX(2);
             LevelManager.instance.RespawnPlayer();
+            isDead = false;
+
         }
+
     }
 
     //Moving Platform
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag  == ("MovingPlatForm"))
@@ -180,13 +171,32 @@ public class Player : MonoBehaviour
             this.transform.parent = other.transform;
             Debug.Log("MOVING");
         }
+
+        if(other.gameObject.tag == "Bird")
+        {
+            //Destroy(other.gameObject);
+            rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+
+        }
         
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Collectable")
+        {
+            AudioManager.instance.PlaySFX(7);
+            Destroy(collision.gameObject);
+            coins++;
+            coinText.text = coins.ToString();
+        }
     }
 
 
     //When get damage
     public void Damage(int damage)
     {
+
         curHealth -= damage;
         //Get the animation RedFlash_Player
         //Do not use the animator that has been already defined.
@@ -196,8 +206,11 @@ public class Player : MonoBehaviour
         //check
         if (curHealth <= 0)
         {
+
+            isDead = true;
             AudioManager.instance.PlaySFX(2);
             LevelManager.instance.RespawnPlayer();
+            isDead = false;
 
         }
         AudioManager.instance.PlaySFX(5);
@@ -212,7 +225,6 @@ public class Player : MonoBehaviour
         while (knockDuration > timer)
         {
             timer += Time.deltaTime; //Increase timer
-
             //To knockback to opposite direction
             rigid.AddForce(new Vector3(knockbackDirection.x * -10, knockbackDirection.y * -knockbackPower, transform.position.z));
         }
@@ -220,52 +232,8 @@ public class Player : MonoBehaviour
         yield return 0;
     }
 
-
     public void Flip() {
         m_facingRight = !m_facingRight;
         transform.Rotate(0f, 180f, 0f);
     }
-
-    /*Spell Testing--------------------------------------------------------------------------------------------------------
-    //Spell Function
-    public IEnumerator spellAttack() { 
-            spellUsed = true;
-            animator.SetBool("spellUsed", spellUsed);
-            yield return new WaitForSeconds(SpellCastTime); //Cast timex
-            CastSpell();
-            StopSpell();
-    }
-    
-    //Stopping spell being used
-    public void StopSpell() {
-        if (spellRoutine != null)
-        {
-            StopCoroutine(spellRoutine);
-            spellUsed = false;
-            animator.SetBool("spellUsed", spellUsed);
-        }
-    }
-
-    //Casting prefab spell
-    public void CastSpell() {
-        Instantiate(spellPrefab[0], spellExit.position, Quaternion.identity);
-    }
-
-    //Looking at enemy
-    public bool InLineOfSight() {
-        Vector3 targetDir = (GameObject.Find("QutieMonster").transform.position - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, targetDir, Vector2.Distance(transform.position, GameObject.Find("QutieMonster").transform.position),256);
-        if (hit.collider == null) {
-            return true;
-        }
-        return false;
-    }
-
-    //Activating blocks for spell attacks
-    public void ActivateBlocks() {
-        blocks[0].SetActive(true);
-        blocks[1].SetActive(true);
-        blocks[2].SetActive(true);
-    }
-    */
 }

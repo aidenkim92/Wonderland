@@ -18,6 +18,7 @@ public class SaveNLoad : MonoBehaviour
         public float playerZ;
 
         public int playerCurrentHP;
+        public int coins;
 
         public List<int> playerItemInventory;
         public List<int> playerItemInventoryCount;
@@ -34,30 +35,32 @@ public class SaveNLoad : MonoBehaviour
     private Player player;
     private DataBaseManager database;
     private Inventory inventory;
+    private UIManager ui;
 
     public Data data;
 
     private Vector3 vector;
     private GameManager gm;
 
-    private void Start()
-    {
-        gm = FindObjectOfType<GameManager>();
+
         
-    }
+        
+
 
     public void callSave()
     {
         database = FindObjectOfType<DataBaseManager>();
         player = FindObjectOfType<Player>();
         inventory = FindObjectOfType<Inventory>();
+        gm = FindObjectOfType<GameManager>();
         data.playerX = player.transform.position.x;
         data.playerY = player.transform.position.y;
         data.playerZ = player.transform.position.z;
         data.playerCurrentHP = player.curHealth;
+        data.coins = player.coins;
         data.sceneNumber = SceneManager.GetActiveScene().buildIndex;
 
-        data.mapName = player.currentMapName;
+        //data.mapName = player.currentMapName;
         
         Debug.Log("basic datas suceeed");
         data.playerItemInventory.Clear();
@@ -102,6 +105,7 @@ public class SaveNLoad : MonoBehaviour
             database = FindObjectOfType<DataBaseManager>();
             player = FindObjectOfType<Player>();
             inventory = FindObjectOfType<Inventory>();
+            gm = FindObjectOfType<GameManager>();
 
 
             player.currentMapName = data.mapName;
@@ -110,6 +114,7 @@ public class SaveNLoad : MonoBehaviour
             player.transform.position = vector;
 
             player.curHealth = data.playerCurrentHP;
+            player.coins = data.coins;
             database.var = data.varNumberList.ToArray();
             database.var_name = data.varNameList.ToArray();
             database.switches = data.swList.ToArray();

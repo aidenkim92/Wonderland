@@ -6,7 +6,7 @@ using UnityEngine;
  * */
 public class AttackTrigger : MonoBehaviour
 {
-    public int damage = 20;
+    public static int damage = 20;
     void OnTriggerEnter2D(Collider2D col)
     {
         //If the trriggered

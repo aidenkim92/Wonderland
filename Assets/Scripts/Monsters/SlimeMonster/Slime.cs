@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Slime : MonoBehaviour
 {
@@ -107,17 +108,27 @@ public class Slime : MonoBehaviour
     private void checkHealth()
     {
         //Depends on the monster status it updates player current stats.
-        if (curHealth <= 0)
+
+
+        if ((curHealth <=0))
         {
+
+            if(Player.instance.transform.position.x >= 270)
+            {
+                SceneManager.LoadScene(3);
+            }
             if (player.currentExp == player.maxExp)
             {
                 player.currentExp = 0;
                 player.character_LV += 1;
+                
+                
 
             }
             else
             {
                 player.currentExp += 10;
+                
 
             }
 
