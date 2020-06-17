@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,12 +20,16 @@ public class UIManager : MonoBehaviour
     public GameObject bigbossHealthBargo;
 
 
-    //Testing timer counter
+    //Timer counter variables
     public Text timeCounter;
     private TimeSpan timePlaying;
     private bool timerGoing;
     private float elapsedTime;
 
+
+    //Recorded time UI variable
+    public GameObject endingCredit;
+    public Text timerRecorded;
 
     //Awake method to define instance variable for singleton pattern
     void Awake()
@@ -45,7 +50,7 @@ public class UIManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        //Testing for the time counter
+        //Timer starts when the player character is in the game at the first in game scene.
         timeCounter.text = "Time: 00:00:00";
         timerGoing = false;
         BeginTimer();
@@ -72,8 +77,10 @@ public class UIManager : MonoBehaviour
             HPText.text = "HP: " + player.curHealth + "/" + player.maxHealth;
         }
 
+        //When the player is in the big boss scene then
         if(Player.instance.currentMapName == "BigBoss")
         {
+            //Set active the Health status bar as active
             bigbossHealthBargo.SetActive(true);
             bigBossHealthText.text = "HP: " + bigBossHealthBar.value;
         }
@@ -81,10 +88,17 @@ public class UIManager : MonoBehaviour
         {
             bigbossHealthBargo.SetActive(false);
         }
+
+        //When the player is defeat the Big boss monster the ending credit is shown
         if (Player.instance.currentMapName == "BigBoss" && bigBossHealthBar.value == 0)
         {
-            Debug.Log(timeCounter.text);
+            endingCredit.SetActive(true);
+            timerRecorded.text = "Recorded Time : "+ timeCounter.text;
             EndTimer();
+        }
+        else
+        {
+            endingCredit.SetActive(false);
         }
 
     }
