@@ -112,7 +112,9 @@ public class BigMomma : MonoBehaviour
         {
             AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
-            if (player.currentExp == player.maxExp)
+
+            /*
+             * if (player.currentExp == player.maxExp)
             {
                 player.currentExp = 0;
                 player.character_LV += 1;
@@ -126,6 +128,8 @@ public class BigMomma : MonoBehaviour
                 SceneManager.LoadScene(3);
 
             }
+             */
+
 
             //Probability that for dropping items.
             int probability;

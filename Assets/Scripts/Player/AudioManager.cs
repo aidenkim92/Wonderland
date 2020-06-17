@@ -19,7 +19,16 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        instance = this;
+        //instance = this;
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
     }
 
     //int variable is an object in array which determines which sound effect to play

@@ -164,7 +164,7 @@ MonoBehaviour:
   character_LV: 1
   currentExp: 0
   maxExp: 100
-  currentMapName: Boss
+  currentMapName: r
   maxSpeed: 5
   speed: 55
   jumpPower: 10
@@ -394,9 +394,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5800626600206686155}
-  m_Layer: 10
+  m_Layer: 17
   m_Name: SpellExit
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

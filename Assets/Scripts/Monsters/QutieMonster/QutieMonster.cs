@@ -34,16 +34,6 @@ public class QutieMonster : MonoBehaviour
     {
         if (curHealth <= 0)
         {
-           if (Player.instance.currentExp == Player.instance.maxExp)
-          {
-               Player.instance.currentExp = 0;
-               Player.instance.character_LV += 1;
-            }
-           else
-            {
-                Player.instance.currentExp += 10;
-
-           }
             int probability;
 
             probability = Random.Range(0, 5);

@@ -8,16 +8,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    //Gain experiences and up the level
-    public int character_LV = 1;
-    public int currentExp = 0;
-    public int maxExp = 100;
-   
-
     //Reference for transfering map
     public string currentMapName;
-    //private SaveNLoad saveNLoad;
-
+    
     //Movement
     public float maxSpeed = 3f;
     public float speed = 50f;
@@ -62,23 +55,11 @@ public class Player : MonoBehaviour
         m_facingRight = true;
         isDead = false;
         TimerController.instance.BeginTimer();
-        //saveNLoad = FindObjectOfType<SaveNLoad>();
     }
 
     void Update()
     {
-        //coinText.text = coins.ToString();
-        /*
-         *  if(Input.GetKeyDown(KeyCode.F5))
-        {
-            saveNLoad.callSave();
-        }
-        if(Input.GetKeyDown(KeyCode.F9))
-        {
-            saveNLoad.callLoad();
-        }
-
-         */
+        //SetBool for the ground animation
         animator.SetBool("Grounded", grounded);
         //Getting actual the Player speed in the animator
         animator.SetFloat("Speed", Mathf.Abs(rigid.velocity.x));
@@ -102,8 +83,6 @@ public class Player : MonoBehaviour
         {
             if (grounded)
             {
-                //Do not erase this
-                //rigid.AddForce(Vector2.up * jumpPower * (Vector2.up)/2);
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 canDoubleJump = true;
             }
@@ -114,14 +93,18 @@ public class Player : MonoBehaviour
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
                     rigid.AddForce(Vector2.up * (jumpPower / 2), ForceMode2D.Impulse);
-                    //Do not erase this
-                    //rigid.AddForce(Vector2.up * jumpPower * (Vector2.up)/2);
                 }
 
             }
             AudioManager.instance.PlaySFX(1);
         }
+
+        if(curHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
 
     void FixedUpdate()
     {
@@ -155,10 +138,13 @@ public class Player : MonoBehaviour
         if (curHealth <= 0)
         {
             isDead = true;
-            AudioManager.instance.PlaySFX(2);
-            LevelManager.instance.RespawnPlayer();
+            if(Player.instance.currentMapName != "BigBoss")
+            {
+                AudioManager.instance.PlaySFX(2);
+                LevelManager.instance.RespawnPlayer();
+            }
             isDead = false;
-
+           
         }
 
     }
@@ -209,11 +195,14 @@ public class Player : MonoBehaviour
 
             isDead = true;
             AudioManager.instance.PlaySFX(2);
-            LevelManager.instance.RespawnPlayer();
+           if(Player.instance.currentMapName != "BigBoss")
+            {
+                LevelManager.instance.RespawnPlayer();
+            }
             isDead = false;
 
         }
-        AudioManager.instance.PlaySFX(5);
+      //  AudioManager.instance.PlaySFX(5);
     }
 
     //For knockback reaction

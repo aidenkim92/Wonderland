@@ -633,7 +633,7 @@ PrefabInstance:
     - target: {fileID: 8386254047553946148, guid: b22f008965aac0346bce80db43c75582,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8386254047553946148, guid: b22f008965aac0346bce80db43c75582,
         type: 3}
@@ -3467,7 +3467,7 @@ MonoBehaviour:
   projectile:
   - {fileID: 472196727686516687, guid: 8d3bd53e315828948b037f619d9abb7d, type: 3}
   - {fileID: 4997764709960516347, guid: 397737e13138f7547b0d5c1af3a313f5, type: 3}
-  cooldownTime: 5
+  cooldownTime: 0.1
   imageCooldown:
   - {fileID: 1549913209}
   - {fileID: 1560057187}
@@ -3822,6 +3822,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2921414897569867367, guid: 825822ebd25d9404c820686b7e488288,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 2921414897569867369, guid: 825822ebd25d9404c820686b7e488288,
         type: 3}
       propertyPath: target
@@ -3881,6 +3886,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921414897569867371, guid: 825822ebd25d9404c820686b7e488288,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 825822ebd25d9404c820686b7e488288, type: 3}
@@ -4151,6 +4161,11 @@ PrefabInstance:
       propertyPath: objectActivate.Array.data[4]
       value: 
       objectReference: {fileID: 1680039530}
+    - target: {fileID: 2190626588768567588, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2751284529838436238, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4205,6 +4220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7838140866360492104, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8702993950606246233, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}

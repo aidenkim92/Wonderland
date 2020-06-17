@@ -112,26 +112,6 @@ public class Slime : MonoBehaviour
 
         if ((curHealth <=0))
         {
-
-            if(Player.instance.transform.position.x >= 270)
-            {
-                SceneManager.LoadScene(3);
-            }
-            if (player.currentExp == player.maxExp)
-            {
-                player.currentExp = 0;
-                player.character_LV += 1;
-                
-                
-
-            }
-            else
-            {
-                player.currentExp += 10;
-                
-
-            }
-
             //Probability that for dropping items.
             int probability;
             probability = Random.Range(0, 5);

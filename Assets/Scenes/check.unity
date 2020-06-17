@@ -1425,6 +1425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d92b262a65af2449d859a07a150225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
 --- !u!1 &1252251365
 GameObject:
   m_ObjectHideFlags: 0
@@ -22691,6 +22692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: check2
+  transition: {fileID: 0}
+  transitionTime: 1
 --- !u!61 &1780675416
 BoxCollider2D:
   m_ObjectHideFlags: 0

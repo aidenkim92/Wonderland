@@ -1279,6 +1279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bossDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 5706545371229564931, guid: 86c4146c08ae164428ef558523ff0445,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5706545371229564935, guid: 86c4146c08ae164428ef558523ff0445,
         type: 3}
       propertyPath: m_LocalPosition.x
