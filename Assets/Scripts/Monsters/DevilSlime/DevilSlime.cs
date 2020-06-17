@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DevilSlime : MonoBehaviour
 {
@@ -184,6 +185,7 @@ public class DevilSlime : MonoBehaviour
 
         if ((curHealth <= 0))
         {
+
             //Probability that for dropping items.
             int probability;
             probability = Random.Range(0, 5);
@@ -195,6 +197,8 @@ public class DevilSlime : MonoBehaviour
             }
             AudioManager.instance.PlaySFX(6);
             Destroy(gameObject);
+            SceneManager.LoadScene(3);
+            
         }
     }
 

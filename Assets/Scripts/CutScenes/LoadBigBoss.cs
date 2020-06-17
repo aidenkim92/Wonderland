@@ -27,13 +27,13 @@ public class LoadBigBoss : MonoBehaviour
         if (vp.time >= videoLength)
         {
 
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(11);
 
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(11);
 
         }
 

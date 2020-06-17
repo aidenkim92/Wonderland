@@ -11279,6 +11279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rain Generator
       objectReference: {fileID: 0}
+    - target: {fileID: 4382199132434167887, guid: 25b59d255bce1274897df1a9790c600c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4382199132434171824, guid: 25b59d255bce1274897df1a9790c600c,
         type: 3}
       propertyPath: m_LocalPosition.x
