@@ -104,7 +104,7 @@ public class Player : MonoBehaviour
         {
 
             isDead = true;
-            AudioManager.instance.PlaySFX(2);
+            //AudioManager.instance.PlaySFX(2);
             if (Player.instance.currentMapName != "BigBoss")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -116,9 +116,9 @@ public class Player : MonoBehaviour
                 currentMapName = "";
                 //should be changed the load scene as Hell scene later when
                 //Shahil finish the hell scene.
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(8);
                 Player.instance.gameObject.SetActive(false);
-                AudioManager.instance.PlaySFX(4);
+                //AudioManager.instance.PlaySFX(4);
                 Player.instance.gameObject.SetActive(true);
                 Player.instance.transform.position = CheckpointController.instance.spawnPoint;
                 Player.instance.curHealth = Player.instance.maxHealth;

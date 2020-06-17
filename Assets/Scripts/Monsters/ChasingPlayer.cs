@@ -40,7 +40,7 @@ public class ChasingPlayer : MonoBehaviour
 
         if(pinky.position.x >= 150)
         {
-            moveSpeed =3;
+            //moveSpeed =3;
         }
 
         if(Math.Abs(pinky.position.x - player.transform.position.x)<= 50)
