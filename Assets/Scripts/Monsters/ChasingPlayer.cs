@@ -18,7 +18,7 @@ public class ChasingPlayer : MonoBehaviour
     void Start()
     {
 
-        AudioManager.instance.PlaySFX(8);
+        AudioManager.instance.PlaySFX(7);
 
     }
 
