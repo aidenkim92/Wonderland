@@ -27,6 +27,8 @@ public class SpawnEnemyCollide : MonoBehaviour
         {
             Player.instance.Damage(damage);
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            //add explosion sound for enemy
+            AudioManager.instance.PlaySFX(11);
             Destroy(go);
         }
     }

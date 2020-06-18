@@ -18,7 +18,7 @@ public class ChasingPlayer : MonoBehaviour
     void Start()
     {
 
-        AudioManager.instance.PlaySFX(7);
+        AudioManager.instance.PlaySFX(9);
 
     }
 
@@ -32,6 +32,7 @@ public class ChasingPlayer : MonoBehaviour
         if(transform.position == forendPoint.transform.position)
         {
             transform.position = forstartPoint.transform.position;
+            AudioManager.instance.PlaySFX(9);
         }
     }
 

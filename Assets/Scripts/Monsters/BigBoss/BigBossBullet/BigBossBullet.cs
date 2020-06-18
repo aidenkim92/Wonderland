@@ -8,6 +8,11 @@ public class BigBossBullet : MonoBehaviour
     public int damage;
     public bool isRotate;
 
+
+    void Start()
+    {
+        //sound here
+    }
     //Update the frame per second
     void Update()
     {

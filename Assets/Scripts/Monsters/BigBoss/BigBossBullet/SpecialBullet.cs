@@ -13,6 +13,7 @@ public class SpecialBullet : MonoBehaviour
     private void Start()
     {
         Destroy(gameObject, 2f);
+        //add sound here
     }
 
     // Update is called once per frame
@@ -33,7 +34,8 @@ public class SpecialBullet : MonoBehaviour
     { 
        if (collision.gameObject.tag == "Player")
        {
-            Player.instance.Damage(damage);
+
+           Player.instance.Damage(damage);
            Destroy(gameObject);
        }
     }

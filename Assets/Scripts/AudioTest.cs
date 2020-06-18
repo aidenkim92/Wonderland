@@ -30,6 +30,10 @@ public class AudioTest : MonoBehaviour
         {
             AudioManager.instance.PlayBGM(2);
         }
+        else if (SceneManager.GetActiveScene().name == "Bigboss")
+        {
+            AudioManager.instance.PlayBGM(4);
+        }
 
         else
         {
