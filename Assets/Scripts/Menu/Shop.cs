@@ -8,13 +8,13 @@ public class Shop : MonoBehaviour
     public static bool shopOpen = false;
     // Update is called once per frame
     public GameObject shop;
-    public static Shop instance;
+    public  Shop instance;
     public Text increaseDmgText;
     public Text increaseHealthText;
     private Player player;
     private AttackTrigger at;
-    private int increaseDmgPrice = 5;
-    private int increaseHealthPrice = 5;
+    private  int increaseDmgPrice = 5;
+    private  int increaseHealthPrice = 5;
 
     void Update()
     {
@@ -94,5 +94,10 @@ public class Shop : MonoBehaviour
         {
             Close();
         }
+    }
+
+    public static GameObject InstantiateFromResource(string _PrfName)
+    {
+        return GameObject.Instantiate(Resources.Load<GameObject>(_PrfName));
     }
 }

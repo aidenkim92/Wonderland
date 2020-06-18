@@ -3431,6 +3431,7 @@ GameObject:
   - component: {fileID: 2178417163416088932}
   - component: {fileID: 2178417163416088931}
   - component: {fileID: 2178417163416088930}
+  - component: {fileID: 2202185897783268758}
   m_Layer: 5
   m_Name: U.I
   m_TagString: Canvas
@@ -3605,6 +3606,21 @@ MonoBehaviour:
     swNameList: []
     varNameList: []
     varNumberList: []
+--- !u!114 &2202185897783268758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076982164838893129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097356b2e76b9604c8fb769cdbee7c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shop: {fileID: 9033648708797332629}
+  increaseDmgText: {fileID: 3707341142665092070}
+  increaseHealthText: {fileID: 5098461366683916212}
 --- !u!1 &1076982164839633063
 GameObject:
   m_ObjectHideFlags: 0
