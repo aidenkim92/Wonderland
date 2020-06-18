@@ -10,7 +10,7 @@ public class AttackTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag != "Player" && collision.tag != "CheckPoint" && collision.tag != "Collectable" && collision.tag != "DevilSlimeFire" && collision.tag != "Door" && collision.tag != "BananaMonsterBullet" &&
-             collision.tag != "Pinky")
+             collision.tag != "Pinky" && collision.tag != "TurretBullet" && collision.tag != "SidePlatForm")
         {
             Debug.Log(collision.tag);
             //If the trriggered

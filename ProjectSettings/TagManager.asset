@@ -25,6 +25,8 @@ TagManager:
   - Door
   - BananaMonsterBullet
   - Pinky
+  - SidePlatForm
+  - TurretBullet
   layers:
   - Default
   - TransparentFX
@@ -48,8 +50,8 @@ TagManager:
   - Door
   - DevilSlimeFire
   - BananaMonsterBullet
-  - 
-  - 
+  - SidePlatForm
+  - TurretBullet
   - 
   - 
   - 
