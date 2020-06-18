@@ -106,16 +106,6 @@ public class UIManager : MonoBehaviour
         {
             endingCredit.SetActive(false);
         }
-
-        //When the key pressed k at the ending credit
-        //Player should begin from the beginning
-        if(Input.GetKeyDown(KeyCode.K) && Player.instance.currentMapName == "EndingCredit")
-        {
-            endingCredit.SetActive(false);
-            Player.instance.curHealth = Player.instance.maxHealth;
-            Player.instance.coins = 0;
-            Player.instance.currentMapName = "index2";
-        }
     }
 
     //Testing for the timer counter
