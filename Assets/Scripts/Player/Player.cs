@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
         //it should load scene depends on the player current scene.
         if (curHealth <= 0 && !isDead)
         {
-
+            gameObject.GetComponent<Animation>().RemoveClip("RedFlash_Player");
             isDead = true;
            
             if (Player.instance.currentMapName != "BigBoss")

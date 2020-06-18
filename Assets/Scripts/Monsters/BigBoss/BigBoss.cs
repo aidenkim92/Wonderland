@@ -275,4 +275,5 @@ public class BigBoss : MonoBehaviour
             anim.SetTrigger("OnHit");
         }
     }
+
 }

@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 69.7
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4444,6 +4444,21 @@ PrefabInstance:
       propertyPath: spellG
       value: 
       objectReference: {fileID: 1148825445}
+    - target: {fileID: 4493641590882847352, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 838d1d08c9a29cc4d8f7af7007b3e2d8, type: 2}
+    - target: {fileID: 4493641590882847352, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493641590882847352, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 838d1d08c9a29cc4d8f7af7007b3e2d8, type: 2}
     - target: {fileID: 4493641590882847353, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
         type: 3}
       propertyPath: coinText
@@ -4458,6 +4473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493641590882847355, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4493641590882847356, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
         type: 3}
@@ -4513,6 +4533,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493641590882847357, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493641590882847357, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493641590882847357, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d516fe3b08e040e4b9dee21fa71c3ad7, type: 3}
