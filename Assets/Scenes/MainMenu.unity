@@ -4449,6 +4449,11 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 317594452}
+    - target: {fileID: 4493641590882847353, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: jumpPower
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4493641590882847355, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
         type: 3}
       propertyPath: m_Name
