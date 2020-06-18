@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1322717250044616490}
   - component: {fileID: -1331938979280261847}
   - component: {fileID: -786170233798300424}
-  m_Layer: 9
+  m_Layer: 20
   m_Name: Devil_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -18,6 +18,11 @@ TagManager:
   - BorderBullet
   - BigBossSpecialBullet
   - BigBoss
+  - Collectable
+  - Bird
+  - Rock
+  - CheckPoint
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -39,7 +44,7 @@ TagManager:
   - PlayerBullet
   - BigBossSpecialBullet
   - Door
-  - 
+  - DevilSlimeFire
   - 
   - 
   - 

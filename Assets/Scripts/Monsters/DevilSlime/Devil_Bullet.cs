@@ -35,6 +35,12 @@ public class Devil_Bullet : MonoBehaviour
                 Destroy(gameObject);
                 isDestroyed = true;
             }
+            else if (other.gameObject.tag == ("PlatForm"))
+            {
+                Destroy(gameObject);
+                isDestroyed = true;
+            }
+
         }
 
     }

@@ -131,10 +131,9 @@ GameObject:
   - component: {fileID: 5706545371229564934}
   - component: {fileID: 5706545371229564933}
   - component: {fileID: 5706545371229564932}
-  - component: {fileID: 4699077363084784105}
   m_Layer: 0
   m_Name: bossDoor
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,21 +240,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5af50ed748ae54841bc7bd7836970932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transferMapName: Boss
-  transition: {fileID: 0}
-  transitionTime: 1
---- !u!114 &4699077363084784105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5706545371229564931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b434d55fbfb20f4a9fae340988740f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9216687682520061806
