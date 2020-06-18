@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class ChasingPlayer : MonoBehaviour
 {
-  
-
     public Transform[] points;
     public float moveSpeed;
     public Transform pinky;

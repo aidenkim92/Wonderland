@@ -68,13 +68,11 @@ public class Player : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0 && m_facingRight)
         {
             Flip();
-            //transform.localScale = new Vector3(-1, 1, 1);
         }
         //To move right but facing left
         else if (Input.GetAxis("Horizontal") > 0 && !m_facingRight)
         {
             Flip();
-            //transform.localScale = new Vector3(1, 1, 1);
         }
 
         //Prevent getting infinite number for jump
@@ -84,10 +82,11 @@ public class Player : MonoBehaviour
             {
                 rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
                 canDoubleJump = true;
+                grounded = false;
             }
             else
             {
-                if (canDoubleJump)
+               if (canDoubleJump)
                 {
                     canDoubleJump = false;
                     rigid.velocity = new Vector2(rigid.velocity.x, 0);
@@ -116,8 +115,6 @@ public class Player : MonoBehaviour
             {
                 
                 currentMapName = "";
-                //should be changed the load scene as Hell scene later when
-                //Shahil finish the hell scene.
                 Player.instance.gameObject.SetActive(false);
                 AudioManager.instance.PlaySFX(4);
                 Player.instance.gameObject.SetActive(true);
@@ -125,18 +122,9 @@ public class Player : MonoBehaviour
                 isDead = false;
                 SceneManager.LoadScene(8);
                 Player.instance.transform.position = new Vector3(-1, 0, 0);
-                //Player.instance.gameObject.SetActive(false);
-                //AudioManager.instance.PlaySFX(4);
-                //Player.instance.gameObject.SetActive(true);
-                //Player.instance.transform.position = CheckpointController.instance.spawnPoint;
-                // Player.instance.curHealth = Player.instance.maxHealth;
-
-                //UIManager.instance.ResetPlayer();
-                isDead = false;
             }
-           
         }
-        
+      
     }
 
 
@@ -168,30 +156,6 @@ public class Player : MonoBehaviour
         {
             rigid.velocity = new Vector2(-maxSpeed, rigid.velocity.y);
         }
-
-
-        //Commented out due to we can use this code later.
-        /*
-         *   if (curHealth <= 0)
-        {
-            isDead = true;
-            if(Player.instance.currentMapName != "BigBoss")
-            {
-                AudioManager.instance.PlaySFX(2);
-                LevelManager.instance.RespawnPlayer();
-            }
-            else if(Player.instance.currentMapName == "BigBoss")
-            {
-                //Testing for Respawn
-                currentMapName = "";
-                //SceneManager.LoadScene(2);
-            }
-            isDead = false;
-           
-        }
-         */
-
-
     }
 
     //Moving Platform
@@ -205,7 +169,6 @@ public class Player : MonoBehaviour
 
         if(other.gameObject.tag == "Bird")
         {
-            //Destroy(other.gameObject);
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 
         }
@@ -223,7 +186,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
     //When get damage
     public void Damage(int damage)
     {
@@ -234,16 +196,7 @@ public class Player : MonoBehaviour
         //Just use reference with this gameObject.
         if(curHealth >= 2)
         {
-
             gameObject.GetComponent<Animation>().Play("RedFlash_Player");
-            if(curHealth == 0)
-            {
-                gameObject.GetComponent<Animation>().Stop("RedFlash_Player");
-            }
-        }
-        else
-        {
-            gameObject.GetComponent<Animation>().Stop("RedFlash_Player");
         }
     }
 
@@ -268,3 +221,17 @@ public class Player : MonoBehaviour
         transform.Rotate(0f, 180f, 0f);
     }
 }
+
+//Do not remove it might be referenced for future work it was in the Update() method in the if(curHealth <= 0)
+/*
+ * //should be changed the load scene as Hell scene later when
+//Shahil finish the hell scene.
+//Player.instance.gameObject.SetActive(false);
+//AudioManager.instance.PlaySFX(4);
+//Player.instance.gameObject.SetActive(true);
+//Player.instance.transform.position = CheckpointController.instance.spawnPoint;
+// Player.instance.curHealth = Player.instance.maxHealth;
+
+//UIManager.instance.ResetPlayer();
+//isDead = false;
+ */

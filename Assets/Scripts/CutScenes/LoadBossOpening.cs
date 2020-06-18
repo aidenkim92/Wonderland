@@ -16,6 +16,7 @@ public class LoadBossOpening : MonoBehaviour
     {
         vp = gameObject.GetComponent<VideoPlayer>();
         vp.Play();
+        Player.instance.currentMapName = "BigBoss";
     }
 
     // Update is called once per frame
