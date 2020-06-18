@@ -8,7 +8,6 @@ public class Shop : MonoBehaviour
     public static bool shopOpen = false;
     // Update is called once per frame
     public GameObject shop;
-    public  Shop instance;
     public Text increaseDmgText;
     public Text increaseHealthText;
     private Player player;
@@ -30,13 +29,14 @@ public class Shop : MonoBehaviour
                 Close();
             }
         }
+        increaseHealthText.text = increaseHealthPrice.ToString();
+        increaseDmgText.text = increaseDmgPrice.ToString();
 
     }
 
     public void Open()
     {
-        increaseHealthText.text = increaseHealthPrice.ToString();
-        increaseDmgText.text = increaseDmgPrice.ToString();
+       
 
         shop.SetActive(false);
         Time.timeScale = 1f;

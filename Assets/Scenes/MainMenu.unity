@@ -3644,6 +3644,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 375114007975393147, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 298
+      objectReference: {fileID: 0}
+    - target: {fileID: 375114007975393147, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 193.79
+      objectReference: {fileID: 0}
     - target: {fileID: 504386390391984875, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_RootOrder
@@ -3817,12 +3827,12 @@ PrefabInstance:
     - target: {fileID: 1076982165930495092, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1076982165930495092, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1076982165978170701, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
@@ -3944,6 +3954,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3707341142665092070, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4277566756619909422, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
       propertyPath: m_Text
@@ -3958,6 +3973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: increaseDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098461366683916212, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
+        type: 3}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5458449991444182591, guid: 7d7d73dbbfcea6f46a0c6294b093a520,
         type: 3}
