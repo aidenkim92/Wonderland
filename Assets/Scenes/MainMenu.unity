@@ -3251,6 +3251,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1061907384, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: m_Volume
+      value: 0.682
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061907384, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4876553685084649614, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
+        type: 2}
+    - target: {fileID: 1061907384, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095079294, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -7430257274011417078, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
+        type: 2}
+    - target: {fileID: 1514403744, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: m_Volume
+      value: 0.678
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514403744, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4876553685084649614, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
+        type: 2}
+    - target: {fileID: 1514403744, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079648272, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: m_Volume
+      value: 0.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079648272, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4876553685084649614, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
+        type: 2}
+    - target: {fileID: 2079648272, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7540408359250446735, guid: 6e8719d096ffbe04f9f57f6e98959169,
         type: 3}
       propertyPath: m_PlayOnAwake

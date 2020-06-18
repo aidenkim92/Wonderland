@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+/**
+ * Class: Loads the hell scene from the previous scene*/
 public class LoadHell : MonoBehaviour
 {
     public double videoLength;
@@ -26,7 +28,7 @@ public class LoadHell : MonoBehaviour
 
         if (vp.time >= videoLength)
         {
-            //SceneManager.LoadScene(2);
+            
             SceneManager.LoadScene(8);
             Player.instance.transform.position = new Vector3(-1, 0, 0);
         }

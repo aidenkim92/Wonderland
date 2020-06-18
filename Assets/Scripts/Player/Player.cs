@@ -118,14 +118,20 @@ public class Player : MonoBehaviour
                 currentMapName = "";
                 //should be changed the load scene as Hell scene later when
                 //Shahil finish the hell scene.
-                SceneManager.LoadScene(8);
                 Player.instance.gameObject.SetActive(false);
-                //AudioManager.instance.PlaySFX(4);
+                AudioManager.instance.PlaySFX(4);
                 Player.instance.gameObject.SetActive(true);
-                Player.instance.transform.position = CheckpointController.instance.spawnPoint;
                 Player.instance.curHealth = Player.instance.maxHealth;
+                isDead = false;
+                SceneManager.LoadScene(8);
+                Player.instance.transform.position = new Vector3(-1, 0, 0);
+                //Player.instance.gameObject.SetActive(false);
+                //AudioManager.instance.PlaySFX(4);
+                //Player.instance.gameObject.SetActive(true);
+                //Player.instance.transform.position = CheckpointController.instance.spawnPoint;
+                // Player.instance.curHealth = Player.instance.maxHealth;
 
-                UIManager.instance.ResetPlayer();
+                //UIManager.instance.ResetPlayer();
                 isDead = false;
             }
            

@@ -40,7 +40,7 @@ public class Checkpoint : MonoBehaviour
     }
 
     /*
-     * Resets all checkpoints
+     * Function: Resets all checkpoints and sets their sprite to Off
      * */
     public void ResetCheckPoint()
     {

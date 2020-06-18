@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * This Class controls every instance of a checkpoint in game
+ * Class: This Class controls every instance of a checkpoint in game
  * @author Shahil Khan
  * */
 public class CheckpointController : MonoBehaviour
@@ -35,7 +35,7 @@ public class CheckpointController : MonoBehaviour
     }
 
     /**
-     * This class deactivates all checkpoints controlled by the controller
+     * Function: This class deactivates all checkpoints controlled by the controller
      */
     public void DeactivateCheckpoints()
     {
@@ -47,7 +47,7 @@ public class CheckpointController : MonoBehaviour
     }
 
     /**
-     * This class sets the player spawn point
+     * Function: This class sets the player spawn point
      * */
     public void SetSpawnPoint(Vector3 newSpawnPoint)
     {

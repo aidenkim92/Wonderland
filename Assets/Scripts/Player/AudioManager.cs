@@ -4,18 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /**
- * Manages all audio in this game
+ * Class: Manages all audio in this game
+ * An instance of this object is required in all Scenes
  * @author Shahil
  * */
 public class AudioManager : MonoBehaviour
 {
     
     //Variables
-    public static AudioManager instance;
+    public static AudioManager instance; //Current instance
     public AudioSource[] soundEffects;
     public AudioSource[] bgm; 
 
-
+    /**
+     * Function: Instantiates an object depending on Singleton Pattern*/
     void Awake()
     {
         
@@ -31,7 +33,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    //Purpose of this class is to play and loop background music
+    /*
+     * Function: Determines which background music to play. Stops all current playing music
+     * Plays the requested music and ensures it loops
+     * If bgm is -1, then no background music will play*/
     public void PlayBGM(int bgmToPlay)
     {
         for(int i =0; i <bgm.Length; i++)
@@ -46,7 +51,12 @@ public class AudioManager : MonoBehaviour
         }
 
     }
-    //int variable is an object in array which determines which sound effect to play
+    
+    /**
+     * Function: Determines which sound effect to play
+     * Stopps all currently playing soundeffects.
+     * Randomizes pitch
+     * Plays the sound*/
     public void PlaySFX(int soundToPlay)
     {
         
