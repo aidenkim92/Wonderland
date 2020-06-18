@@ -23,6 +23,8 @@ TagManager:
   - Rock
   - CheckPoint
   - Door
+  - BananaMonsterBullet
+  - Pinky
   layers:
   - Default
   - TransparentFX
@@ -45,7 +47,7 @@ TagManager:
   - BigBossSpecialBullet
   - Door
   - DevilSlimeFire
-  - 
+  - BananaMonsterBullet
   - 
   - 
   - 

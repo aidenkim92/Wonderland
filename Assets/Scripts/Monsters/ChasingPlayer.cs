@@ -7,19 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class ChasingPlayer : MonoBehaviour
 {
-    public Transform[] points;
     public float moveSpeed;
-    public Transform pinky;
-    public int currentPoint;
-    private Player player;
-    private Vector3 originalPos;
     public Transform cutSceneTrigger;
     public Checkpoint c;
+
+    //Points for pinky reset
+    public GameObject forendPoint;
+    public GameObject forstartPoint;
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<Player>();
-        originalPos = pinky.position;
+
         AudioManager.instance.PlaySFX(8);
 
     }
@@ -27,49 +25,28 @@ public class ChasingPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pinky.position = Vector3.MoveTowards(pinky.position, points[currentPoint].position, moveSpeed * Time.deltaTime);
         nextScene();
 
-        if(player.curHealth <=0)
+        transform.position = Vector3.MoveTowards(transform.position, forendPoint.transform.position, moveSpeed * Time.deltaTime);
+
+        if(transform.position == forendPoint.transform.position)
         {
-            pinky.position = originalPos;
-           
+            transform.position = forstartPoint.transform.position;
         }
-
-        if(pinky.position.x >= 150)
-        {
-            //moveSpeed =3;
-        }
-
-        if(Math.Abs(pinky.position.x - player.transform.position.x)<= 50)
-        {
-            AudioManager.instance.PlaySFX(8);
-        }
-
-        if(c.transform.position.x >= player.transform.position.x)
-        {
-            pinky.position = originalPos;
-
-        }
-
     }
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.CompareTag("Player") && Math.Abs(pinky.transform.position.x - player.transform.position.x) <=10)
+       if(col.CompareTag("Player") || (Player.instance.transform.position.x == transform.position.x))
         {
-            player.Damage(player.curHealth);
-            
-            pinky.position = originalPos;
-            moveSpeed = 3 ;
+            Player.instance.Damage(100);
 
-            Debug.Log("Killed Player");
         }
     }
 
     public void nextScene()
     {
-        if(player.transform.position.x >= cutSceneTrigger.position.x)
+        if(Player.instance.transform.position.x >= cutSceneTrigger.position.x)
         {
             SceneManager.LoadScene(6);
         }

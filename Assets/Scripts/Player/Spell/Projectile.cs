@@ -17,7 +17,8 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Player" && collision.tag != "CheckPoint" && collision.tag != "Collectable" && collision.tag != "DevilSlimeFire" && collision.tag != "Door")
+        if (collision.tag != "Player" && collision.tag != "CheckPoint" && collision.tag != "Collectable" && collision.tag != "DevilSlimeFire" && collision.tag != "Door" && collision.tag != "BananaMonsterBullet" &&
+            collision.tag != "Pinky")
         {
             Debug.Log(collision.tag);
             GameObject clone = Instantiate(impactEffect, transform.position, transform.rotation);
