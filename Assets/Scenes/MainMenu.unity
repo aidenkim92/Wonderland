@@ -1207,7 +1207,7 @@ PrefabInstance:
     - target: {fileID: 1080874793195632635, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}
       propertyPath: coins
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1080874793195632638, guid: 2ca695312cce2e64e9e0ecdb96bde592,
         type: 3}

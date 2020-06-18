@@ -26,7 +26,6 @@ public class UIManager : MonoBehaviour
     private bool timerGoing;
     private float elapsedTime;
 
-
     //Recorded time UI variable
     public GameObject endingCredit;
     public Text timerRecorded;
@@ -92,15 +91,31 @@ public class UIManager : MonoBehaviour
         //When the player is defeat the Big boss monster the ending credit is shown
         if (Player.instance.currentMapName == "BigBoss" && bigBossHealthBar.value == 0)
         {
-            endingCredit.SetActive(true);
-            timerRecorded.text = "Recorded Time : "+ timeCounter.text;
+            timerRecorded.text = "Recorded Time : " + timeCounter.text;
             EndTimer();
+            SceneManager.LoadScene(12);
+            Player.instance.currentMapName = "";
+        }
+
+        //If the player is in the ending credit then start the ending credit.
+        if(Player.instance.currentMapName == "EndingCredit")
+        {
+            endingCredit.SetActive(true);
         }
         else
         {
             endingCredit.SetActive(false);
         }
 
+        //When the key pressed k at the ending credit
+        //Player should begin from the beginning
+        if(Input.GetKeyDown(KeyCode.K) && Player.instance.currentMapName == "EndingCredit")
+        {
+            endingCredit.SetActive(false);
+            Player.instance.curHealth = Player.instance.maxHealth;
+            Player.instance.coins = 0;
+            Player.instance.currentMapName = "index2";
+        }
     }
 
     //Testing for the timer counter

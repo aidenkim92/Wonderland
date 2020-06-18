@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    //string for saving transfer mapname
-    public string transferMapName;
-    public Animator transition;
-    public float transitionTime = 1f;
     //Reference
     private Player player;
 
@@ -25,9 +21,8 @@ public class Door : MonoBehaviour
             //Input is key'e', then enter to the scene depends on transfermapname
             if(Input.GetKeyDown("e"))
             {
-                SceneManager.LoadScene(11);
+                SceneManager.LoadScene(10);
                 Player.instance.currentMapName = "BigBoss";
-               // Player.instance.transform.position = new Vector3(-5, -2, 0);
 
             }
         }
@@ -39,23 +34,10 @@ public class Door : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                SceneManager.LoadScene(11);
+                SceneManager.LoadScene(10);
                 Player.instance.currentMapName = "BigBoss";
-                // Player.instance.transform.position = new Vector3(136, -1, 0);
             }
         }
-    }
-    //Loads next level on the build index
-    public void LoadNextLevel() {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-    }
-
-    IEnumerator LoadLevel(int levelIndex) {
-        transition.SetTrigger("start");
-        yield return new WaitForSeconds(transitionTime);
-        player.currentMapName = transferMapName;
-        SceneManager.LoadScene(levelIndex);
-
     }
    
 }

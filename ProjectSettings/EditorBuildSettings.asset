@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossEnding.unity
     guid: 32c31633ea45cc84ba2b4223421b89f3
+  - enabled: 1
+    path: Assets/Scenes/LastSceneForEndingCredit.unity
+    guid: 19beb0f67225f6344a8c5b39d6bf9dd7
   m_configObjects: {}
