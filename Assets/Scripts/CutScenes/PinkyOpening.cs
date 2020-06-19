@@ -16,21 +16,12 @@ public class PinkyOpening : MonoBehaviour
         vp = gameObject.GetComponent<VideoPlayer>();
         vp.Play();
 
-
-
-
-
     }
-
-
 
     void Update()
     {
-        //Debug.Log(vp.time);
-
         if (vp.time >= videoLength)
         {
-            //SceneManager.LoadScene(2);
             SceneManager.LoadScene(5);
             Player.instance.transform.position = new Vector3(146, -1, 0);
         }
@@ -40,8 +31,5 @@ public class PinkyOpening : MonoBehaviour
             SceneManager.LoadScene(5);
             Player.instance.transform.position = new Vector3(146, -1, 0);
         }
-
-
-
     }
 }

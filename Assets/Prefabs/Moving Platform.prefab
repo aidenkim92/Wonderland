@@ -179,16 +179,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: One Way Platform
       objectReference: {fileID: 0}
-    - target: {fileID: 949155148948354573, guid: 22db9b21676d892499d958fd83bce8a1,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 290373581
-      objectReference: {fileID: 0}
-    - target: {fileID: 949155148948354573, guid: 22db9b21676d892499d958fd83bce8a1,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22db9b21676d892499d958fd83bce8a1, type: 3}
 --- !u!4 &1595630551808388511 stripped

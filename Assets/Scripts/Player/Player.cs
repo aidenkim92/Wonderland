@@ -98,27 +98,26 @@ public class Player : MonoBehaviour
         //it should load scene depends on the player current scene.
         if (curHealth <= 0 && !isDead)
         {
-            gameObject.GetComponent<Animation>().RemoveClip("RedFlash_Player");
             isDead = true;
            
-            if (Player.instance.currentMapName != "BigBoss")
+            if (currentMapName != "BigBoss")
             {
                 
                 Debug.Log("Dead");
                 LevelManager.instance.RespawnPlayer();
                 isDead = false;
             }
-            else if (Player.instance.currentMapName == "BigBoss")
+            else if (currentMapName == "BigBoss")
             {
                 
                 currentMapName = "";
                 Player.instance.gameObject.SetActive(false);
                 AudioManager.instance.PlaySFX(4);
                 Player.instance.gameObject.SetActive(true);
-                Player.instance.curHealth = Player.instance.maxHealth;
+                curHealth = maxHealth;
                 isDead = false;
                 SceneManager.LoadScene(8);
-                Player.instance.transform.position = new Vector3(-1, 0, 0);
+                Player.instance.transform.position = new Vector3(-5.28f, 3.39f, 0);
             }
         }
       

@@ -30,16 +30,14 @@ public class LoadHell : MonoBehaviour
         {
             
             SceneManager.LoadScene(8);
-            Player.instance.transform.position = new Vector3(-1, 0, 0);
+            Player.instance.transform.position = new Vector3(-5.28f, 3.39f, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene(8);
-            Player.instance.transform.position = new Vector3(-1, 0, 0);
+            Player.instance.transform.position = new Vector3(-5.28f, 3.39f, 0);
         }
-
-
 
     }
 }
