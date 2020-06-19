@@ -22,6 +22,7 @@ public class FireBallSpell : MonoBehaviour
         {
             if (Input.GetKeyDown("g"))
             {
+                Debug.Log("shooting");
                 nextFireTime = Time.time + cooldownTime;
                 Shoot(spellIndex);
             }
@@ -48,6 +49,8 @@ public class FireBallSpell : MonoBehaviour
     void Shoot(int spellIndex)
     {
         isCooldown = true;
+        
         Instantiate(projectile, firePosition.position, firePosition.rotation);
+        Debug.Log("ShootingTwo");
     }
 }
