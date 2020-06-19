@@ -29,11 +29,9 @@ public class Player : MonoBehaviour
     public int curHealth = 0;
     public int maxHealth = 7;
     public bool isDead;
-
     //References
     private Rigidbody2D rigid;
     private Animator animator;
-
     public static Player instance;
    
     private void Awake()
@@ -74,7 +72,6 @@ public class Player : MonoBehaviour
         {
             Flip();
         }
-
         //Prevent getting infinite number for jump
         if (Input.GetButtonDown("Jump"))
         {
@@ -128,6 +125,7 @@ public class Player : MonoBehaviour
     }
 
 
+
     void FixedUpdate()
     {
         Vector3 easeVelocity = rigid.velocity;
@@ -161,11 +159,6 @@ public class Player : MonoBehaviour
     //Moving Platform
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag  == ("MovingPlatForm"))
-        {
-            this.transform.parent = other.transform;
-            Debug.Log("MOVING");
-        }
 
         if(other.gameObject.tag == "Bird")
         {
@@ -220,6 +213,7 @@ public class Player : MonoBehaviour
         m_facingRight = !m_facingRight;
         transform.Rotate(0f, 180f, 0f);
     }
+
 }
 
 //Do not remove it might be referenced for future work it was in the Update() method in the if(curHealth <= 0)

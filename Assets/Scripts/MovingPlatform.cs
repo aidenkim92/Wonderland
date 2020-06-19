@@ -10,6 +10,7 @@ public class MovingPlatform : MonoBehaviour
     public int currentPoint;
 
     public Transform platform;
+    private Player player;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,4 +32,7 @@ public class MovingPlatform : MonoBehaviour
         }
         
     }
+
+    
+
 }

@@ -13,7 +13,6 @@ public class DevilSlime : MonoBehaviour
 
     private Animator animator;
     private Vector3 movement;
-    private int movementFlag = 0;//0:Idle, 1:Left, 2:Right
     bool isTracing;
     private GameObject traceTarget;
 
@@ -39,7 +38,6 @@ public class DevilSlime : MonoBehaviour
     //Reference prefabs for items
     public GameObject[] prefab;
 
-    private bool facingRight = true;
 
     private void Start()
     {
