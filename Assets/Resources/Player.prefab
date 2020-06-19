@@ -304,7 +304,7 @@ MonoBehaviour:
   currentMapName: r
   maxSpeed: 5
   speed: 55
-  jumpPower: 7.3
+  jumpPower: 7.9
   canDoubleJump: 0
   grounded: 0
   coins: 0
