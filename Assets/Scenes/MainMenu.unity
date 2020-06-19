@@ -3075,21 +3075,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 137588690, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -7430257274011417078, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
-        type: 2}
-    - target: {fileID: 1455714243, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -7430257274011417078, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
-        type: 2}
-    - target: {fileID: 1484229516, guid: 6e8719d096ffbe04f9f57f6e98959169, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -7430257274011417078, guid: f4c4e1bf4aa8a6d4cbf58f89aacc2664,
-        type: 2}
     - target: {fileID: 7540408359844996172, guid: 6e8719d096ffbe04f9f57f6e98959169,
         type: 3}
       propertyPath: m_LocalPosition.x

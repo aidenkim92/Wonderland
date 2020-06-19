@@ -20,9 +20,18 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
+
+        //conrols audio of fireball
+
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            AudioManager.instance.PlaySFX(13);
+        }
+
         //When the key "f" is pressed and not attacking the moment
-        if(Input.GetKeyDown("f") && !attacking)
+        if (Input.GetKeyDown("f") && !attacking)
         {
            
             attacking = true;
