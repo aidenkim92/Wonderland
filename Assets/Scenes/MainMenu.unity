@@ -4411,6 +4411,11 @@ PrefabInstance:
       propertyPath: spellG.Array.data[1]
       value: 
       objectReference: {fileID: 855398574}
+    - target: {fileID: 3556883636455954636, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
+        type: 3}
+      propertyPath: cooldownTime
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 3779405453793290802, guid: d516fe3b08e040e4b9dee21fa71c3ad7,
         type: 3}
       propertyPath: imageCooldown
