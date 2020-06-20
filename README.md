@@ -53,4 +53,5 @@ Features of this game include:
 
 
 License
+MIT
 ----
