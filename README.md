@@ -31,7 +31,7 @@ Features of this game include:
 1.    Clone the branch titled **release** on to your local computer
 2.   Open this project in Unity Hub and Add the folder where **release** is cloned to
 ![](https://i.imgur.com/2ys66qL.png)
-3. Ensure the Unity Version is **2019.3.5f1**
+3. Ensure the Unity Version is **2019.3.5f1** and open the project
 ![](https://i.imgur.com/3kAh6Hg.png)
 4. In Unity, Navigate to *File -> Build Settings*
 ![](https://i.imgur.com/GljU7z7.gif)
